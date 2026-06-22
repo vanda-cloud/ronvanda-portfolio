@@ -27,7 +27,8 @@
     "@radix-ui/react-dropdown-menu": "latest",
     "@radix-ui/react-icons": "latest",
     "@radix-ui/react-slot": "latest",
-    "class-variance-authority": "latest"
+    "class-variance-authority": "latest",
+    "lottie-react": "latest"
   },
   "devDependencies": {
     "typescript": "latest",

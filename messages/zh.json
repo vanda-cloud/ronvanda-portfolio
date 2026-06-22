@@ -27,6 +27,9 @@
   "locale": {
     "label": "语言"
   },
+  "common": {
+    "scrollToTop": "返回顶部"
+  },
   "skills": {
     "title": "技能与工具",
     "subtitle": "我用来构建产品的完整技术栈。",

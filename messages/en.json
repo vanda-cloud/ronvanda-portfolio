@@ -27,6 +27,9 @@
   "locale": {
     "label": "Language"
   },
+  "common": {
+    "scrollToTop": "Scroll to top"
+  },
   "skills": {
     "title": "Skills & Tools",
     "subtitle": "What I build with, end to end.",

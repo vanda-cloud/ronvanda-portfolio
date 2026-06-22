@@ -27,6 +27,9 @@
   "locale": {
     "label": "言語"
   },
+  "common": {
+    "scrollToTop": "トップへ戻る"
+  },
   "skills": {
     "title": "スキル & ツール",
     "subtitle": "私が使っている技術スタックです。",
