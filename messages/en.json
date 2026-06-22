@@ -1,0 +1,94 @@
+{
+  "metadata": {
+    "title": "Ron Vanda — Full-Stack Developer",
+    "description": "Personal portfolio of Ron Vanda, a full-stack developer building mobile, web, desktop apps and the DevOps pipelines that ship them."
+  },
+  "nav": {
+    "home": "Home",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Ron Vanda",
+    "role": "Full-Stack Developer",
+    "tagline": "Building mobile, web, and desktop apps — and the DevOps pipelines that ship them.",
+    "ctaProjects": "View Projects",
+    "ctaContact": "Contact Me"
+  },
+  "theme": {
+    "light": "Switch to light mode",
+    "dark": "Switch to dark mode"
+  },
+  "locale": {
+    "label": "Language"
+  },
+  "skills": {
+    "title": "Skills & Tools",
+    "subtitle": "What I build with, end to end.",
+    "items": {
+      "mobile": { "title": "Mobile Apps", "desc": "Flutter" },
+      "web": { "title": "Web Apps", "desc": "ASP.NET Core" },
+      "desktop": { "title": "Desktop Apps", "desc": "C# · MVP pattern" },
+      "website": { "title": "Websites", "desc": "Next.js · NestJS · TYPO3" },
+      "database": { "title": "Databases", "desc": "MSSQL · PostgreSQL" },
+      "devops": { "title": "DevOps", "desc": "Docker · GitHub Actions · AWS" },
+      "design": { "title": "UI/UX", "desc": "Responsive design" },
+      "pm": { "title": "Project Management", "desc": "Jira" },
+      "git": { "title": "Collaboration", "desc": "Git & GitHub" }
+    }
+  },
+  "experience": {
+    "title": "Work Experience",
+    "subtitle": "Building software professionally since 2012.",
+    "items": {
+      "current": {
+        "period": "2023 — Present",
+        "role": "Lead Full-Stack Developer",
+        "company": "Company Name",
+        "desc": "Placeholder description — replace with your real responsibilities, achievements, and the tech stack you used in this role."
+      },
+      "prior3": {
+        "period": "2019 — 2023",
+        "role": "Senior Full-Stack Developer",
+        "company": "Company Name",
+        "desc": "Placeholder description — replace with your real responsibilities, achievements, and the tech stack you used in this role."
+      },
+      "prior2": {
+        "period": "2015 — 2019",
+        "role": "Full-Stack Developer",
+        "company": "Company Name",
+        "desc": "Placeholder description — replace with your real responsibilities, achievements, and the tech stack you used in this role."
+      },
+      "prior1": {
+        "period": "2012 — 2015",
+        "role": "Junior Software Developer",
+        "company": "Company Name",
+        "desc": "Placeholder description — replace with your real responsibilities, achievements, and the tech stack you used in this role."
+      }
+    }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "A few things I've shipped recently.",
+    "viewGithub": "More on GitHub",
+    "items": {
+      "inventory": {
+        "title": "Inventory Management System",
+        "desc": "A desktop application for factory inventory, sales, and purchases — built with C# using the MVP pattern, backed by MSSQL."
+      },
+      "sfa": {
+        "title": "Sales Force Automation (SFA)",
+        "desc": "A Flutter mobile app that streamlines sales processes, manages customer relationships, and tracks sales activity."
+      }
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Open to new opportunities and collaborations — say hello.",
+    "cta": "Email Me",
+    "footer": "© {year} Ron Vanda. All rights reserved."
+  }
+}

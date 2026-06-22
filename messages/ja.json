@@ -1,0 +1,94 @@
+{
+  "metadata": {
+    "title": "Ron Vanda — フルスタック開発者",
+    "description": "モバイル・Web・デスクトップアプリと、それを支えるDevOpsパイプラインを構築するフルスタック開発者 Ron Vanda のポートフォリオ。"
+  },
+  "nav": {
+    "home": "ホーム",
+    "skills": "スキル",
+    "experience": "経歴",
+    "projects": "プロジェクト",
+    "contact": "お問い合わせ"
+  },
+  "hero": {
+    "greeting": "こんにちは、私は",
+    "name": "Ron Vanda",
+    "role": "フルスタック開発者",
+    "tagline": "モバイル・Web・デスクトップアプリと、それを支えるDevOpsパイプラインを構築しています。",
+    "ctaProjects": "プロジェクトを見る",
+    "ctaContact": "お問い合わせ"
+  },
+  "theme": {
+    "light": "ライトモードに切り替え",
+    "dark": "ダークモードに切り替え"
+  },
+  "locale": {
+    "label": "言語"
+  },
+  "skills": {
+    "title": "スキル & ツール",
+    "subtitle": "私が使っている技術スタックです。",
+    "items": {
+      "mobile": { "title": "モバイルアプリ", "desc": "Flutter" },
+      "web": { "title": "Webアプリ", "desc": "ASP.NET Core" },
+      "desktop": { "title": "デスクトップアプリ", "desc": "C# · MVPパターン" },
+      "website": { "title": "Webサイト", "desc": "Next.js · NestJS · TYPO3" },
+      "database": { "title": "データベース", "desc": "MSSQL · PostgreSQL" },
+      "devops": { "title": "DevOps", "desc": "Docker · GitHub Actions · AWS" },
+      "design": { "title": "UI/UX", "desc": "レスポンシブデザイン" },
+      "pm": { "title": "プロジェクト管理", "desc": "Jira" },
+      "git": { "title": "コラボレーション", "desc": "Git & GitHub" }
+    }
+  },
+  "experience": {
+    "title": "実務経験",
+    "subtitle": "2012年からソフトウェア開発を専門としています。",
+    "items": {
+      "current": {
+        "period": "2023年 — 現在",
+        "role": "リードフルスタック開発者",
+        "company": "会社名",
+        "desc": "プレースホルダーの説明文です。実際の業務内容・実績・使用技術に置き換えてください。"
+      },
+      "prior3": {
+        "period": "2019年 — 2023年",
+        "role": "シニアフルスタック開発者",
+        "company": "会社名",
+        "desc": "プレースホルダーの説明文です。実際の業務内容・実績・使用技術に置き換えてください。"
+      },
+      "prior2": {
+        "period": "2015年 — 2019年",
+        "role": "フルスタック開発者",
+        "company": "会社名",
+        "desc": "プレースホルダーの説明文です。実際の業務内容・実績・使用技術に置き換えてください。"
+      },
+      "prior1": {
+        "period": "2012年 — 2015年",
+        "role": "ジュニアソフトウェア開発者",
+        "company": "会社名",
+        "desc": "プレースホルダーの説明文です。実際の業務内容・実績・使用技術に置き換えてください。"
+      }
+    }
+  },
+  "projects": {
+    "title": "主な実績",
+    "subtitle": "最近手がけたプロジェクトの一部です。",
+    "viewGithub": "GitHubでもっと見る",
+    "items": {
+      "inventory": {
+        "title": "在庫管理システム",
+        "desc": "工場の在庫・販売・購買を管理するデスクトップアプリ。C# と MVP パターンで構築し、MSSQL と連携。"
+      },
+      "sfa": {
+        "title": "営業支援アプリ (SFA)",
+        "desc": "営業プロセスを効率化し、顧客関係を管理し、営業活動を追跡する Flutter 製モバイルアプリ。"
+      }
+    }
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "subtitle": "新しい機会やコラボレーションを歓迎しています。お気軽にご連絡ください。",
+    "cta": "メールを送る",
+    "footer": "© {year} Ron Vanda. 無断転載を禁じます。"
+  }
+}

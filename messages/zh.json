@@ -1,0 +1,94 @@
+{
+  "metadata": {
+    "title": "Ron Vanda — 全栈开发工程师",
+    "description": "Ron Vanda 的个人作品集,一名构建移动端、网页、桌面应用以及支撑它们上线的 DevOps 流水线的全栈开发工程师。"
+  },
+  "nav": {
+    "home": "首页",
+    "skills": "技能",
+    "experience": "经历",
+    "projects": "项目",
+    "contact": "联系"
+  },
+  "hero": {
+    "greeting": "你好,我是",
+    "name": "Ron Vanda",
+    "role": "全栈开发工程师",
+    "tagline": "构建移动端、网页、桌面应用,以及支撑它们上线的 DevOps 流水线。",
+    "ctaProjects": "查看项目",
+    "ctaContact": "联系我"
+  },
+  "theme": {
+    "light": "切换到浅色模式",
+    "dark": "切换到深色模式"
+  },
+  "locale": {
+    "label": "语言"
+  },
+  "skills": {
+    "title": "技能与工具",
+    "subtitle": "我用来构建产品的完整技术栈。",
+    "items": {
+      "mobile": { "title": "移动应用", "desc": "Flutter" },
+      "web": { "title": "Web 应用", "desc": "ASP.NET Core" },
+      "desktop": { "title": "桌面应用", "desc": "C# · MVP 模式" },
+      "website": { "title": "网站", "desc": "Next.js · NestJS · TYPO3" },
+      "database": { "title": "数据库", "desc": "MSSQL · PostgreSQL" },
+      "devops": { "title": "DevOps", "desc": "Docker · GitHub Actions · AWS" },
+      "design": { "title": "UI/UX", "desc": "响应式设计" },
+      "pm": { "title": "项目管理", "desc": "Jira" },
+      "git": { "title": "协作", "desc": "Git & GitHub" }
+    }
+  },
+  "experience": {
+    "title": "工作经历",
+    "subtitle": "自 2012 年起从事专业软件开发工作。",
+    "items": {
+      "current": {
+        "period": "2023 — 至今",
+        "role": "首席全栈开发工程师",
+        "company": "公司名称",
+        "desc": "占位说明文字 —— 请替换为你的真实职责、成果与所使用的技术栈。"
+      },
+      "prior3": {
+        "period": "2019 — 2023",
+        "role": "高级全栈开发工程师",
+        "company": "公司名称",
+        "desc": "占位说明文字 —— 请替换为你的真实职责、成果与所使用的技术栈。"
+      },
+      "prior2": {
+        "period": "2015 — 2019",
+        "role": "全栈开发工程师",
+        "company": "公司名称",
+        "desc": "占位说明文字 —— 请替换为你的真实职责、成果与所使用的技术栈。"
+      },
+      "prior1": {
+        "period": "2012 — 2015",
+        "role": "初级软件开发工程师",
+        "company": "公司名称",
+        "desc": "占位说明文字 —— 请替换为你的真实职责、成果与所使用的技术栈。"
+      }
+    }
+  },
+  "projects": {
+    "title": "代表项目",
+    "subtitle": "近期完成的一些项目。",
+    "viewGithub": "在 GitHub 查看更多",
+    "items": {
+      "inventory": {
+        "title": "库存管理系统",
+        "desc": "面向工厂的库存、销售与采购桌面应用,采用 C# 与 MVP 模式开发,后端使用 MSSQL。"
+      },
+      "sfa": {
+        "title": "销售自动化应用 (SFA)",
+        "desc": "一款 Flutter 移动应用,用于简化销售流程、管理客户关系并跟踪销售活动。"
+      }
+    }
+  },
+  "contact": {
+    "title": "联系我",
+    "subtitle": "我对新的机会与合作持开放态度 —— 欢迎与我联系。",
+    "cta": "给我发邮件",
+    "footer": "© {year} Ron Vanda。保留所有权利。"
+  }
+}

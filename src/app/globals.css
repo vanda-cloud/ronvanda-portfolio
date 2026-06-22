@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f5f6f8;
+  --foreground: #14151a;
+  --muted-foreground: #5b5f6b;
+  --accent: #6366f1;
+  --glass-bg: rgba(255, 255, 255, 0.55);
+  --glass-strong: rgba(255, 255, 255, 0.75);
+  --glass-border: rgba(255, 255, 255, 0.6);
+  --glass-shadow: rgba(20, 21, 26, 0.08);
+}
+
+.dark {
+  --background: #0b0c10;
+  --foreground: #f5f6f8;
+  --muted-foreground: #9ca0ab;
+  --accent: #8b8ffb;
+  --glass-bg: rgba(255, 255, 255, 0.06);
+  --glass-strong: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.14);
+  --glass-shadow: rgba(0, 0, 0, 0.45);
+}
+
+* {
+  border-color: var(--glass-border);
+}
+
+html {
+  scroll-behavior: auto; /* Lenis owns smoothing */
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@layer components {
+  .glass-panel {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(20px) saturate(160%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%);
+    box-shadow: 0 8px 32px var(--glass-shadow);
+  }
+
+  .glass-pill {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(16px) saturate(160%);
+    -webkit-backdrop-filter: blur(16px) saturate(160%);
+    border-radius: 999px;
+  }
+}
+
+.liquid-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.55;
+  animation: liquid-float 14s ease-in-out infinite;
+}
+
+.liquid-blob-a {
+  top: -10%;
+  left: 8%;
+  width: 26rem;
+  height: 26rem;
+  background: var(--accent);
+}
+
+.liquid-blob-b {
+  bottom: -15%;
+  right: 4%;
+  width: 22rem;
+  height: 22rem;
+  background: #22d3ee;
+  animation-delay: -7s;
+}
+
+@keyframes liquid-float {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(3%, 6%) scale(1.08);
+  }
+  66% {
+    transform: translate(-4%, -3%) scale(0.95);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .liquid-blob {
+    animation: none !important;
+  }
+}
+
+.spline-loader {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 3px solid var(--glass-border);
+  border-top-color: var(--accent);
+  animation: spline-spin 0.8s linear infinite;
+}
+
+@keyframes spline-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
