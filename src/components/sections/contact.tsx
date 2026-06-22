@@ -10,6 +10,8 @@ import {
   GithubIcon,
 } from "@/components/ui/brand-icons";
 import { gsap, ScrollTrigger } from "@/lib/gsap";
+import Lottie from "lottie-react";
+import programmingComputerAnimation from "@/assets/lottie/programming-computer.json";
 
 type IconComponent = (props: { size?: number; className?: string }) => React.JSX.Element;
 
@@ -25,28 +27,43 @@ export function Contact() {
   const t = useTranslations("contact");
   const sectionRef = useRef<HTMLDivElement>(null);
   const iconsRef = useRef<HTMLDivElement>(null);
+  const robotRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (!sectionRef.current || !iconsRef.current) return;
+    if (!sectionRef.current) return;
 
     const ctx = gsap.context(() => {
       const icons = iconsRef.current?.querySelectorAll(".social-icon");
-      if (!icons?.length) return;
+      if (icons?.length) {
+        gsap.from(icons, {
+          opacity: 0,
+          scale: 0,
+          duration: 0.5,
+          ease: "back.out(2.2)",
+          stagger: 0.07,
+          // See note in skills.tsx — clears the inline transform so each
+          // glass-pill icon's backdrop-filter blur recomputes correctly.
+          clearProps: "transform,opacity",
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: "top 80%",
+          },
+        });
+      }
 
-      gsap.from(icons, {
-        opacity: 0,
-        scale: 0,
-        duration: 0.5,
-        ease: "back.out(2.2)",
-        stagger: 0.07,
-        // See note in skills.tsx — clears the inline transform so each
-        // glass-pill icon's backdrop-filter blur recomputes correctly.
-        clearProps: "transform,opacity",
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 80%",
-        },
-      });
+      if (robotRef.current) {
+        gsap.from(robotRef.current, {
+          opacity: 0,
+          scale: 0.92,
+          duration: 0.7,
+          ease: "power3.out",
+          clearProps: "transform,opacity",
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: "top 75%",
+          },
+        });
+      }
     }, sectionRef);
 
     return () => {
@@ -61,41 +78,52 @@ export function Contact() {
     <section
       id="contact"
       ref={sectionRef}
-      className="relative mx-auto max-w-3xl px-6 py-28 text-center"
+      className="relative mx-auto max-w-6xl px-6 py-28"
     >
-      <h2 className="gradient-text text-3xl font-bold tracking-tight sm:text-4xl">
-        {t("title")}
-      </h2>
-      <p className="mx-auto mt-3 max-w-md text-base text-[var(--muted-foreground)]">
-        {t("subtitle")}
-      </p>
+      <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+        <div className="text-center lg:text-left">
+          <h2 className="gradient-text text-3xl font-bold tracking-tight sm:text-4xl">
+            {t("title")}
+          </h2>
+          <p className="mx-auto mt-3 max-w-md text-base text-[var(--muted-foreground)] lg:mx-0">
+            {t("subtitle")}
+          </p>
 
-      <div className="mt-8 flex justify-center">
-        <a
-          href="mailto:ronvanda99@gmail.com"
-          className="glass-panel inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-transform hover:scale-[1.03]"
+          <div className="mt-8 flex justify-center lg:justify-start">
+            <a
+              href="mailto:ronvanda99@gmail.com"
+              className="glass-panel inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-transform hover:scale-[1.03]"
+            >
+              <Mail size={16} />
+              {t("cta")}
+            </a>
+          </div>
+
+          <div ref={iconsRef} className="mt-10 flex justify-center gap-3 lg:justify-start">
+            {SOCIALS.map(({ id, href, icon: Icon }) => (
+              <a
+                key={id}
+                href={href}
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label={id}
+                className="social-icon glass-pill flex h-11 w-11 items-center justify-center transition-transform hover:scale-110"
+              >
+                <Icon size={18} />
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <div
+          ref={robotRef}
+          className="relative mx-auto flex w-full max-w-sm items-center justify-center lg:max-w-md"
         >
-          <Mail size={16} />
-          {t("cta")}
-        </a>
+          <Lottie animationData={programmingComputerAnimation} loop autoplay />
+        </div>
       </div>
 
-      <div ref={iconsRef} className="mt-10 flex justify-center gap-3">
-        {SOCIALS.map(({ id, href, icon: Icon }) => (
-          <a
-            key={id}
-            href={href}
-            target="_blank"
-            rel="noreferrer noopener"
-            aria-label={id}
-            className="social-icon glass-pill flex h-11 w-11 items-center justify-center transition-transform hover:scale-110"
-          >
-            <Icon size={18} />
-          </a>
-        ))}
-      </div>
-
-      <p className="mt-16 text-xs text-[var(--muted-foreground)]">
+      <p className="mt-16 text-center text-xs text-[var(--muted-foreground)]">
         {t("footer", { year })}
       </p>
     </section>
