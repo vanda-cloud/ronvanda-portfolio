@@ -59,6 +59,21 @@
       "pm": "项目管理"
     }
   },
+  "architecture": {
+    "title": "技能架构",
+    "subtitle": "各部分如何协同工作。",
+    "categories": {
+      "desktop": "桌面端",
+      "web": "网页",
+      "backend": "后端",
+      "automation": "自动化工作流程",
+      "database": "数据库",
+      "mobile": "移动端",
+      "devops": "DevOps",
+      "tools": "工具",
+      "devsecops": "DevSecOps"
+    }
+  },
   "experience": {
     "title": "工作经历",
     "subtitle": "自 2012 年起从事专业软件开发工作。",

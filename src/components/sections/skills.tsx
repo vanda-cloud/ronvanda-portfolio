@@ -15,6 +15,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { gsap, ScrollTrigger } from "@/lib/gsap";
+import { SkillArchitecture } from "./skill-architecture";
 
 const SKILL_IDS = [
   "mobile",
@@ -232,6 +233,8 @@ export function Skills() {
           </div>
         ))}
       </div>
+
+      <SkillArchitecture />
     </section>
   );
 }

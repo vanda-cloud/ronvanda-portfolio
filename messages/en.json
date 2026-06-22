@@ -59,6 +59,21 @@
       "pm": "Project Management"
     }
   },
+  "architecture": {
+    "title": "Skill Architecture",
+    "subtitle": "How everything fits together.",
+    "categories": {
+      "desktop": "Desktop",
+      "web": "Web",
+      "backend": "Backend",
+      "automation": "Automation Workflows",
+      "database": "Database",
+      "mobile": "Mobile",
+      "devops": "DevOps",
+      "tools": "Tools",
+      "devsecops": "DevSecOps"
+    }
+  },
   "experience": {
     "title": "Work Experience",
     "subtitle": "Building software professionally since 2012.",

@@ -59,6 +59,21 @@
       "pm": "プロジェクト管理"
     }
   },
+  "architecture": {
+    "title": "スキルアーキテクチャ",
+    "subtitle": "それぞれがどのようにつながっているか。",
+    "categories": {
+      "desktop": "デスクトップ",
+      "web": "Web",
+      "backend": "バックエンド",
+      "automation": "自動化ワークフロー",
+      "database": "データベース",
+      "mobile": "モバイル",
+      "devops": "DevOps",
+      "tools": "ツール",
+      "devsecops": "DevSecOps"
+    }
+  },
   "experience": {
     "title": "実務経験",
     "subtitle": "2012年からソフトウェア開発を専門としています。",
