@@ -47,7 +47,7 @@ export function LocaleSwitcher() {
         <Button
           variant="outline"
           aria-label={t("label")}
-          className="h-9 gap-1.5 px-3 text-xs font-medium"
+          className="h-9 gap-1.5 px-3 text-sm font-medium"
         >
           <span aria-hidden>{flags[locale]}</span>
           {labels[locale]}

@@ -13,7 +13,11 @@
   "hero": {
     "greeting": "こんにちは、私は",
     "name": "Ron Vanda",
-    "role": "フルスタック開発者",
+    "roles": [
+      "フルスタック開発者",
+      "プロジェクトマネージャー",
+      "DevOps・DevSecOps インフラ"
+    ],
     "tagline": "モバイル・Web・デスクトップアプリと、それを支えるDevOpsパイプラインを構築しています。",
     "ctaProjects": "プロジェクトを見る",
     "ctaContact": "お問い合わせ"
@@ -43,6 +47,16 @@
       "design": { "title": "UI/UX", "desc": "レスポンシブデザイン" },
       "pm": { "title": "プロジェクト管理", "desc": "Jira" },
       "git": { "title": "コラボレーション", "desc": "Git & GitHub" }
+    }
+  },
+  "techStack": {
+    "title": "技術スタック",
+    "subtitle": "日常的に使用しているツールとプラットフォームです。",
+    "categories": {
+      "platform": "プラットフォーム",
+      "stack": "技術スタック",
+      "deployment": "デプロイ",
+      "pm": "プロジェクト管理"
     }
   },
   "experience": {

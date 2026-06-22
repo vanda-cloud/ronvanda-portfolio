@@ -63,12 +63,12 @@ export function Navbar() {
           <a
             href="#home"
             onClick={(e) => handleNavClick(e, "home")}
-            className="text-sm font-semibold tracking-wide"
+            className="text-base font-semibold tracking-wide"
           >
             RV<span className="text-[var(--accent)]">.</span>
           </a>
 
-          <ul className="hidden items-center gap-6 text-sm font-medium sm:flex">
+          <ul className="hidden items-center gap-6 text-base font-medium sm:flex">
             {NAV_ITEMS.map((item) => {
               const isActive = activeSection === item.href;
               return (

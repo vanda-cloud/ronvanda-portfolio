@@ -13,7 +13,11 @@
   "hero": {
     "greeting": "你好,我是",
     "name": "Ron Vanda",
-    "role": "全栈开发工程师",
+    "roles": [
+      "全栈开发工程师",
+      "项目经理",
+      "DevOps 与 DevSecOps 基础设施"
+    ],
     "tagline": "构建移动端、网页、桌面应用,以及支撑它们上线的 DevOps 流水线。",
     "ctaProjects": "查看项目",
     "ctaContact": "联系我"
@@ -43,6 +47,16 @@
       "design": { "title": "UI/UX", "desc": "响应式设计" },
       "pm": { "title": "项目管理", "desc": "Jira" },
       "git": { "title": "协作", "desc": "Git & GitHub" }
+    }
+  },
+  "techStack": {
+    "title": "技术栈",
+    "subtitle": "我日常使用的工具与平台。",
+    "categories": {
+      "platform": "平台",
+      "stack": "技术栈",
+      "deployment": "部署",
+      "pm": "项目管理"
     }
   },
   "experience": {

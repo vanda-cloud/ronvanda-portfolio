@@ -13,7 +13,11 @@
   "hero": {
     "greeting": "Hello, I'm",
     "name": "Ron Vanda",
-    "role": "Full-Stack Developer",
+    "roles": [
+      "Full-Stack Developer",
+      "Project Manager",
+      "DevOps and DevSecOps Infrastructure"
+    ],
     "tagline": "Building mobile, web, and desktop apps — and the DevOps pipelines that ship them.",
     "ctaProjects": "View Projects",
     "ctaContact": "Contact Me"
@@ -43,6 +47,16 @@
       "design": { "title": "UI/UX", "desc": "Responsive design" },
       "pm": { "title": "Project Management", "desc": "Jira" },
       "git": { "title": "Collaboration", "desc": "Git & GitHub" }
+    }
+  },
+  "techStack": {
+    "title": "Tech Stack",
+    "subtitle": "Tools and platforms I work with daily.",
+    "categories": {
+      "platform": "Platform",
+      "stack": "Tech Stack",
+      "deployment": "Deployment",
+      "pm": "Project Management"
     }
   },
   "experience": {

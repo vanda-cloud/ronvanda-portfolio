@@ -13,7 +13,11 @@
   "hero": {
     "greeting": "សួស្តី ខ្ញុំជា",
     "name": "Ron Vanda",
-    "role": "អ្នកអភិវឌ្ឍន៍ Full-Stack",
+    "roles": [
+      "អ្នកអភិវឌ្ឍន៍ Full-Stack",
+      "អ្នកគ្រប់គ្រងគម្រោង",
+      "ហេដ្ឋារចនាសម្ព័ន្ធ DevOps និង DevSecOps"
+    ],
     "tagline": "បង្កើតកម្មវិធីទូរស័ព្ទ វិបសាយ និង desktop ព្រមទាំង pipeline DevOps សម្រាប់ដាក់ឱ្យប្រើប្រាស់។",
     "ctaProjects": "មើលគម្រោង",
     "ctaContact": "ទាក់ទងខ្ញុំ"
@@ -43,6 +47,16 @@
       "design": { "title": "UI/UX", "desc": "ការរចនាឆ្លើយតប" },
       "pm": { "title": "គ្រប់គ្រងគម្រោង", "desc": "Jira" },
       "git": { "title": "សហការងារ", "desc": "Git & GitHub" }
+    }
+  },
+  "techStack": {
+    "title": "បច្ចេកវិទ្យាដែលប្រើ",
+    "subtitle": "ឧបករណ៍ និងវេទិកាដែលខ្ញុំប្រើប្រចាំថ្ងៃ។",
+    "categories": {
+      "platform": "វេទិកា",
+      "stack": "បច្ចេកវិទ្យា",
+      "deployment": "ការដាក់ឱ្យដំណើរការ",
+      "pm": "គ្រប់គ្រងគម្រោង"
     }
   },
   "experience": {

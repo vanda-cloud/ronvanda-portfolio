@@ -8,6 +8,7 @@ import Link from "next/link";
 import { gsap, ScrollTrigger } from "@/lib/gsap";
 import { SplineScene } from "@/components/ui/spline-scene";
 import { Spotlight } from "@/components/ui/spotlight";
+import { TypingText } from "@/components/ui/typing-text";
 
 // Placeholder public Spline scene (a 3D robot) — swap for your own exported
 // scene URL from spline.design whenever it's ready.
@@ -16,6 +17,7 @@ const HERO_SPLINE_SCENE =
 
 export function Hero() {
   const t = useTranslations("hero");
+  const roles = t.raw("roles") as string[];
   const sectionRef = useRef<HTMLDivElement>(null);
   const robotRef = useRef<HTMLDivElement>(null);
 
@@ -65,7 +67,10 @@ export function Hero() {
             {t("name")}
           </h1>
           <p className="mt-2 text-xl font-medium text-[var(--muted-foreground)]">
-            {t("role")}
+            <span aria-hidden="true">
+              <TypingText texts={roles} />
+            </span>
+            <span className="sr-only">{roles.join(" · ")}</span>
           </p>
           <p className="mt-6 max-w-md text-base text-[var(--muted-foreground)]">
             {t("tagline")}
