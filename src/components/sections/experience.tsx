@@ -35,7 +35,7 @@ export function Experience() {
         },
       );
 
-      const items = timelineRef.current?.querySelectorAll(".experience-item");
+      const items = timelineRef.current?.querySelectorAll<HTMLLIElement>(".experience-item");
       if (items?.length) {
         gsap.from(items, {
           opacity: 0,
@@ -47,6 +47,19 @@ export function Experience() {
             trigger: timelineRef.current,
             start: "top 75%",
           },
+        });
+
+        // Bold/fill each point as you scroll past it, and keep it that way —
+        // points accumulate going down, like a checklist. Scrolling back up
+        // above a point un-marks it again.
+        items.forEach((item) => {
+          ScrollTrigger.create({
+            trigger: item,
+            start: "top 70%",
+            onEnter: () => item.classList.add("is-active"),
+            onEnterBack: () => item.classList.add("is-active"),
+            onLeaveBack: () => item.classList.remove("is-active"),
+          });
         });
       }
     }, sectionRef);
@@ -82,8 +95,8 @@ export function Experience() {
         <ul className="space-y-10">
           {EXPERIENCE_IDS.map((id) => (
             <li key={id} className="experience-item relative pl-9">
-              <span className="absolute left-0 top-1.5 h-3.5 w-3.5 rounded-full border-2 border-[var(--accent)] bg-[var(--background)]" />
-              <p className="text-xs font-semibold uppercase tracking-wide text-[var(--accent)]">
+              <span className="experience-dot absolute left-0 top-1.5 h-3.5 w-3.5 rounded-full border-2 border-[var(--accent)] bg-[var(--background)]" />
+              <p className="experience-period text-xs font-semibold uppercase tracking-wide text-[var(--accent)]">
                 {t(`items.${id}.period`)}
               </p>
               <h3 className="mt-1 font-semibold">

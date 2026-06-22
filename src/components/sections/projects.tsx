@@ -33,6 +33,10 @@ export function Projects() {
         duration: 0.7,
         ease: "power3.out",
         stagger: 0.12,
+        // See note in skills.tsx — clears the inline transform so the
+        // glass-panel's backdrop-filter blur recomputes correctly after
+        // the entrance animation settles.
+        clearProps: "transform,opacity",
         scrollTrigger: {
           trigger: sectionRef.current,
           start: "top 75%",

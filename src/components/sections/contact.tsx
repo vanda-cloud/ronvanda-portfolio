@@ -39,6 +39,9 @@ export function Contact() {
         duration: 0.5,
         ease: "back.out(2.2)",
         stagger: 0.07,
+        // See note in skills.tsx — clears the inline transform so each
+        // glass-pill icon's backdrop-filter blur recomputes correctly.
+        clearProps: "transform,opacity",
         scrollTrigger: {
           trigger: sectionRef.current,
           start: "top 80%",

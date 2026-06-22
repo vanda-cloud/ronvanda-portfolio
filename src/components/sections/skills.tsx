@@ -59,6 +59,12 @@ export function Skills() {
         duration: 0.6,
         ease: "power3.out",
         stagger: 0.08,
+        // Drop the inline transform/opacity once settled — leaving it on
+        // the element after the tween ends is what was breaking the
+        // glass-panel's backdrop-filter blur on some cards (a known
+        // Chrome/Safari quirk where a stale composited layer from an
+        // animated transform stops the blur from being recomputed).
+        clearProps: "transform,opacity",
         scrollTrigger: {
           trigger: sectionRef.current,
           start: "top 75%",
