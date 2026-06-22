@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
 import { motion } from "motion/react";
 import { ArrowRight, Mail } from "lucide-react";
-import { Link } from "@/i18n/navigation";
+import Link from "next/link";
 import { gsap, ScrollTrigger } from "@/lib/gsap";
 import { SplineScene } from "@/components/ui/spline-scene";
 import { Spotlight } from "@/components/ui/spotlight";

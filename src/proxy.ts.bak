@@ -1,0 +1,10 @@
+import createMiddleware from "next-intl/middleware";
+import { routing } from "./i18n/routing";
+
+export default createMiddleware(routing);
+
+export const config = {
+  // "/" is listed explicitly per next-intl's recommendation for the
+  // `localePrefix: "never"` strategy, alongside the general catch-all.
+  matcher: ["/", "/((?!api|trpc|_next|_vercel|.*\\..*).*)"],
+};

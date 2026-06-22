@@ -1,10 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { Globe } from "lucide-react";
-import { usePathname, useRouter } from "@/i18n/navigation";
-import { routing } from "@/i18n/routing";
+import {
+  locales,
+  localeCookieName,
+  localeCookieMaxAge,
+} from "@/i18n/routing";
 
 const labels: Record<string, string> = {
   en: "EN",
@@ -16,9 +20,20 @@ const labels: Record<string, string> = {
 export function LocaleSwitcher() {
   const locale = useLocale();
   const router = useRouter();
-  const pathname = usePathname();
   const t = useTranslations("locale");
   const [open, setOpen] = useState(false);
+
+  function selectLocale(loc: string) {
+    setOpen(false);
+    if (loc === locale) return;
+
+    // No URL segment to change — just persist the choice in a cookie and
+    // ask Next.js to re-render Server Components in place. This refetches
+    // the RSC payload for the *same* URL, so client state (theme, Lenis,
+    // GSAP contexts, scroll position) never unmounts — no reload flash.
+    document.cookie = `${localeCookieName}=${loc}; path=/; max-age=${localeCookieMaxAge}; SameSite=Lax`;
+    router.refresh();
+  }
 
   return (
     <div className="relative">
@@ -42,15 +57,12 @@ export function LocaleSwitcher() {
             onClick={() => setOpen(false)}
           />
           <ul className="glass-panel absolute right-0 z-50 mt-2 w-32 overflow-hidden rounded-2xl p-1 text-sm">
-            {routing.locales.map((loc) => (
+            {locales.map((loc) => (
               <li key={loc}>
                 <button
                   type="button"
                   className="flex w-full rounded-xl px-3 py-2 text-left transition-colors hover:bg-[var(--glass-strong)]"
-                  onClick={() => {
-                    setOpen(false);
-                    router.replace(pathname, { locale: loc });
-                  }}
+                  onClick={() => selectLocale(loc)}
                 >
                   {labels[loc]}
                 </button>
