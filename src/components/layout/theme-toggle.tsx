@@ -3,10 +3,23 @@
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import { useTranslations } from "next-intl";
-import { Moon, Sun } from "lucide-react";
+import { Check, Monitor, Moon, Sun } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+
+const OPTIONS = [
+  { value: "light", icon: Sun },
+  { value: "dark", icon: Moon },
+  { value: "system", icon: Monitor },
+] as const;
 
 export function ThemeToggle() {
-  const { resolvedTheme, setTheme } = useTheme();
+  const { theme, resolvedTheme, setTheme } = useTheme();
   const t = useTranslations("theme");
   const [mounted, setMounted] = useState(false);
 
@@ -19,13 +32,26 @@ export function ThemeToggle() {
   const isDark = resolvedTheme === "dark";
 
   return (
-    <button
-      type="button"
-      aria-label={isDark ? t("light") : t("dark")}
-      onClick={() => setTheme(isDark ? "light" : "dark")}
-      className="glass-pill flex h-9 w-9 items-center justify-center transition-transform hover:scale-105"
-    >
-      {isDark ? <Sun size={16} /> : <Moon size={16} />}
-    </button>
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button
+          variant="outline"
+          size="icon"
+          aria-label={t("menuLabel")}
+          className="h-9 w-9"
+        >
+          {isDark ? <Moon size={16} /> : <Sun size={16} />}
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="end" className="min-w-36">
+        {OPTIONS.map(({ value, icon: Icon }) => (
+          <DropdownMenuItem key={value} onClick={() => setTheme(value)}>
+            <Icon size={16} className="opacity-70" />
+            <span>{t(value)}</span>
+            {theme === value && <Check size={14} className="ml-auto text-[var(--accent)]" />}
+          </DropdownMenuItem>
+        ))}
+      </DropdownMenuContent>
+    </DropdownMenu>
   );
 }

@@ -19,8 +19,10 @@
     "ctaContact": "Contact Me"
   },
   "theme": {
-    "light": "Switch to light mode",
-    "dark": "Switch to dark mode"
+    "menuLabel": "Select theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
   },
   "locale": {
     "label": "Language"

@@ -61,7 +61,7 @@ export function Hero() {
           <p className="text-sm font-medium uppercase tracking-[0.2em] text-[var(--accent)]">
             {t("greeting")}
           </p>
-          <h1 className="mt-3 text-5xl font-bold tracking-tight sm:text-6xl">
+          <h1 className="gradient-text mt-3 text-5xl font-bold tracking-tight sm:text-6xl">
             {t("name")}
           </h1>
           <p className="mt-2 text-xl font-medium text-[var(--muted-foreground)]">

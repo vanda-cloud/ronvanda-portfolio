@@ -19,8 +19,10 @@
     "ctaContact": "联系我"
   },
   "theme": {
-    "light": "切换到浅色模式",
-    "dark": "切换到深色模式"
+    "menuLabel": "选择主题",
+    "light": "浅色",
+    "dark": "深色",
+    "system": "跟随系统"
   },
   "locale": {
     "label": "语言"

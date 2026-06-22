@@ -19,8 +19,10 @@
     "ctaContact": "お問い合わせ"
   },
   "theme": {
-    "light": "ライトモードに切り替え",
-    "dark": "ダークモードに切り替え"
+    "menuLabel": "テーマを選択",
+    "light": "ライト",
+    "dark": "ダーク",
+    "system": "システム"
   },
   "locale": {
     "label": "言語"

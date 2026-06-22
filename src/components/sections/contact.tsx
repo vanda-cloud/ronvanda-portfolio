@@ -60,7 +60,7 @@ export function Contact() {
       ref={sectionRef}
       className="relative mx-auto max-w-3xl px-6 py-28 text-center"
     >
-      <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+      <h2 className="gradient-text text-3xl font-bold tracking-tight sm:text-4xl">
         {t("title")}
       </h2>
       <p className="mx-auto mt-3 max-w-md text-base text-[var(--muted-foreground)]">

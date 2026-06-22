@@ -53,7 +53,7 @@ export function Projects() {
       className="relative mx-auto max-w-6xl px-6 py-28"
     >
       <div className="mx-auto max-w-xl text-center">
-        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+        <h2 className="gradient-text text-3xl font-bold tracking-tight sm:text-4xl">
           {t("title")}
         </h2>
         <p className="mt-3 text-base text-[var(--muted-foreground)]">

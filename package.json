@@ -23,7 +23,11 @@
     "@splinetool/react-spline": "latest",
     "@splinetool/runtime": "latest",
     "clsx": "latest",
-    "tailwind-merge": "latest"
+    "tailwind-merge": "latest",
+    "@radix-ui/react-dropdown-menu": "latest",
+    "@radix-ui/react-icons": "latest",
+    "@radix-ui/react-slot": "latest",
+    "class-variance-authority": "latest"
   },
   "devDependencies": {
     "typescript": "latest",
