@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Ron Vanda — フルスタック開発者",
-    "description": "モバイル・Web・デスクトップアプリと、それを支えるDevOpsパイプラインを構築するフルスタック開発者 Ron Vanda のポートフォリオ。"
+    "title": "Ron Vanda — フルスタックエンジニア · DevOps · DevSecOps",
+    "description": "Ron Vanda のポートフォリオ — Flutter モバイルアプリ・Next.js & ASP.NET Core Web プラットフォーム・.NET デスクトップを手がけるフルスタックエンジニア。クラウド DevOps、マルチデータベース設計、DevSecOps セキュリティ自動化の専門知識を持つ。"
   },
   "nav": {
     "home": "ホーム",
@@ -18,7 +18,7 @@
       "プロジェクトマネージャー",
       "DevOps・DevSecOps インフラ"
     ],
-    "tagline": "モバイル・Web・デスクトップアプリと、それを支えるDevOpsパイプラインを構築しています。",
+    "tagline": "Flutter モバイル（Android & iOS）・Next.js & ASP.NET Core Web・.NET デスクトップを横断するフルスタックエンジニア — NestJS バックエンド、PostgreSQL · Redis · DynamoDB、Docker & AWS DevOps、CI/CD 自動化、エンドツーエンドの DevSecOps セキュリティまで担う。",
     "ctaProjects": "プロジェクトを見る",
     "ctaContact": "お問い合わせ"
   },

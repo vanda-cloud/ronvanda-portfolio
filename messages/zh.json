@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Ron Vanda — 全栈开发工程师",
-    "description": "Ron Vanda 的个人作品集,一名构建移动端、网页、桌面应用以及支撑它们上线的 DevOps 流水线的全栈开发工程师。"
+    "title": "Ron Vanda — 全栈工程师 · DevOps · DevSecOps",
+    "description": "Ron Vanda 的个人作品集 — 全栈工程师，构建 Flutter 移动应用、Next.js & ASP.NET Core 网页平台及 .NET 桌面软件，深耕云端 DevOps、多数据库架构与 DevSecOps 安全自动化。"
   },
   "nav": {
     "home": "首页",
@@ -18,7 +18,7 @@
       "项目经理",
       "DevOps 与 DevSecOps 基础设施"
     ],
-    "tagline": "构建移动端、网页、桌面应用,以及支撑它们上线的 DevOps 流水线。",
+    "tagline": "全栈工程师，覆盖 Flutter 移动端（Android & iOS）、Next.js & ASP.NET Core 网页、.NET 桌面 — 兼具 NestJS 后端、PostgreSQL · Redis · DynamoDB 数据库、Docker & AWS DevOps、CI/CD 自动化流水线，以及端到端 DevSecOps 安全体系。",
     "ctaProjects": "查看项目",
     "ctaContact": "联系我"
   },

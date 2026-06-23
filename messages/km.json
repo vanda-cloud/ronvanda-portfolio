@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Ron Vanda — អ្នកអភិវឌ្ឍន៍ Full-Stack",
-    "description": "ផតហ្វូលីយផ្ទាល់ខ្លួនរបស់ Ron Vanda អ្នកអភិវឌ្ឍន៍ Full-Stack ដែលបង្កើតកម្មវិធីទូរស័ព្ទ វិបសាយ និង desktop ព្រមទាំង pipeline DevOps សម្រាប់ដាក់ឱ្យប្រើប្រាស់។"
+    "title": "Ron Vanda — វិស្វករ Full-Stack · DevOps · DevSecOps",
+    "description": "ផតហ្វូលីយរបស់ Ron Vanda — វិស្វករ Full-Stack ដែលបង្កើតកម្មវិធី Flutter, វេទិកាវិបសាយ Next.js & ASP.NET Core, និង Desktop .NET ជាមួយជំនាញ DevOps លើ Cloud, ស្ថាបត្យកម្មមូលដ្ឋានទិន្នន័យ, និងស្វ័យប្រវត្តិកម្ម DevSecOps។"
   },
   "nav": {
     "home": "ទំព័រដើម",
@@ -18,7 +18,7 @@
       "អ្នកគ្រប់គ្រងគម្រោង",
       "ហេដ្ឋារចនាសម្ព័ន្ធ DevOps និង DevSecOps"
     ],
-    "tagline": "បង្កើតកម្មវិធីទូរស័ព្ទ វិបសាយ និង desktop ព្រមទាំង pipeline DevOps សម្រាប់ដាក់ឱ្យប្រើប្រាស់។",
+    "tagline": "វិស្វករ Full-Stack លើ Flutter (Android & iOS), Next.js & ASP.NET Core, .NET Desktop — ជាមួយ Backend NestJS, មូលដ្ឋានទិន្នន័យ PostgreSQL · Redis · DynamoDB, DevOps Docker & AWS, CI/CD ស្វ័យប្រវត្តិ, និង DevSecOps សុវត្ថិភាពពេញលេញ។",
     "ctaProjects": "មើលគម្រោង",
     "ctaContact": "ទាក់ទងខ្ញុំ"
   },

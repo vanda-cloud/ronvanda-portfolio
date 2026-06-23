@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Ron Vanda — Full-Stack Developer",
-    "description": "Personal portfolio of Ron Vanda, a full-stack developer building mobile, web, desktop apps and the DevOps pipelines that ship them."
+    "title": "Ron Vanda — Full-Stack Engineer · DevOps · DevSecOps",
+    "description": "Portfolio of Ron Vanda — full-stack engineer building Flutter mobile apps, Next.js & ASP.NET Core web platforms, and .NET desktop software, with expertise in cloud DevOps, multi-database architecture, and DevSecOps security automation."
   },
   "nav": {
     "home": "Home",
@@ -18,7 +18,7 @@
       "Project Manager",
       "DevOps and DevSecOps Infrastructure"
     ],
-    "tagline": "Building mobile, web, and desktop apps — and the DevOps pipelines that ship them.",
+    "tagline": "Full-stack engineer across Flutter mobile (Android & iOS), Next.js & ASP.NET Core web, and .NET desktop — with NestJS backends, PostgreSQL · Redis · DynamoDB databases, Docker & AWS DevOps, CI/CD automation pipelines, and end-to-end DevSecOps security.",
     "ctaProjects": "View Projects",
     "ctaContact": "Contact Me"
   },
