@@ -12,6 +12,10 @@ import {
   Palette,
   ClipboardList,
   GitBranch,
+  LayoutGrid,
+  Code2,
+  Rocket,
+  FolderKanban,
   type LucideIcon,
 } from "lucide-react";
 import { gsap, ScrollTrigger } from "@/lib/gsap";
@@ -42,6 +46,13 @@ const ICONS: Record<(typeof SKILL_IDS)[number], LucideIcon> = {
 };
 
 type Badge = { alt: string; img: string; href?: string };
+
+const CATEGORY_ICONS: Record<string, LucideIcon> = {
+  platform: LayoutGrid,
+  stack: Code2,
+  deployment: Rocket,
+  pm: FolderKanban,
+};
 
 const TECH_CATEGORIES: { key: string; badges: Badge[] }[] = [
   {
@@ -203,7 +214,8 @@ export function Skills() {
             key={category.key}
             className="tech-row glass-panel flex flex-col gap-3 rounded-2xl p-5 sm:flex-row sm:items-center sm:gap-5"
           >
-            <span className="glass-pill shrink-0 px-3 py-1.5 text-xs font-semibold uppercase tracking-wide text-[var(--accent)]">
+            <span className="glass-pill flex shrink-0 items-center gap-1.5 px-3 py-1.5 text-xs font-semibold uppercase tracking-wide text-[var(--accent)]">
+              {(() => { const Icon = CATEGORY_ICONS[category.key]; return Icon ? <Icon size={14} /> : null; })()}
               {tStack(`categories.${category.key}`)}
             </span>
             <div className="flex flex-wrap items-center gap-2">
