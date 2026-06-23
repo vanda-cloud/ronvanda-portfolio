@@ -66,7 +66,7 @@ export function Hero() {
           <h1 className="gradient-text mt-3 text-5xl font-bold tracking-tight sm:text-6xl">
             {t("name")}
           </h1>
-          <p className="mt-2 text-xl font-medium text-[var(--muted-foreground)]">
+          <p className="mt-2 text-xl font-medium text-[var(--accent)]">
             <span aria-hidden="true">
               <TypingText texts={roles} />
             </span>

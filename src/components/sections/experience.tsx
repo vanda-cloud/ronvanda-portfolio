@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
+import { Briefcase } from "lucide-react";
 import { gsap, ScrollTrigger } from "@/lib/gsap";
 import Lottie from "lottie-react";
 import programmerAnimation from "@/assets/lottie/programmer.json";
@@ -95,9 +96,12 @@ export function Experience() {
       className="relative mx-auto max-w-6xl px-6 py-28"
     >
       <div className="mx-auto max-w-xl text-center">
-        <h2 className="gradient-text text-3xl font-bold tracking-tight sm:text-4xl">
-          {t("title")}
-        </h2>
+        <div className="flex items-center justify-center gap-3">
+          <Briefcase size={30} className="shrink-0 text-[var(--accent)]" />
+          <h2 className="gradient-text text-3xl font-bold tracking-tight sm:text-4xl">
+            {t("title")}
+          </h2>
+        </div>
         <p className="mt-3 text-base text-[var(--muted-foreground)]">
           {t("subtitle")}
         </p>

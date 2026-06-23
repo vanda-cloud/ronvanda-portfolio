@@ -29,6 +29,16 @@ html[lang="km"] {
   --font-sans: var(--font-kantumruy), ui-sans-serif, system-ui, sans-serif;
 }
 
+/* Khmer glyphs need a touch more size for legibility in the navbar.
+   Targets desktop nav links and mobile dropdown items only. */
+html[lang="km"] .nav-link {
+  font-size: 1.05rem;
+}
+
+html[lang="km"] .nav-mobile-item {
+  font-size: 0.9375rem;
+}
+
 .dark {
   --background: #0b0c10;
   --foreground: #f5f6f8;

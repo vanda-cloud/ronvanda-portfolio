@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
-import { Mail, SendHorizontal } from "lucide-react";
+import { Mail, MessageCircle, SendHorizontal } from "lucide-react";
 import Lottie from "lottie-react";
 import {
   FacebookIcon,
@@ -80,9 +80,12 @@ export function Contact() {
     >
       <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
         <div className="text-center lg:text-left">
-          <h2 className="gradient-text text-3xl font-bold tracking-tight sm:text-4xl">
-            {t("title")}
-          </h2>
+          <div className="flex items-center justify-center gap-3 lg:justify-start">
+            <MessageCircle size={30} className="shrink-0 text-[var(--accent)]" />
+            <h2 className="gradient-text text-3xl font-bold tracking-tight sm:text-4xl">
+              {t("title")}
+            </h2>
+          </div>
           <p className="mx-auto mt-3 max-w-md text-base text-[var(--muted-foreground)] lg:mx-0">
             {t("subtitle")}
           </p>

@@ -76,7 +76,7 @@ export function Navbar() {
                   <a
                     href={`#${item.href}`}
                     onClick={(e) => handleNavClick(e, item.href)}
-                    className={`pb-1 transition-colors duration-200 ${
+                    className={`nav-link pb-1 transition-colors duration-200 ${
                       isActive ? "text-[var(--accent)]" : "opacity-80 hover:opacity-100"
                     }`}
                   >
@@ -121,7 +121,7 @@ export function Navbar() {
                   key={item.key}
                   href={`#${item.href}`}
                   onClick={(e) => handleNavClick(e, item.href)}
-                  className={`rounded-xl px-3 py-2 text-sm font-medium transition-colors ${
+                  className={`nav-mobile-item rounded-xl px-3 py-2 text-sm font-medium transition-colors ${
                     isActive
                       ? "bg-[var(--glass-strong)] text-[var(--accent)]"
                       : "hover:bg-[var(--glass-strong)]"
