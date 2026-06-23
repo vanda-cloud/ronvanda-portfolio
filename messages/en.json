@@ -45,8 +45,8 @@
       "database": { "title": "Databases", "desc": "MSSQL · PostgreSQL" },
       "devops": { "title": "DevOps", "desc": "Docker · GitHub Actions · AWS" },
       "design": { "title": "UI/UX", "desc": "Responsive design" },
-      "pm": { "title": "Project Management", "desc": "Jira" },
-      "git": { "title": "Collaboration", "desc": "Git & GitHub" }
+      "pm": { "title": "Project Management", "desc": "Jira · Git & GitHub" },
+      "devsecops": { "title": "DevSecOps", "desc": "SAST · SCA · Secret Scanning" }
     }
   },
   "techStack": {

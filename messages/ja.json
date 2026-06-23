@@ -45,8 +45,8 @@
       "database": { "title": "データベース", "desc": "MSSQL · PostgreSQL" },
       "devops": { "title": "DevOps", "desc": "Docker · GitHub Actions · AWS" },
       "design": { "title": "UI/UX", "desc": "レスポンシブデザイン" },
-      "pm": { "title": "プロジェクト管理", "desc": "Jira" },
-      "git": { "title": "コラボレーション", "desc": "Git & GitHub" }
+      "pm": { "title": "プロジェクト管理", "desc": "Jira · Git & GitHub" },
+      "devsecops": { "title": "DevSecOps", "desc": "SAST · SCA · シークレットスキャン" }
     }
   },
   "techStack": {

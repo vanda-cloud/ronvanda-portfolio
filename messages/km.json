@@ -45,8 +45,8 @@
       "database": { "title": "មូលដ្ឋានទិន្នន័យ", "desc": "MSSQL · PostgreSQL" },
       "devops": { "title": "DevOps", "desc": "Docker · GitHub Actions · AWS" },
       "design": { "title": "UI/UX", "desc": "ការរចនាឆ្លើយតប" },
-      "pm": { "title": "គ្រប់គ្រងគម្រោង", "desc": "Jira" },
-      "git": { "title": "សហការងារ", "desc": "Git & GitHub" }
+      "pm": { "title": "គ្រប់គ្រងគម្រោង", "desc": "Jira · Git & GitHub" },
+      "devsecops": { "title": "DevSecOps", "desc": "SAST · SCA · ស្កែនសម្ងាត់" }
     }
   },
   "techStack": {

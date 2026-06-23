@@ -11,7 +11,7 @@ import {
   Cloud,
   Palette,
   ClipboardList,
-  GitBranch,
+  ShieldCheck,
   LayoutGrid,
   Code2,
   Rocket,
@@ -31,7 +31,7 @@ const SKILL_IDS = [
   "devops",
   "design",
   "pm",
-  "git",
+  "devsecops",
 ] as const;
 
 const ICONS: Record<(typeof SKILL_IDS)[number], LucideIcon> = {
@@ -43,7 +43,7 @@ const ICONS: Record<(typeof SKILL_IDS)[number], LucideIcon> = {
   devops: Cloud,
   design: Palette,
   pm: ClipboardList,
-  git: GitBranch,
+  devsecops: ShieldCheck,
 };
 
 type Badge = { alt: string; img: string; href?: string };

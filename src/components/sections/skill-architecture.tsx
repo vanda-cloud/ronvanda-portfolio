@@ -140,6 +140,9 @@ const SUBGRAPHS_RAW: RawSubgraph[] = [
       { id: "Z", label: "License Compliance" },
       { id: "AA", label: "Image Scan" },
       { id: "BB", label: "SBOM" },
+      { id: "CC", label: "Internal Vulnerability Assessment" },
+      { id: "DD", label: "Web Application Penetration Test" },
+      { id: "EE", label: "Mobile Application Penetration Test" },
     ],
   },
 ];
@@ -179,7 +182,7 @@ const SUBGRAPHS = SUBGRAPHS_RAW.map((sg, colIndex) => {
   return { ...sg, left, centerX, height, nodes };
 });
 
-// Computed after SUBGRAPHS exists, since DevSecOps (8 items) is taller
+// Computed after SUBGRAPHS exists, since DevSecOps (11 items) is taller
 // than every other group — the viewBox needs to fit whichever is tallest.
 const VIEW_H = SUBGRAPH_TOP + Math.max(...SUBGRAPHS.map((sg) => sg.height)) + 30;
 
