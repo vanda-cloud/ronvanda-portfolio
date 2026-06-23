@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import Lottie, { type LottieRefCurrentProps } from "lottie-react";
 import { gsap } from "@/lib/gsap";
 import heartAnimation from "@/assets/lottie/animation-heart.json";
+import { ReleaseNotesModal } from "@/components/ui/release-notes-modal";
 
 function spawnHearts(originX: number, originY: number) {
   const count = 16;
@@ -57,6 +58,11 @@ export function Footer() {
 
   return (
     <footer className="border-t border-[var(--glass-border)] bg-[var(--background)] py-6">
+      {/* Version badge — clicking opens release notes modal */}
+      <div className="mb-4 flex items-center justify-center">
+        <ReleaseNotesModal />
+      </div>
+
       <p className="flex flex-wrap items-center justify-center gap-x-1 text-center text-xs text-[var(--muted-foreground)]">
         <span>© {year} {t("madeWith")}</span>
         <button
