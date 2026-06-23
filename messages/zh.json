@@ -122,7 +122,11 @@
   "contact": {
     "title": "联系我",
     "subtitle": "我对新的机会与合作持开放态度 —— 欢迎与我联系。",
-    "cta": "给我发邮件",
-    "footer": "© {year} Ron Vanda。保留所有权利。"
+    "cta": "给我发邮件"
+  },
+  "footer": {
+    "madeWith": "用",
+    "by": "由",
+    "rights": "保留所有权利。"
   }
 }

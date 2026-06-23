@@ -122,7 +122,11 @@
   "contact": {
     "title": "Get In Touch",
     "subtitle": "Open to new opportunities and collaborations — say hello.",
-    "cta": "Email Me",
-    "footer": "© {year} Ron Vanda. All rights reserved."
+    "cta": "Email Me"
+  },
+  "footer": {
+    "madeWith": "Made with",
+    "by": "by",
+    "rights": "All rights reserved."
   }
 }

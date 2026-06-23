@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
 import { Mail, SendHorizontal } from "lucide-react";
+import Lottie from "lottie-react";
 import {
   FacebookIcon,
   InstagramIcon,
@@ -10,7 +11,6 @@ import {
   GithubIcon,
 } from "@/components/ui/brand-icons";
 import { gsap, ScrollTrigger } from "@/lib/gsap";
-import Lottie from "lottie-react";
 import programmingComputerAnimation from "@/assets/lottie/programming-computer.json";
 
 type IconComponent = (props: { size?: number; className?: string }) => React.JSX.Element;
@@ -72,8 +72,6 @@ export function Contact() {
     };
   }, []);
 
-  const year = new Date().getFullYear();
-
   return (
     <section
       id="contact"
@@ -123,9 +121,6 @@ export function Contact() {
         </div>
       </div>
 
-      <p className="mt-16 text-center text-xs text-[var(--muted-foreground)]">
-        {t("footer", { year })}
-      </p>
     </section>
   );
 }
