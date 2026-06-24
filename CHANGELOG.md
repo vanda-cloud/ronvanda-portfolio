@@ -4,6 +4,44 @@ All notable changes to **Ron Vanda Portfolio** are documented here.
 
 ---
 
+## 🚀 3.1.0 (24-Jun-2026)
+[![Author](https://img.shields.io/badge/Author-Ron%20Vanda-green?style=flat-round&logo=github)](https://github.com/vanda-cloud)
+![Release Date](https://img.shields.io/badge/Release%20Date-24%20Jun%202026-blue?style=flat-round&logo=rocket)
+![Version](https://img.shields.io/badge/Version-3.1.0-brightgreen?style=flat-round&logo=semanticrelease)
+
+### 🌱 New Feature
+
+- feat(background): replace shooting star canvas with neural network particle background — 48 floating nodes, edges drawn between nodes < 190px apart, signal pulses travel along edges every 350–1000ms (up to 16 active), floating hex labels spawn on signal arrival; dark/light aware via `globalFade`
+- feat(cursor): magic wand cursor effect — fixed canvas at z-index 9999 with `pointer-events-none`, wand-tip gold/violet radial glow at cursor, 3–5 star/dot sparkles per `mousemove` with physics (upward velocity, gravity, rotation, fade)
+- feat(about): new About Me section between Hero and Skills — 3D tilt stat cards (count-up animation, GSAP spotlight glow), bio paragraph, and LinkedIn Profile button
+- feat(hero): hero-wide Spline robot mouse tracking — dispatches `PointerEvent("pointermove")` to Spline canvas on section `mousemove` so the robot follows the cursor from anywhere on the hero
+- feat(hero): 10% glass backdrop behind Spline robot via a separate `pointer-events-none` absolute div — preserves Spline interactivity
+- feat(hero): scroll-down indicator with `ChevronDown` bounce animation scrolling to `#about`
+- feat(experience): per-item tech tag pills for all 8 experience entries
+- feat(experience): promoted badge for e4 — emerald `TrendingUp` badge "Promoted · Dec 2014"
+- feat(projects): add VnC POS — multi-tenant full-stack POS (NestJS, Next.js, Flutter, GraphQL, PostgreSQL, Redis)
+- feat(projects): add VnC PMS — petroleum station management system (Flutter, ASP.NET Core, SignalR, Firebird, Windows Service)
+- feat(navbar): add "about" nav item linking to `#about`
+
+### 🧩 Improvement
+
+- feat(hero): update tagline across all 4 locales — 18+ years, full tech breadth (Flutter, Next.js, NestJS, TYPO3, .NET, Docker, AWS, DigitalOcean, Vercel, DevOps, DevSecOps)
+- feat(hero): update typing roles to 5 items — Full-Stack Engineering, Mobile, Web, and Desktop Development, DevOps & DevSecOps, Cloud Architecture, Technical Leadership
+- feat(skills): expand all 9 skill card descriptions across all 4 locales
+- feat(projects): unique tech tags per project card (previously generic across all C# entries)
+- feat(projects): update subtitle to "Enterprise systems I've designed, built, and shipped."
+- feat(experience): e4 period updated to "Jun — Dec 2014" with desc noting 6-month promotion
+
+### 🧪 Bug Fix
+
+- fix(light-mode): `--glass-border` was `rgba(255,255,255,0.6)` — invisible white border on light background; changed to `rgba(79,82,232,0.16)` (indigo tint)
+- fix(light-mode): improve `--background`, `--foreground`, `--muted-foreground`, `--accent`, `--glass-bg`, `--glass-strong`, `--glass-shadow` for better light mode contrast
+- fix(skills): fix Canva badge logo — was `logo=figma`, corrected to `logo=canva`
+- fix(contact): widen `IconComponent` type to `() => any` to resolve `ForwardRefExoticComponent` assignment error
+- fix(hero): use `PointerEvent("pointermove")` instead of `MouseEvent("mousemove")` — Spline only responds to pointer events
+
+
+
 ## 🚀 3.0.0 (23-Jun-2026)
 [![Author](https://img.shields.io/badge/Author-Ron%20Vanda-green?style=flat-round&logo=github)](https://github.com/vanda-cloud)
 ![Start Date](https://img.shields.io/badge/Start%20Date-20%20Jun%202026-lightgrey?style=flat-round&logo=readme)

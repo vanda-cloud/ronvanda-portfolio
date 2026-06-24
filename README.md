@@ -6,7 +6,7 @@
 
 <!-- Profile Photo -->
 <img src="public/icon-source.png" width="160px" alt="Ron Vanda" style="border-radius: 50%; border: 3px solid #818cf8;" />
-<h1 align="center">🧑‍💻 Ron Vanda — Portfolio v3.0.0</h1>
+<h1 align="center">🧑‍💻 Ron Vanda — Portfolio v3.1.0</h1>
 
 <!-- Author -->
 <a href="https://github.com/vanda-cloud" target="_blank">
@@ -30,7 +30,7 @@
 </a>
 <!-- Changelog -->
 <a href="./CHANGELOG.md" target="_blank">
-  <img src="https://img.shields.io/badge/Changelog-v3.0.0-orange?style=flat-round&logo=git" alt="Changelog" />
+  <img src="https://img.shields.io/badge/Changelog-v3.1.0-orange?style=flat-round&logo=git" alt="Changelog" />
 </a><br/>
 
 <!-- Tech Stack -->
@@ -81,7 +81,7 @@
 <a name="Overview"></a>
 ## 💡 [Overview &#9650;](#___top "click to go to top of document")
 
-**Ron Vanda Portfolio v3.0.0** is a personal portfolio website built with **Next.js 16 App Router**, **Tailwind v4**, and **TypeScript**. It showcases full-stack engineering expertise across mobile, web, desktop, DevOps, and DevSecOps — delivered with Apple-inspired **Liquid Glass UI**, smooth scroll animations, a 3D robot hero, and full PWA support.
+**Ron Vanda Portfolio v3.1.0** is a personal portfolio website built with **Next.js 16 App Router**, **Tailwind v4**, and **TypeScript**. It showcases full-stack engineering expertise across mobile, web, desktop, DevOps, and DevSecOps — delivered with Apple-inspired **Liquid Glass UI**, smooth scroll animations, a 3D robot hero, neural network particle background, magic wand cursor, and full PWA support.
 
 The site supports **4 languages** (English, Khmer, Japanese, Chinese) via cookie-based locale switching with no URL prefix and no page reload.
 
@@ -140,6 +140,7 @@ ronvanda-portfolio/               # Project root
 │   │   │   └── pwa-register.tsx
 │   │   ├── sections/
 │   │   │   ├── hero.tsx
+│   │   │   ├── about.tsx         # About Me — stat cards, bio, LinkedIn
 │   │   │   ├── skills.tsx
 │   │   │   ├── skill-architecture.tsx
 │   │   │   ├── experience.tsx
@@ -148,6 +149,8 @@ ronvanda-portfolio/               # Project root
 │   │   └── ui/
 │   │       ├── button.tsx
 │   │       ├── brand-icons.tsx
+│   │       ├── magic-cursor.tsx  # Magic wand sparkle cursor effect
+│   │       ├── particle-background.tsx  # Neural network canvas background
 │   │       ├── release-notes-modal.tsx
 │   │       ├── scroll-to-top.tsx
 │   │       ├── spline-scene.tsx
@@ -176,15 +179,18 @@ ronvanda-portfolio/               # Project root
 | 1. | ✅ Liquid Glass UI | Apple-inspired glassmorphism with `backdrop-filter` blur and CSS variable theming |
 | 2. | ✅ Dark / Light / System Theme | Three-way theme toggle via `next-themes` with Radix UI dropdown |
 | 3. | ✅ 4-Language Support | English, Khmer, Japanese, Chinese — cookie-based, instant switch |
-| 4. | ✅ 3D Robot Hero | Spline 3D scene with GSAP parallax scroll and Spotlight effect |
-| 5. | ✅ Skill Architecture Diagram | Custom SVG flowchart — 9 domains, hub-and-spoke, bezier cross-links |
-| 6. | ✅ Smooth Scroll | Lenis smooth scroll synced to GSAP ScrollTrigger |
-| 7. | ✅ Experience Timeline | Scrubbed progress line with scrollspy dot activation |
-| 8. | ✅ Progressive Web App (PWA) | Installable on all platforms with service worker caching |
-| 9. | ✅ Release Notes Modal | Auto-shows on first visit, GSAP shake on backdrop click |
-| 10. | ✅ Heart Firework Effect | 3-phase GSAP firework — 207 hearts per click spanning full viewport |
-| 11. | ✅ Scroll-to-Top | Lottie-animated scroll-to-top button |
-| 12. | ✅ Typing Animation | Role cycling with blinking accent cursor |
+| 4. | ✅ 3D Robot Hero | Spline 3D scene with hero-wide mouse tracking and GSAP parallax scroll |
+| 5. | ✅ Neural Network Background | Canvas particle background — 48 nodes, signal pulses, floating hex labels |
+| 6. | ✅ Magic Wand Cursor | Star/dot sparkles with wand-tip glow following the cursor |
+| 7. | ✅ About Me Section | 3D tilt stat cards with count-up animation, bio, and LinkedIn button |
+| 8. | ✅ Skill Architecture Diagram | Custom SVG flowchart — 9 domains, hub-and-spoke, bezier cross-links |
+| 9. | ✅ Smooth Scroll | Lenis smooth scroll synced to GSAP ScrollTrigger |
+| 10. | ✅ Experience Timeline | Tech tags per entry, promoted badge, scrubbed progress line, scrollspy dots |
+| 11. | ✅ Progressive Web App (PWA) | Installable on all platforms with service worker caching |
+| 12. | ✅ Release Notes Modal | Auto-shows on first visit, GSAP shake on backdrop click |
+| 13. | ✅ Heart Firework Effect | 3-phase GSAP firework — 207 hearts per click spanning full viewport |
+| 14. | ✅ Scroll-to-Top | Lottie-animated scroll-to-top button |
+| 15. | ✅ Typing Animation | Role cycling with blinking accent cursor |
 
 ---
 
@@ -316,7 +322,7 @@ npm start
 <br/>
 <h1></h1>
 <div align="center">
-  <img src="https://img.shields.io/badge/Initialized_At-20_|_Jun_|_2026-blue?style=flat-round&logo=readme" alt="Initialized" />
+  <img src="https://img.shields.io/badge/Updated_At-24_|_Jun_|_2026-blue?style=flat-round&logo=readme" alt="Updated" />
   <img src="https://img.shields.io/badge/Maintained%20by-Ron%20Vanda-blue?style=flat-round&logo=github" alt="Maintained by Ron Vanda" />
   <img src="https://img.shields.io/badge/License-MIT-green?style=flat-round&logo=opensourceinitiative&logoColor=white" alt="License" />
 </div>
