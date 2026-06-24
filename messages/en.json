@@ -140,6 +140,38 @@
       "sfa": {
         "title": "Sales Force Automation (SFA)",
         "desc": "A Flutter mobile app that streamlines sales processes, manages customer relationships, and tracks sales activity."
+      },
+      "payroll": {
+        "title": "Payroll Management System",
+        "desc": "A desktop application for managing employee payroll, salary calculations, deductions, and monthly payslip generation — built with C# using the MVP pattern, backed by MSSQL."
+      },
+      "parking": {
+        "title": "Parking Management System",
+        "desc": "A desktop application for managing vehicle parking, tracking entry and exit times, calculating fees, and generating daily reports — built with C# using the MVP pattern, backed by MSSQL."
+      },
+      "production": {
+        "title": "Production Management System",
+        "desc": "A desktop application for planning and tracking factory production orders, monitoring work-in-progress, and generating output reports — built with C# using the MVP pattern, backed by MSSQL."
+      },
+      "crm": {
+        "title": "Customer Relationship Management System",
+        "desc": "A desktop application for managing customer data, tracking interactions, following up on leads, and analyzing customer activity — built with C# using the MVP pattern, backed by MSSQL."
+      },
+      "pos": {
+        "title": "Point of Sale System",
+        "desc": "A desktop application for processing sales transactions, managing product inventory, printing receipts, and generating sales reports — built with C# using the MVP pattern, backed by MSSQL."
+      },
+      "hrm": {
+        "title": "Human Resource Management System",
+        "desc": "A desktop application for managing employee records, contracts, leave requests, and HR reporting — built with C# using the MVP pattern, backed by MSSQL."
+      },
+      "canteen": {
+        "title": "Canteen Management System",
+        "desc": "A desktop application for managing canteen menus, daily orders, meal tracking, and cost reporting for company staff — built with C# using the MVP pattern, backed by MSSQL."
+      },
+      "attendance": {
+        "title": "Attendance Management System",
+        "desc": "A desktop application for tracking employee check-in and check-out, managing leave and overtime, and generating attendance reports — built with C# using the MVP pattern, backed by MSSQL."
       }
     }
   },

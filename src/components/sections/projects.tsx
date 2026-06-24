@@ -6,11 +6,19 @@ import { ArrowUpRight, FolderCode } from "lucide-react";
 import { GithubIcon } from "@/components/ui/brand-icons";
 import { gsap, ScrollTrigger } from "@/lib/gsap";
 
-const PROJECT_IDS = ["inventory", "sfa"] as const;
+const PROJECT_IDS = ["inventory", "sfa", "payroll", "parking", "production", "crm", "pos", "hrm", "canteen", "attendance"] as const;
 
 const TAGS: Record<(typeof PROJECT_IDS)[number], string[]> = {
-  inventory: ["C#", "MVP Pattern", "MSSQL", "Desktop"],
-  sfa: ["Flutter", "Mobile", "CRM"],
+  inventory:  ["C#", "MVP Pattern", "MSSQL", "Desktop"],
+  sfa:        ["Flutter", "Mobile", "CRM"],
+  payroll:    ["C#", "MVP Pattern", "MSSQL", "Desktop"],
+  parking:    ["C#", "MVP Pattern", "MSSQL", "Desktop"],
+  production: ["C#", "MVP Pattern", "MSSQL", "Desktop"],
+  crm:        ["C#", "MVP Pattern", "MSSQL", "Desktop"],
+  pos:        ["C#", "MVP Pattern", "MSSQL", "Desktop"],
+  hrm:        ["C#", "MVP Pattern", "MSSQL", "Desktop"],
+  canteen:    ["C#", "MVP Pattern", "MSSQL", "Desktop"],
+  attendance: ["C#", "MVP Pattern", "MSSQL", "Desktop"],
 };
 
 export function Projects() {
