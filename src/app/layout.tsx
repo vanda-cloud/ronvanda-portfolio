@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/providers/theme-provider";
 import { SmoothScrollProvider } from "@/components/providers/smooth-scroll-provider";
 import { PwaRegister } from "@/components/providers/pwa-register";
 import { ParticleBackground } from "@/components/ui/particle-background";
+import { MagicCursor } from "@/components/ui/magic-cursor";
 import "./globals.css";
 
 // next/font self-hosts these automatically at build time — the files are
@@ -79,6 +80,7 @@ export default async function RootLayout({
     >
       <body className="antialiased">
         <ParticleBackground />
+        <MagicCursor />
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
             <SmoothScrollProvider>{children}</SmoothScrollProvider>
