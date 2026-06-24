@@ -148,6 +148,39 @@
     "subtitle": "Open to new opportunities and collaborations — say hello.",
     "cta": "Email Me"
   },
+  "releaseNotes": {
+    "badge": "Latest",
+    "whatsNew": "What's New",
+    "released": "Released {date}",
+    "viewGithub": "View on GitHub →",
+    "gotIt": "Got it",
+    "items": {
+      "liquidGlass": {
+        "title": "Liquid Glass UI",
+        "desc": "Apple-inspired glassmorphism design system with dark, light, and system theme support."
+      },
+      "i18n": {
+        "title": "4-Language Support",
+        "desc": "Full localization in English, Khmer (ខ្មែរ), Japanese (日本語), and Chinese (中文) — cookie-based, no page reload."
+      },
+      "skillArch": {
+        "title": "Skill Architecture Diagram",
+        "desc": "Custom SVG flowchart covering 9 domains: Desktop, Web, Mobile, Backend, Automation, Database, Tools, DevOps, and DevSecOps."
+      },
+      "pwa": {
+        "title": "Progressive Web App (PWA)",
+        "desc": "Installable on all platforms with service worker caching, full icon set, and web manifest."
+      },
+      "animations": {
+        "title": "Apple-style Scroll Animations",
+        "desc": "GSAP ScrollTrigger-powered reveals, parallax robot, scrubbed timeline progress, and Lenis smooth scrolling."
+      },
+      "devsecops": {
+        "title": "DevSecOps Coverage",
+        "desc": "SAST, SCA, Secret Scanning, Image Scan, SBOM, IaC Scan, Dockerfile Lint, and License Compliance — all documented."
+      }
+    }
+  },
   "footer": {
     "madeWith": "Made with",
     "by": "by",

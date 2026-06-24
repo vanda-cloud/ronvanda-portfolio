@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, useCallback } from "react";
+import { useTranslations } from "next-intl";
 import { X, Sparkles, Zap, Shield, Smartphone, Globe, Monitor, Tag } from "lucide-react";
 import { gsap } from "@/lib/gsap";
 
@@ -8,40 +9,14 @@ const VERSION = "3.0.0";
 const RELEASE_DATE = "23 Jun 2026";
 const STORAGE_KEY = "rv-last-seen-version";
 
-type ReleaseItem = { icon: React.ReactNode; title: string; desc: string };
-
-const RELEASE_NOTES: ReleaseItem[] = [
-  {
-    icon: <Sparkles size={15} />,
-    title: "Liquid Glass UI",
-    desc: "Apple-inspired glassmorphism design system with dark, light, and system theme support.",
-  },
-  {
-    icon: <Globe size={15} />,
-    title: "4-Language Support",
-    desc: "Full localization in English, Khmer (ខ្មែរ), Japanese (日本語), and Chinese (中文) — cookie-based, no page reload.",
-  },
-  {
-    icon: <Zap size={15} />,
-    title: "Skill Architecture Diagram",
-    desc: "Custom SVG flowchart covering 9 domains: Desktop, Web, Mobile, Backend, Automation, Database, Tools, DevOps, and DevSecOps.",
-  },
-  {
-    icon: <Smartphone size={15} />,
-    title: "Progressive Web App (PWA)",
-    desc: "Installable on all platforms with service worker caching, full icon set, and web manifest.",
-  },
-  {
-    icon: <Monitor size={15} />,
-    title: "Apple-style Scroll Animations",
-    desc: "GSAP ScrollTrigger-powered reveals, parallax robot, scrubbed timeline progress, and Lenis smooth scrolling.",
-  },
-  {
-    icon: <Shield size={15} />,
-    title: "DevSecOps Coverage",
-    desc: "SAST, SCA, Secret Scanning, Image Scan, SBOM, IaC Scan, Dockerfile Lint, and License Compliance — all documented.",
-  },
-];
+const RELEASE_ITEM_KEYS = [
+  { key: "liquidGlass", icon: <Sparkles size={15} /> },
+  { key: "i18n",        icon: <Globe size={15} /> },
+  { key: "skillArch",   icon: <Zap size={15} /> },
+  { key: "pwa",         icon: <Smartphone size={15} /> },
+  { key: "animations",  icon: <Monitor size={15} /> },
+  { key: "devsecops",   icon: <Shield size={15} /> },
+] as const;
 
 interface Props {
   open: boolean;
@@ -49,6 +24,8 @@ interface Props {
 }
 
 function Modal({ open, onClose }: Props) {
+  const t = useTranslations("releaseNotes");
+
   useEffect(() => {
     if (!open) return;
     const overlay = document.getElementById("rn-overlay");
@@ -105,11 +82,11 @@ function Modal({ open, onClose }: Props) {
               <Tag size={16} className="text-[var(--accent)]" />
               <span className="text-sm font-bold text-[var(--accent)]">v{VERSION}</span>
               <span className="rounded-full bg-[var(--accent)] px-2 py-0.5 text-[10px] font-semibold text-white">
-                Latest
+                {t("badge")}
               </span>
             </div>
-            <h2 className="mt-1 text-xl font-bold tracking-tight">What&apos;s New</h2>
-            <p className="mt-0.5 text-xs text-[var(--muted-foreground)]">Released {RELEASE_DATE}</p>
+            <h2 className="mt-1 text-xl font-bold tracking-tight">{t("whatsNew")}</h2>
+            <p className="mt-0.5 text-xs text-[var(--muted-foreground)]">{t("released", { date: RELEASE_DATE })}</p>
           </div>
           <button
             onClick={handleClose}
@@ -125,14 +102,14 @@ function Modal({ open, onClose }: Props) {
 
         {/* Release items */}
         <ul className="space-y-4 max-h-[60vh] overflow-y-auto pr-1">
-          {RELEASE_NOTES.map((item) => (
-            <li key={item.title} className="flex gap-3">
+          {RELEASE_ITEM_KEYS.map(({ key, icon }) => (
+            <li key={key} className="flex gap-3">
               <div className="glass-pill mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center text-[var(--accent)]">
-                {item.icon}
+                {icon}
               </div>
               <div>
-                <p className="text-sm font-semibold">{item.title}</p>
-                <p className="mt-0.5 text-xs leading-relaxed text-[var(--muted-foreground)]">{item.desc}</p>
+                <p className="text-sm font-semibold">{t(`items.${key}.title`)}</p>
+                <p className="mt-0.5 text-xs leading-relaxed text-[var(--muted-foreground)]">{t(`items.${key}.desc`)}</p>
               </div>
             </li>
           ))}
@@ -146,13 +123,13 @@ function Modal({ open, onClose }: Props) {
             rel="noreferrer noopener"
             className="text-xs text-[var(--accent)] transition-opacity hover:opacity-75"
           >
-            View on GitHub →
+            {t("viewGithub")}
           </a>
           <button
             onClick={handleClose}
             className="glass-panel rounded-full px-4 py-1.5 text-xs font-semibold transition-transform hover:scale-[1.03]"
           >
-            Got it
+            {t("gotIt")}
           </button>
         </div>
       </div>
@@ -162,6 +139,7 @@ function Modal({ open, onClose }: Props) {
 
 export function ReleaseNotesModal() {
   const [open, setOpen] = useState(false);
+  const t = useTranslations("releaseNotes");
 
   // Auto-show once per version on first visit
   useEffect(() => {
@@ -187,7 +165,7 @@ export function ReleaseNotesModal() {
         <Tag size={11} className="text-[var(--accent)]" />
         <span className="text-xs font-semibold text-[var(--accent)]">v{VERSION}</span>
         <span className="h-3 w-px bg-[var(--glass-border)]" />
-        <span className="text-xs text-[var(--muted-foreground)]">Released {RELEASE_DATE}</span>
+        <span className="text-xs text-[var(--muted-foreground)]">{t("released", { date: RELEASE_DATE })}</span>
       </button>
 
       <Modal open={open} onClose={() => setOpen(false)} />

@@ -148,6 +148,39 @@
     "subtitle": "新しい機会やコラボレーションを歓迎しています。お気軽にご連絡ください。",
     "cta": "メールを送る"
   },
+  "releaseNotes": {
+    "badge": "最新",
+    "whatsNew": "新機能",
+    "released": "{date} リリース",
+    "viewGithub": "GitHub で見る →",
+    "gotIt": "了解",
+    "items": {
+      "liquidGlass": {
+        "title": "リキッドグラス UI",
+        "desc": "Apple にインスパイアされたグラスモーフィズムデザインシステム。ダーク・ライト・システムテーマに対応。"
+      },
+      "i18n": {
+        "title": "4言語対応",
+        "desc": "英語・クメール語（ខ្មែរ）・日本語・中国語（中文）に完全対応 — Cookie ベースでページリロードなし。"
+      },
+      "skillArch": {
+        "title": "スキルアーキテクチャ図",
+        "desc": "9 ドメイン（Desktop・Web・Mobile・Backend・Automation・Database・Tools・DevOps・DevSecOps）を網羅したカスタム SVG フローチャート。"
+      },
+      "pwa": {
+        "title": "プログレッシブ ウェブ アプリ（PWA）",
+        "desc": "Service Worker キャッシュ・完全なアイコンセット・Web マニフェストを備え、全プラットフォームにインストール可能。"
+      },
+      "animations": {
+        "title": "Apple スタイルのスクロールアニメーション",
+        "desc": "GSAP ScrollTrigger によるリビール、パララックスロボット、スクラブ付きタイムライン進行、Lenis スムーズスクロール。"
+      },
+      "devsecops": {
+        "title": "DevSecOps カバレッジ",
+        "desc": "SAST・SCA・シークレットスキャン・イメージスキャン・SBOM・IaC スキャン・Dockerfile Lint・ライセンスコンプライアンス — すべて文書化済み。"
+      }
+    }
+  },
   "footer": {
     "madeWith": "愛を込めて",
     "by": "制作：",

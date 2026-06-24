@@ -148,6 +148,39 @@
     "subtitle": "我对新的机会与合作持开放态度 —— 欢迎与我联系。",
     "cta": "给我发邮件"
   },
+  "releaseNotes": {
+    "badge": "最新",
+    "whatsNew": "新增内容",
+    "released": "{date} 发布",
+    "viewGithub": "在 GitHub 查看 →",
+    "gotIt": "知道了",
+    "items": {
+      "liquidGlass": {
+        "title": "液态玻璃 UI",
+        "desc": "苹果风格玻璃拟态设计系统，支持深色、浅色与跟随系统主题。"
+      },
+      "i18n": {
+        "title": "四语言支持",
+        "desc": "完整支持英语、高棉语（ខ្មែរ）、日语（日本語）和中文 —— 基于 Cookie 切换，无需刷新页面。"
+      },
+      "skillArch": {
+        "title": "技能架构图",
+        "desc": "自定义 SVG 流程图，涵盖 9 个领域：桌面端、网页、移动端、后端、自动化、数据库、工具、DevOps 和 DevSecOps。"
+      },
+      "pwa": {
+        "title": "渐进式 Web 应用（PWA）",
+        "desc": "可安装于所有平台，具备 Service Worker 缓存、完整图标集与 Web Manifest。"
+      },
+      "animations": {
+        "title": "苹果风格滚动动效",
+        "desc": "GSAP ScrollTrigger 驱动的入场动画、视差机器人、进度线联动，以及 Lenis 流畅滚动。"
+      },
+      "devsecops": {
+        "title": "DevSecOps 全覆盖",
+        "desc": "SAST、SCA、密钥扫描、镜像扫描、SBOM、IaC 扫描、Dockerfile Lint 和许可证合规 —— 全部已归档。"
+      }
+    }
+  },
   "footer": {
     "madeWith": "用",
     "by": "由",

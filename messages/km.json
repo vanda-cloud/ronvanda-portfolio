@@ -148,6 +148,39 @@
     "subtitle": "ខ្ញុំបើកចំហចំពោះការងារ និងកិច្ចសហការថ្មីៗ — សួស្តីបានគ្រប់ពេល។",
     "cta": "អ៊ីមែលមកខ្ញុំ"
   },
+  "releaseNotes": {
+    "badge": "ថ្មីបំផុត",
+    "whatsNew": "មានអ្វីថ្មី",
+    "released": "បានចេញផ្សាយ {date}",
+    "viewGithub": "មើលលើ GitHub →",
+    "gotIt": "យល់ហើយ",
+    "items": {
+      "liquidGlass": {
+        "title": "Liquid Glass UI",
+        "desc": "ប្រព័ន្ធរចនាបែប Glassmorphism បែបស្ទីល Apple ជាមួយការគាំទ្រ ម៉ូដ ងងឹត ភ្លឺ និងប្រព័ន្ធ។"
+      },
+      "i18n": {
+        "title": "គាំទ្រ 4 ភាសា",
+        "desc": "ការបកប្រែពេញលេញជា ភាសាអង់គ្លេស ខ្មែរ ជប៉ុន និងចិន — ផ្អែកលើ Cookie គ្មានការផ្ទុកទំព័រឡើងវិញ។"
+      },
+      "skillArch": {
+        "title": "ដ្យាក្រាមស្ថាបត្យកម្មជំនាញ",
+        "desc": "ដ្យាក្រាម SVG ផ្ទាល់ខ្លួន ครอบ 9 វិស័យ: Desktop, Web, Mobile, Backend, Automation, Database, Tools, DevOps, និង DevSecOps។"
+      },
+      "pwa": {
+        "title": "Progressive Web App (PWA)",
+        "desc": " អាចដំឡើងបានគ្រប់វេទិកា ជាមួយ Service Worker Cache ឧបករណ៍ icon ពេញលេញ និង Web Manifest។"
+      },
+      "animations": {
+        "title": "Animation រំកិលបែប Apple",
+        "desc": "ប្រើ GSAP ScrollTrigger ជំរុញ Reveal, Robot Parallax, Timeline Progress និង Lenis Smooth Scrolling។"
+      },
+      "devsecops": {
+        "title": "DevSecOps Coverage",
+        "desc": "SAST, SCA, Secret Scanning, Image Scan, SBOM, IaC Scan, Dockerfile Lint, និង License Compliance — ទាំងអស់ត្រូវបានចងក្រង។"
+      }
+    }
+  },
   "footer": {
     "madeWith": "បង្កើតដោយ",
     "by": "ដោយ",
