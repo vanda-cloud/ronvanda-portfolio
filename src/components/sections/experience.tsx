@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useCallback } from "react";
 import { useTranslations } from "next-intl";
-import { Briefcase } from "lucide-react";
+import { Briefcase, TrendingUp } from "lucide-react";
 import { gsap, ScrollTrigger } from "@/lib/gsap";
 import Lottie from "lottie-react";
 import programmerAnimation from "@/assets/lottie/programmer.json";
@@ -20,9 +20,11 @@ const EXPERIENCE_TAGS: Record<(typeof EXPERIENCE_IDS)[number], string[]> = {
   e8: ["English", "Translation", "Teaching"],
 };
 
+const PROMOTED_IDS: ReadonlySet<string> = new Set(["e4"]);
+
 // ── Single timeline entry ─────────────────────────────────────────────────────
-function ExperienceItem({ period, role, company, desc, tags }: {
-  period: string; role: string; company: string; desc: string; tags: string[];
+function ExperienceItem({ period, role, company, desc, tags, promoted }: {
+  period: string; role: string; company: string; desc: string; tags: string[]; promoted?: boolean;
 }) {
   const itemRef    = useRef<HTMLLIElement>(null);
   const dotRef     = useRef<HTMLSpanElement>(null);
@@ -115,6 +117,12 @@ function ExperienceItem({ period, role, company, desc, tags }: {
           {role}
           <span className="text-[var(--muted-foreground)]"> · {company}</span>
         </h3>
+        {promoted && (
+          <span className="mt-2 inline-flex items-center gap-1 rounded-full bg-emerald-500/15 px-2.5 py-0.5 text-[11px] font-semibold text-emerald-500">
+            <TrendingUp size={11} />
+            Promoted · Dec 2014
+          </span>
+        )}
         <p className="mt-2 text-sm leading-relaxed text-[var(--muted-foreground)]">
           {desc}
         </p>
@@ -221,6 +229,7 @@ export function Experience() {
                 company={t(`items.${id}.company`)}
                 desc={t(`items.${id}.desc`)}
                 tags={EXPERIENCE_TAGS[id]}
+                promoted={PROMOTED_IDS.has(id)}
               />
             ))}
           </ul>
