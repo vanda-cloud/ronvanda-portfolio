@@ -21,7 +21,8 @@
         ],
         "tagline": "18年以上にわたり、モバイルアプリ・Webプラットフォーム・デスクトップソフトウェアを開発。Flutter & Next.js から .NET、Docker、DevSecOps まで幅広く対応。",
         "ctaProjects": "プロジェクトを見る",
-        "ctaContact": "お問い合わせ"
+        "ctaContact": "お問い合わせ",
+        "scroll": "スクロール"
     },
     "theme": {
         "menuLabel": "テーマを選択",

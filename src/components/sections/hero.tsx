@@ -116,7 +116,7 @@ export function Hero() {
         className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 opacity-60 transition-opacity hover:opacity-100"
       >
         <span className="text-xs font-medium uppercase tracking-widest text-[var(--muted-foreground)]">
-          scroll
+          {t("scroll")}
         </span>
         <ChevronDown
           size={20}

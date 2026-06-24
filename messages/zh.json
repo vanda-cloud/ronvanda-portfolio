@@ -21,7 +21,8 @@
         ],
         "tagline": "18年以上的经验，涵盖移动应用、Web平台和桌面软件开发 — 从 Flutter & Next.js 到 .NET、Docker 和 DevSecOps。",
         "ctaProjects": "查看项目",
-        "ctaContact": "联系我"
+        "ctaContact": "联系我",
+        "scroll": "滚动"
     },
     "theme": {
         "menuLabel": "选择主题",

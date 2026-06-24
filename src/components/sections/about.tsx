@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useCallback, useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
 import { ArrowUpRight, UserRound } from "lucide-react";
 import { LinkedinIcon } from "@/components/ui/brand-icons";
@@ -11,6 +11,40 @@ const STAT_KEYS = ["years", "platforms", "systems", "languages"] as const;
 function StatCard({ value, label, index }: { value: string; label: string; index: number }) {
   const cardRef = useRef<HTMLDivElement>(null);
   const numRef  = useRef<HTMLSpanElement>(null);
+  const glowRef = useRef<HTMLDivElement>(null);
+
+  // ── 3D tilt + spotlight ──────────────────────────────────────────────────
+  const handleMouseMove = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
+    const card = cardRef.current;
+    const glow = glowRef.current;
+    if (!card || !glow) return;
+    const { left, top, width, height } = card.getBoundingClientRect();
+    const x  = e.clientX - left;
+    const y  = e.clientY - top;
+    const nx = (x / width  - 0.5) * 2;
+    const ny = (y / height - 0.5) * 2;
+    gsap.to(card, {
+      rotateY:  nx * 10,
+      rotateX: -ny * 10,
+      duration: 0.3,
+      ease: "power2.out",
+      transformPerspective: 800,
+      transformOrigin: "center center",
+    });
+    glow.style.background = `radial-gradient(200px circle at ${x}px ${y}px, var(--accent-glow, rgba(99,102,241,0.18)), transparent 70%)`;
+  }, []);
+
+  const handleMouseEnter = useCallback(() => {
+    if (glowRef.current) gsap.to(glowRef.current, { opacity: 1, duration: 0.25 });
+  }, []);
+
+  const handleMouseLeave = useCallback(() => {
+    const card = cardRef.current;
+    const glow = glowRef.current;
+    if (!card || !glow) return;
+    gsap.to(card, { rotateY: 0, rotateX: 0, duration: 0.55, ease: "elastic.out(1, 0.5)" });
+    gsap.to(glow, { opacity: 0, duration: 0.3 });
+  }, []);
 
   useEffect(() => {
     const card = cardRef.current;
@@ -55,12 +89,19 @@ function StatCard({ value, label, index }: { value: string; label: string; index
   return (
     <div
       ref={cardRef}
-      className="glass-panel flex flex-col items-center rounded-2xl px-6 py-5 text-center"
+      onMouseMove={handleMouseMove}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      className="glass-panel relative flex flex-col items-center overflow-hidden rounded-2xl px-6 py-5 text-center"
+      style={{ willChange: "transform" }}
     >
-      <span ref={numRef} className="gradient-text text-4xl font-bold tabular-nums">
+      {/* Spotlight glow */}
+      <div ref={glowRef} className="pointer-events-none absolute inset-0 rounded-2xl opacity-0" aria-hidden />
+
+      <span ref={numRef} className="gradient-text relative text-4xl font-bold tabular-nums">
         {value}
       </span>
-      <span className="mt-1 text-xs font-medium uppercase tracking-wide text-[var(--muted-foreground)]">
+      <span className="relative mt-1 text-xs font-medium uppercase tracking-wide text-[var(--muted-foreground)]">
         {label}
       </span>
     </div>

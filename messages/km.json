@@ -21,7 +21,8 @@
         ],
         "tagline": "បទពិសោធន៍ជាង ១៨ ឆ្នាំ ក្នុងការបង្កើតកម្មវិធីទូរស័ព្ទ វេទិកាវ៉េប និងកម្មវិធីដេស្ក​តុ — ពី Flutter & Next.js រហូតដល់ .NET, Docker និង DevSecOps។",
         "ctaProjects": "មើលគម្រោង",
-        "ctaContact": "ទាក់ទងខ្ញុំ"
+        "ctaContact": "ទាក់ទងខ្ញុំ",
+        "scroll": "រំកិល"
     },
     "theme": {
         "menuLabel": "ជ្រើសរើសម៉ូដ",

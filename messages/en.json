@@ -21,7 +21,8 @@
         ],
         "tagline": "18+ years shipping mobile apps, web platforms, and desktop software — from Flutter & Next.js to .NET, Docker, and DevSecOps.",
         "ctaProjects": "View Projects",
-        "ctaContact": "Contact Me"
+        "ctaContact": "Contact Me",
+        "scroll": "scroll"
     },
     "theme": {
         "menuLabel": "Select theme",
