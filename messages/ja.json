@@ -15,11 +15,13 @@
         "greeting": "こんにちは、私は",
         "name": "Ron Vanda",
         "roles": [
-            "フルスタック開発者",
-            "プロジェクトマネージャー",
-            "DevOps・DevSecOps インフラ"
+            "フルスタックエンジニアリング",
+            "モバイル・Web・デスクトップ開発",
+            "DevOps & DevSecOps",
+            "クラウドアーキテクチャ",
+            "テクニカルリーダーシップ"
         ],
-        "tagline": "18年以上にわたり、モバイルアプリ・Webプラットフォーム・デスクトップソフトウェアを開発。Flutter & Next.js から .NET、Docker、DevSecOps まで幅広く対応。",
+        "tagline": "18年以上にわたり、スケーラブルなモバイルアプリ・Webプラットフォーム・エンタープライズソフトウェアを提供 — Flutter、Next.js、NestJS、TYPO3、.NET、Docker、AWS、DigitalOcean、Vercel、DevOps、DevSecOps を専門とする。",
         "ctaProjects": "プロジェクトを見る",
         "ctaContact": "お問い合わせ",
         "scroll": "スクロール"

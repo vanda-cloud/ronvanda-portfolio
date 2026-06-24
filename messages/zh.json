@@ -15,11 +15,13 @@
         "greeting": "你好,我是",
         "name": "Ron Vanda",
         "roles": [
-            "全栈开发工程师",
-            "项目经理",
-            "DevOps 与 DevSecOps 基础设施"
+            "全栈工程",
+            "移动端、Web 与桌面端开发",
+            "DevOps & DevSecOps",
+            "云架构",
+            "技术领导力"
         ],
-        "tagline": "18年以上的经验，涵盖移动应用、Web平台和桌面软件开发 — 从 Flutter & Next.js 到 .NET、Docker 和 DevSecOps。",
+        "tagline": "18年以上经验，交付可扩展的移动应用、Web平台与企业级软件 — 专注于 Flutter、Next.js、NestJS、TYPO3、.NET、Docker、AWS、DigitalOcean、Vercel、DevOps 与 DevSecOps。",
         "ctaProjects": "查看项目",
         "ctaContact": "联系我",
         "scroll": "滚动"

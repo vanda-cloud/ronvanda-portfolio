@@ -15,11 +15,13 @@
         "greeting": "សួស្តី ខ្ញុំជា",
         "name": "Ron Vanda",
         "roles": [
-            "អ្នកអភិវឌ្ឍន៍ Full-Stack",
-            "អ្នកគ្រប់គ្រងគម្រោង",
-            "ហេដ្ឋារចនាសម្ព័ន្ធ DevOps និង DevSecOps"
+            "វិស្វកម្ម Full-Stack",
+            "អភិវឌ្ឍន៍ Mobile, Web និង Desktop",
+            "DevOps & DevSecOps",
+            "ស្ថាបត្យកម្ម Cloud",
+            "ភាពជាអ្នកដឹកនាំបច្ចេកទេស"
         ],
-        "tagline": "បទពិសោធន៍ជាង ១៨ ឆ្នាំ ក្នុងការបង្កើតកម្មវិធីទូរស័ព្ទ វេទិកាវ៉េប និងកម្មវិធីដេស្ក​តុ — ពី Flutter & Next.js រហូតដល់ .NET, Docker និង DevSecOps។",
+        "tagline": "បទពិសោធន៍ជាង ១៨ ឆ្នាំ ក្នុងការផ្តល់កម្មវិធីទូរស័ព្ទ វេទិកាវ៉េប និងកម្មវិធីសហគ្រាសដែលអាចពង្រីកបាន — ជំនាញលើ Flutter, Next.js, NestJS, TYPO3, .NET, Docker, AWS, DigitalOcean, Vercel, DevOps និង DevSecOps។",
         "ctaProjects": "មើលគម្រោង",
         "ctaContact": "ទាក់ទងខ្ញុំ",
         "scroll": "រំកិល"

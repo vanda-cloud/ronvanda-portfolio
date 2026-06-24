@@ -15,11 +15,13 @@
         "greeting": "Hello, I'm",
         "name": "Ron Vanda",
         "roles": [
-            "Full-Stack Developer",
-            "Project Manager",
-            "DevOps and DevSecOps Infrastructure"
+            "Full-Stack Engineering",
+            "Mobile, Web, and Desktop Development",
+            "DevOps & DevSecOps",
+            "Cloud Architecture",
+            "Technical Leadership"
         ],
-        "tagline": "18+ years shipping mobile apps, web platforms, and desktop software — from Flutter & Next.js to .NET, Docker, and DevSecOps.",
+        "tagline": "18+ years delivering scalable mobile applications, web platforms, and enterprise software — specializing in Flutter, Next.js, NestJS, TYPO3, .NET, Docker, AWS, DigitalOcean, Vercel, DevOps, and DevSecOps.",
         "ctaProjects": "View Projects",
         "ctaContact": "Contact Me",
         "scroll": "scroll"
