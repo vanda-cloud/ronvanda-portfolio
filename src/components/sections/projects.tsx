@@ -179,7 +179,7 @@ export function Projects() {
         </p>
       </div>
 
-      <div ref={gridRef} className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+      <div ref={gridRef} className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-2">
         {PROJECT_IDS.map((id) => (
           <ProjectCard
             key={id}
