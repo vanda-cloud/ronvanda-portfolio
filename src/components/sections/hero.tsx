@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
 import { motion } from "motion/react";
-import { ArrowRight, Mail } from "lucide-react";
+import { ArrowRight, Mail, ChevronDown } from "lucide-react";
 import Link from "next/link";
 import { gsap, ScrollTrigger } from "@/lib/gsap";
 import { SplineScene } from "@/components/ui/spline-scene";
@@ -107,6 +107,22 @@ export function Hero() {
           </div>
         </motion.div>
       </div>
+
+      {/* Scroll-down indicator */}
+      <button
+        type="button"
+        aria-label="Scroll down"
+        onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 opacity-60 transition-opacity hover:opacity-100"
+      >
+        <span className="text-xs font-medium uppercase tracking-widest text-[var(--muted-foreground)]">
+          scroll
+        </span>
+        <ChevronDown
+          size={20}
+          className="animate-bounce text-[var(--accent)]"
+        />
+      </button>
     </section>
   );
 }

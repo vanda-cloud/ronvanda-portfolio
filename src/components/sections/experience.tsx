@@ -9,9 +9,20 @@ import programmerAnimation from "@/assets/lottie/programmer.json";
 
 const EXPERIENCE_IDS = ["e1", "e2", "e3", "e4", "e5", "e6", "e7", "e8"] as const;
 
+const EXPERIENCE_TAGS: Record<(typeof EXPERIENCE_IDS)[number], string[]> = {
+  e1: ["Flutter", "Next.js", "ASP.NET Core", "NestJS", "AWS", "Docker", "DevSecOps"],
+  e2: ["ASP.NET Core", "MSSQL", "PostgreSQL", "Docker", "GitHub Actions", "DevSecOps"],
+  e3: ["C#", ".NET", "MSSQL", "Desktop", "Web", "Project Management"],
+  e4: ["C#", "MSSQL", "Desktop", "Server", "Network"],
+  e5: ["C#", "MSSQL", "Inventory System", "Desktop"],
+  e6: ["IT Support", "Lab Management", "C#", "MSSQL"],
+  e7: ["Microsoft Office", "HTML", "Networking", "Teaching"],
+  e8: ["English", "Translation", "Teaching"],
+};
+
 // ── Single timeline entry ─────────────────────────────────────────────────────
-function ExperienceItem({ period, role, company, desc }: {
-  period: string; role: string; company: string; desc: string;
+function ExperienceItem({ period, role, company, desc, tags }: {
+  period: string; role: string; company: string; desc: string; tags: string[];
 }) {
   const itemRef    = useRef<HTMLLIElement>(null);
   const dotRef     = useRef<HTMLSpanElement>(null);
@@ -107,6 +118,16 @@ function ExperienceItem({ period, role, company, desc }: {
         <p className="mt-2 text-sm leading-relaxed text-[var(--muted-foreground)]">
           {desc}
         </p>
+        <div className="mt-3 flex flex-wrap gap-1.5">
+          {tags.map((tag) => (
+            <span
+              key={tag}
+              className="glass-pill px-2.5 py-0.5 text-[11px] font-medium text-[var(--accent)]"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
       </div>
     </li>
   );
@@ -199,6 +220,7 @@ export function Experience() {
                 role={t(`items.${id}.role`)}
                 company={t(`items.${id}.company`)}
                 desc={t(`items.${id}.desc`)}
+                tags={EXPERIENCE_TAGS[id]}
               />
             ))}
           </ul>

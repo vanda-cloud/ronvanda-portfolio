@@ -1,221 +1,272 @@
 {
-  "metadata": {
-    "title": "Ron Vanda — វិស្វករ Full-Stack · DevOps · DevSecOps",
-    "description": "ផតហ្វូលីយរបស់ Ron Vanda — វិស្វករ Full-Stack ដែលបង្កើតកម្មវិធី Flutter, វេទិកាវិបសាយ Next.js & ASP.NET Core, និង Desktop .NET ជាមួយជំនាញ DevOps លើ Cloud, ស្ថាបត្យកម្មមូលដ្ឋានទិន្នន័យ, និងស្វ័យប្រវត្តិកម្ម DevSecOps។"
-  },
-  "nav": {
-    "home": "ទំព័រដើម",
-    "skills": "ជំនាញ",
-    "experience": "បទពិសោធន៍",
-    "projects": "គម្រោង",
-    "contact": "ទាក់ទង"
-  },
-  "hero": {
-    "greeting": "សួស្តី ខ្ញុំជា",
-    "name": "Ron Vanda",
-    "roles": [
-      "អ្នកអភិវឌ្ឍន៍ Full-Stack",
-      "អ្នកគ្រប់គ្រងគម្រោង",
-      "ហេដ្ឋារចនាសម្ព័ន្ធ DevOps និង DevSecOps"
-    ],
-    "tagline": "វិស្វករ Full-Stack លើ Flutter (Android & iOS), Next.js & ASP.NET Core, .NET Desktop — ជាមួយ Backend NestJS, មូលដ្ឋានទិន្នន័យ PostgreSQL · Redis · DynamoDB, DevOps Docker & AWS, CI/CD ស្វ័យប្រវត្តិ, និង DevSecOps សុវត្ថិភាពពេញលេញ។",
-    "ctaProjects": "មើលគម្រោង",
-    "ctaContact": "ទាក់ទងខ្ញុំ"
-  },
-  "theme": {
-    "menuLabel": "ជ្រើសរើសម៉ូដ",
-    "light": "ភ្លឺ",
-    "dark": "ងងឹត",
-    "system": "ប្រព័ន្ធ"
-  },
-  "locale": {
-    "label": "ភាសា"
-  },
-  "common": {
-    "scrollToTop": "ត្រឡប់ទៅខាងលើ"
-  },
-  "skills": {
-    "title": "ជំនាញ និងឧបករណ៍",
-    "subtitle": "អ្វីដែលខ្ញុំប្រើដើម្បីបង្កើតកម្មវិធី ពីដើមដល់ចប់។",
-    "items": {
-      "mobile": { "title": "កម្មវិធីទូរស័ព្ទ", "desc": "Flutter" },
-      "web": { "title": "កម្មវិធីវិបសាយ", "desc": "ASP.NET Core" },
-      "desktop": { "title": "កម្មវិធី Desktop", "desc": "C# · MVP pattern" },
-      "website": { "title": "វិបសាយ", "desc": "Next.js · NestJS · TYPO3" },
-      "database": { "title": "មូលដ្ឋានទិន្នន័យ", "desc": "MSSQL · PostgreSQL" },
-      "devops": { "title": "DevOps", "desc": "Docker · GitHub Actions · AWS" },
-      "design": { "title": "UI/UX", "desc": "ការរចនាឆ្លើយតប" },
-      "pm": { "title": "គ្រប់គ្រងគម្រោង", "desc": "Jira · Git & GitHub" },
-      "devsecops": { "title": "DevSecOps", "desc": "SAST · SCA · ស្កែនសម្ងាត់" }
+    "metadata": {
+        "title": "Ron Vanda — វិស្វករ Full-Stack · DevOps · DevSecOps",
+        "description": "ផតហ្វូលីយរបស់ Ron Vanda — វិស្វករ Full-Stack ដែលបង្កើតកម្មវិធី Flutter, វេទិកាវិបសាយ Next.js & ASP.NET Core, និង Desktop .NET ជាមួយជំនាញ DevOps លើ Cloud, ស្ថាបត្យកម្មមូលដ្ឋានទិន្នន័យ, និងស្វ័យប្រវត្តិកម្ម DevSecOps។"
+    },
+    "nav": {
+        "home": "ទំព័រដើម",
+        "about": "អំពីខ្ញុំ",
+        "skills": "ជំនាញ",
+        "experience": "បទពិសោធន៍",
+        "projects": "គម្រោង",
+        "contact": "ទាក់ទង"
+    },
+    "hero": {
+        "greeting": "សួស្តី ខ្ញុំជា",
+        "name": "Ron Vanda",
+        "roles": [
+            "អ្នកអភិវឌ្ឍន៍ Full-Stack",
+            "អ្នកគ្រប់គ្រងគម្រោង",
+            "ហេដ្ឋារចនាសម្ព័ន្ធ DevOps និង DevSecOps"
+        ],
+        "tagline": "បទពិសោធន៍ជាង ១៨ ឆ្នាំ ក្នុងការបង្កើតកម្មវិធីទូរស័ព្ទ វេទិកាវ៉េប និងកម្មវិធីដេស្ក​តុ — ពី Flutter & Next.js រហូតដល់ .NET, Docker និង DevSecOps។",
+        "ctaProjects": "មើលគម្រោង",
+        "ctaContact": "ទាក់ទងខ្ញុំ"
+    },
+    "theme": {
+        "menuLabel": "ជ្រើសរើសម៉ូដ",
+        "light": "ភ្លឺ",
+        "dark": "ងងឹត",
+        "system": "ប្រព័ន្ធ"
+    },
+    "locale": {
+        "label": "ភាសា"
+    },
+    "common": {
+        "scrollToTop": "ត្រឡប់ទៅខាងលើ"
+    },
+    "skills": {
+        "title": "ជំនាញ និងឧបករណ៍",
+        "subtitle": "អ្វីដែលខ្ញុំប្រើដើម្បីបង្កើតកម្មវិធី ពីដើមដល់ចប់។",
+        "items": {
+            "mobile": {
+                "title": "កម្មវិធីទូរស័ព្ទ",
+                "desc": "Flutter cross-platform សម្រាប់ Android & iOS — ពីស្ថាបត្យកម្មដល់ការចេញផ្សាយ។"
+            },
+            "web": {
+                "title": "កម្មវិធីវ៉េប",
+                "desc": "ASP.NET Core portals និង NestJS APIs សម្រាប់ប្រតិបត្តិការអាជីវកម្មធំៗ។"
+            },
+            "desktop": {
+                "title": "កម្មវិធី Desktop",
+                "desc": "Windows apps ជាមួយ C# & MVP pattern — payroll, POS, HRM និងច្រើនទៀត។"
+            },
+            "website": {
+                "title": "គេហទំព័រ",
+                "desc": "Next.js & TYPO3 ជាមួយ SSR, i18n, PWA និង Tailwind UI ស្អាត។"
+            },
+            "database": {
+                "title": "មូលដ្ឋានទិន្នន័យ",
+                "desc": "MSSQL, PostgreSQL, Redis, DynamoDB — ការរចនា schema ដល់ optimisation។"
+            },
+            "devops": {
+                "title": "DevOps",
+                "desc": "Docker, GitHub Actions, AWS ECS/S3/RDS — CI/CD pipeline ពី code ដល់ cloud។"
+            },
+            "design": {
+                "title": "UI / UX",
+                "desc": "Figma-to-code, glassmorphism, និង interface Tailwind ដែលឆ្លើយតបខ្ពស់។"
+            },
+            "pm": {
+                "title": "គ្រប់គ្រងគម្រោង",
+                "desc": "ការចែកចាយពីដើមដល់ចប់ ជាមួយ Jira, GitHub Projects និង agile sprints។"
+            },
+            "devsecops": {
+                "title": "DevSecOps",
+                "desc": "SAST, SCA, Secret Scanning, Image Scan, SBOM, IaC scanning ក្នុង pipeline។"
+            }
+        }
+    },
+    "techStack": {
+        "title": "បច្ចេកវិទ្យាដែលប្រើ",
+        "subtitle": "ឧបករណ៍ និងវេទិកាដែលខ្ញុំប្រើប្រចាំថ្ងៃ។",
+        "categories": {
+            "platform": "វេទិកា",
+            "stack": "បច្ចេកវិទ្យា",
+            "deployment": "ការដាក់ឱ្យដំណើរការ",
+            "pm": "គ្រប់គ្រងគម្រោង"
+        }
+    },
+    "architecture": {
+        "title": "ស្ថាបត្យកម្មជំនាញ",
+        "subtitle": "របៀបដែលអ្វីៗទាំងអស់ភ្ជាប់គ្នា។",
+        "categories": {
+            "desktop": "កុំព្យូទ័រលើតុ",
+            "web": "វិបសាយ",
+            "backend": "ផ្នែកខាងក្រោយ",
+            "automation": "លំហូរការងារស្វ័យប្រវត្តិកម្ម",
+            "database": "មូលដ្ឋានទិន្នន័យ",
+            "mobile": "ទូរស័ព្ទ",
+            "devops": "DevOps",
+            "tools": "ឧបករណ៍",
+            "devsecops": "DevSecOps"
+        }
+    },
+    "experience": {
+        "title": "បទពិសោធការងារ",
+        "subtitle": "បង្កើតកម្មវិធីជាវិជ្ជាជីវៈតាំងពីឆ្នាំ 2007។",
+        "items": {
+            "e1": {
+                "period": "2025 — បច្ចុប្បន្ន",
+                "role": "អ្នកគ្រប់គ្រងជាន់ខ្ពស់ ផ្នែកអភិវឌ្ឍន៍កម្មវិធី",
+                "company": "J Trust Royal Bank Plc.",
+                "desc": "អភិវឌ្ឍ Web App, Mobile App, និង Website សម្រាប់ភាគីពាក់ព័ន្ធ និងអតិថិជន។"
+            },
+            "e2": {
+                "period": "2022 — 2024",
+                "role": "អ្នកគ្រប់គ្រងកម្មវិធីវិបសាយ និងដំណោះស្រាយ",
+                "company": "J Trust Royal Bank Plc.",
+                "desc": "អភិវឌ្ឍ Portal វិបសាយសម្រាប់ភាគីពាក់ព័ន្ធ ដើម្បីគ្រប់គ្រងប្រតិបត្តិការប្រចាំថ្ងៃ និងគាំទ្រការពេញចិត្តរបស់អតិថិជន។"
+            },
+            "e3": {
+                "period": "2014 — 2022",
+                "role": "អ្នកគ្រប់គ្រងគម្រោងពិសេស",
+                "company": "Forval (Cambodia) Co., Ltd.",
+                "desc": "អភិវឌ្ឍ និងគ្រប់គ្រងប្រព័ន្ធគ្រប់ប្រភេទសម្រាប់អតិថិជនជប៉ុន រួមមានរោងចក្រ ភោជនីយដ្ឋាន សំណង់ សណ្ឋាគារ និងក្រុមហ៊ុនអចលនទ្រព្យ។"
+            },
+            "e4": {
+                "period": "2014",
+                "role": "វិស្វករព័ត៌មានវិទ្យា",
+                "company": "Forval (Cambodia) Co., Ltd.",
+                "desc": "អភិវឌ្ឍប្រព័ន្ធគ្រប់គ្រងផលិតកម្មសម្រាប់រោងចក្រ និងគ្រប់គ្រង Server, Network, Hardware សម្រាប់អតិថិជនជប៉ុន។"
+            },
+            "e5": {
+                "period": "2013 — 2014",
+                "role": "អ្នកអភិវឌ្ឍន៍មូលដ្ឋានទិន្នន័យ",
+                "company": "S.I Group Co., Ltd.",
+                "desc": "អភិវឌ្ឍប្រព័ន្ធគ្រប់គ្រងស្តុក សម្រាប់ S.I Group និងអតិថិជន ដើម្បីគ្រប់គ្រងស្តុក និងតាមដានការប្រើប្រាស់វត្ថុធាតុដើម។"
+            },
+            "e6": {
+                "period": "2011 — 2013",
+                "role": "ជំនួយការព័ត៌មានវិទ្យា",
+                "company": "Royal University of Phnom Penh (RUPP)",
+                "desc": "គ្រប់គ្រងបន្ទប់ Lab កុំព្យូទ័រ ជួយអ្នកបង្រៀន និងនិស្សិត ហើយបង្កើតប្រព័ន្ធគ្រប់គ្រង Lab ដើម្បីគ្រប់គ្រងនិស្សិតក្នុង Lab។"
+            },
+            "e7": {
+                "period": "2009 — 2010",
+                "role": "គ្រូបង្រៀនកុំព្យូទ័រ",
+                "company": "American House School (AHS)",
+                "desc": "បង្រៀនមុខវិជ្ជា Microsoft Word, Excel, Access, Internet Program, Maintenance & Repair, HTML, និង Network Administrator។"
+            },
+            "e8": {
+                "period": "2007 — 2009",
+                "role": "គ្រូបង្រៀនភាសាអង់គ្លេស",
+                "company": "EYDP Organization",
+                "desc": "បង្រៀនការសន្ទនាភាសាអង់គ្លេស និង Core English (Opportunity) ហើយបានបំរើជាអ្នកបកប្រែនៅ EYDP។"
+            }
+        }
+    },
+    "projects": {
+        "title": "គម្រោងសំខាន់ៗ",
+        "subtitle": "ប្រព័ន្ធសហគ្រាសដែលខ្ញុំបានរចនា បង្កើត និងដាក់ឱ្យប្រើប្រាស់។",
+        "viewGithub": "មើលច្រើនទៀតលើ GitHub",
+        "items": {
+            "inventory": {
+                "title": "ប្រព័ន្ធគ្រប់គ្រងស្តុក",
+                "desc": "កម្មវិធី Desktop សម្រាប់គ្រប់គ្រងស្តុក ការលក់ និងការទិញសម្រាប់រោងចក្រ បង្កើតដោយ C# តាមគំរូ MVP ភ្ជាប់ជាមួយ MSSQL។"
+            },
+            "sfa": {
+                "title": "កម្មវិធីស្វ័យប្រវត្តិកម្មការលក់ (SFA)",
+                "desc": "កម្មវិធីទូរស័ព្ទ Flutter ដែលសម្រួលដំណើរការលក់ គ្រប់គ្រងទំនាក់ទំនងអតិថិជន និងតាមដានសកម្មភាពលក់។"
+            },
+            "payroll": {
+                "title": "ប្រព័ន្ធគ្រប់គ្រងប្រាក់ខែ",
+                "desc": "កម្មវិធី Desktop សម្រាប់គ្រប់គ្រងប្រាក់ខែបុគ្គលិក ការគណនាប្រាក់ខែ ការកាត់ប្រាក់ និងបង្កើតបង្គ្រប់ប្រចាំខែ — បង្កើតដោយ C# តាមគំរូ MVP ភ្ជាប់ជាមួយ MSSQL។"
+            },
+            "parking": {
+                "title": "ប្រព័ន្ធគ្រប់គ្រងចតរថយន្ត",
+                "desc": "កម្មវិធី Desktop សម្រាប់គ្រប់គ្រងការចតរថយន្ត តាមដានពេលចូល-ចេញ គណនាថ្លៃ និងបង្កើតរបាយការណ៍ប្រចាំថ្ងៃ — បង្កើតដោយ C# តាមគំរូ MVP ភ្ជាប់ជាមួយ MSSQL។"
+            },
+            "production": {
+                "title": "ប្រព័ន្ធគ្រប់គ្រងផលិតកម្ម",
+                "desc": "កម្មវិធី Desktop សម្រាប់រៀបចំផែនការ តាមដានការបញ្ជាទិញផលិតកម្ម ត្រួតពិនិត្យដំណើរការផលិត និងបង្កើតរបាយការណ៍ — បង្កើតដោយ C# តាមគំរូ MVP ភ្ជាប់ជាមួយ MSSQL។"
+            },
+            "crm": {
+                "title": "ប្រព័ន្ធគ្រប់គ្រងទំនាក់ទំនងអតិថិជន",
+                "desc": "កម្មវិធី Desktop សម្រាប់គ្រប់គ្រងទិន្នន័យអតិថិជន តាមដានអន្តរកម្ម តាមដានការចាប់អារម្មណ៍ និងវិភាគសកម្មភាពអតិថិជន — បង្កើតដោយ C# តាមគំរូ MVP ភ្ជាប់ជាមួយ MSSQL។"
+            },
+            "pos": {
+                "title": "ប្រព័ន្ធលក់រាយ (POS)",
+                "desc": "កម្មវិធី Desktop សម្រាប់ដំណើរការប្រតិបត្តិការលក់ គ្រប់គ្រងស្ទុ ព្រីនវិក្កយបត្រ និងបង្កើតរបាយការណ៍លក់ — បង្កើតដោយ C# តាមគំរូ MVP ភ្ជាប់ជាមួយ MSSQL។"
+            },
+            "hrm": {
+                "title": "ប្រព័ន្ធគ្រប់គ្រងធនធានមនុស្ស",
+                "desc": "កម្មវិធី Desktop សម្រាប់គ្រប់គ្រងព័ត៌មានបុគ្គលិក កិច្ចសន្យា ការស្នើច្បាប់ និងរបាយការណ៍ធនធានមនុស្ស — បង្កើតដោយ C# តាមគំរូ MVP ភ្ជាប់ជាមួយ MSSQL។"
+            },
+            "canteen": {
+                "title": "ប្រព័ន្ធគ្រប់គ្រងបន្ទប់ញ៉ាំ",
+                "desc": "កម្មវិធី Desktop សម្រាប់គ្រប់គ្រងម៉ឺនុយ ការបញ្ជាទិញប្រចាំថ្ងៃ តាមដានអាហារ និងបង្កើតរបាយការណ៍ចំណាយសម្រាប់បុគ្គលិក — បង្កើតដោយ C# តាមគំរូ MVP ភ្ជាប់ជាមួយ MSSQL។"
+            },
+            "attendance": {
+                "title": "ប្រព័ន្ធគ្រប់គ្រងវត្តមាន",
+                "desc": "កម្មវិធី Desktop សម្រាប់តាមដានការចូលចេញការងារបុគ្គលិក គ្រប់គ្រងច្បាប់ និងការងារអតិរេក និងបង្កើតរបាយការណ៍វត្តមាន — បង្កើតដោយ C# តាមគំរូ MVP ភ្ជាប់ជាមួយ MSSQL។"
+            }
+        }
+    },
+    "contact": {
+        "title": "ទាក់ទងខ្ញុំ",
+        "subtitle": "ខ្ញុំបើកចំហចំពោះការងារ និងកិច្ចសហការថ្មីៗ — សួស្តីបានគ្រប់ពេល។",
+        "cta": "អ៊ីមែលមកខ្ញុំ"
+    },
+    "releaseNotes": {
+        "badge": "ថ្មីបំផុត",
+        "whatsNew": "មានអ្វីថ្មី",
+        "released": "បានចេញផ្សាយ {date}",
+        "viewGithub": "មើលលើ GitHub →",
+        "gotIt": "យល់ហើយ",
+        "items": {
+            "liquidGlass": {
+                "title": "Liquid Glass UI",
+                "desc": "ប្រព័ន្ធរចនាបែប Glassmorphism បែបស្ទីល Apple ជាមួយការគាំទ្រ ម៉ូដ ងងឹត ភ្លឺ និងប្រព័ន្ធ។"
+            },
+            "i18n": {
+                "title": "គាំទ្រ 4 ភាសា",
+                "desc": "ការបកប្រែពេញលេញជា ភាសាអង់គ្លេស ខ្មែរ ជប៉ុន និងចិន — ផ្អែកលើ Cookie គ្មានការផ្ទុកទំព័រឡើងវិញ។"
+            },
+            "skillArch": {
+                "title": "ដ្យាក្រាមស្ថាបត្យកម្មជំនាញ",
+                "desc": "ដ្យាក្រាម SVG ផ្ទាល់ខ្លួន ครอบ 9 វិស័យ: Desktop, Web, Mobile, Backend, Automation, Database, Tools, DevOps, និង DevSecOps។"
+            },
+            "pwa": {
+                "title": "Progressive Web App (PWA)",
+                "desc": " អាចដំឡើងបានគ្រប់វេទិកា ជាមួយ Service Worker Cache ឧបករណ៍ icon ពេញលេញ និង Web Manifest។"
+            },
+            "animations": {
+                "title": "Animation រំកិលបែប Apple",
+                "desc": "ប្រើ GSAP ScrollTrigger ជំរុញ Reveal, Robot Parallax, Timeline Progress និង Lenis Smooth Scrolling។"
+            },
+            "devsecops": {
+                "title": "DevSecOps Coverage",
+                "desc": "SAST, SCA, Secret Scanning, Image Scan, SBOM, IaC Scan, Dockerfile Lint, និង License Compliance — ទាំងអស់ត្រូវបានចងក្រង។"
+            }
+        }
+    },
+    "footer": {
+        "madeWith": "បង្កើតដោយ",
+        "by": "ដោយ",
+        "rights": "រក្សាសិទ្ធិគ្រប់យ៉ាង។"
+    },
+    "about": {
+        "title": "អំពីខ្ញុំ",
+        "bio": "ខ្ញុំជាវិស្វករ Full-Stack ប្រចាំនៅភ្នំពេញ ប្រទេសកម្ពុជា ដោយមានបទពិសោធន៍ជាង ១៨ ឆ្នាំ ក្នុងការបង្កើតកម្មវិធីសម្រាប់ទូរស័ព្ទ វ៉េប និងដេស្ក​តុ — សម្រាប់ធនាគារ រោងចក្រ សាលារៀន និងអ្វីៗផ្សេងទៀត។",
+        "stats": {
+            "years": {
+                "value": "១៨+",
+                "label": "ឆ្នាំបទពិសោធន៍"
+            },
+            "platforms": {
+                "value": "៣",
+                "label": "វេទិកា"
+            },
+            "systems": {
+                "value": "១០+",
+                "label": "ប្រព័ន្ធសហគ្រាស"
+            },
+            "languages": {
+                "value": "៤",
+                "label": "ភាសា UI"
+            }
+        },
+        "linkedinButton": "មើលប្រវត្តិរូប LinkedIn"
     }
-  },
-  "techStack": {
-    "title": "បច្ចេកវិទ្យាដែលប្រើ",
-    "subtitle": "ឧបករណ៍ និងវេទិកាដែលខ្ញុំប្រើប្រចាំថ្ងៃ។",
-    "categories": {
-      "platform": "វេទិកា",
-      "stack": "បច្ចេកវិទ្យា",
-      "deployment": "ការដាក់ឱ្យដំណើរការ",
-      "pm": "គ្រប់គ្រងគម្រោង"
-    }
-  },
-  "architecture": {
-    "title": "ស្ថាបត្យកម្មជំនាញ",
-    "subtitle": "របៀបដែលអ្វីៗទាំងអស់ភ្ជាប់គ្នា។",
-    "categories": {
-      "desktop": "កុំព្យូទ័រលើតុ",
-      "web": "វិបសាយ",
-      "backend": "ផ្នែកខាងក្រោយ",
-      "automation": "លំហូរការងារស្វ័យប្រវត្តិកម្ម",
-      "database": "មូលដ្ឋានទិន្នន័យ",
-      "mobile": "ទូរស័ព្ទ",
-      "devops": "DevOps",
-      "tools": "ឧបករណ៍",
-      "devsecops": "DevSecOps"
-    }
-  },
-  "experience": {
-    "title": "បទពិសោធការងារ",
-    "subtitle": "បង្កើតកម្មវិធីជាវិជ្ជាជីវៈតាំងពីឆ្នាំ 2007។",
-    "items": {
-      "e1": {
-        "period": "2025 — បច្ចុប្បន្ន",
-        "role": "អ្នកគ្រប់គ្រងជាន់ខ្ពស់ ផ្នែកអភិវឌ្ឍន៍កម្មវិធី",
-        "company": "J Trust Royal Bank Plc.",
-        "desc": "អភិវឌ្ឍ Web App, Mobile App, និង Website សម្រាប់ភាគីពាក់ព័ន្ធ និងអតិថិជន។"
-      },
-      "e2": {
-        "period": "2022 — 2024",
-        "role": "អ្នកគ្រប់គ្រងកម្មវិធីវិបសាយ និងដំណោះស្រាយ",
-        "company": "J Trust Royal Bank Plc.",
-        "desc": "អភិវឌ្ឍ Portal វិបសាយសម្រាប់ភាគីពាក់ព័ន្ធ ដើម្បីគ្រប់គ្រងប្រតិបត្តិការប្រចាំថ្ងៃ និងគាំទ្រការពេញចិត្តរបស់អតិថិជន។"
-      },
-      "e3": {
-        "period": "2014 — 2022",
-        "role": "អ្នកគ្រប់គ្រងគម្រោងពិសេស",
-        "company": "Forval (Cambodia) Co., Ltd.",
-        "desc": "អភិវឌ្ឍ និងគ្រប់គ្រងប្រព័ន្ធគ្រប់ប្រភេទសម្រាប់អតិថិជនជប៉ុន រួមមានរោងចក្រ ភោជនីយដ្ឋាន សំណង់ សណ្ឋាគារ និងក្រុមហ៊ុនអចលនទ្រព្យ។"
-      },
-      "e4": {
-        "period": "2014 — 2014",
-        "role": "វិស្វករព័ត៌មានវិទ្យា",
-        "company": "Forval (Cambodia) Co., Ltd.",
-        "desc": "អភិវឌ្ឍប្រព័ន្ធគ្រប់គ្រងផលិតកម្មសម្រាប់រោងចក្រ និងគ្រប់គ្រង Server, Network, Hardware សម្រាប់អតិថិជនជប៉ុន។"
-      },
-      "e5": {
-        "period": "2013 — 2014",
-        "role": "អ្នកអភិវឌ្ឍន៍មូលដ្ឋានទិន្នន័យ",
-        "company": "S.I Group Co., Ltd.",
-        "desc": "អភិវឌ្ឍប្រព័ន្ធគ្រប់គ្រងស្តុក សម្រាប់ S.I Group និងអតិថិជន ដើម្បីគ្រប់គ្រងស្តុក និងតាមដានការប្រើប្រាស់វត្ថុធាតុដើម។"
-      },
-      "e6": {
-        "period": "2011 — 2013",
-        "role": "ជំនួយការព័ត៌មានវិទ្យា",
-        "company": "Royal University of Phnom Penh (RUPP)",
-        "desc": "គ្រប់គ្រងបន្ទប់ Lab កុំព្យូទ័រ ជួយអ្នកបង្រៀន និងនិស្សិត ហើយបង្កើតប្រព័ន្ធគ្រប់គ្រង Lab ដើម្បីគ្រប់គ្រងនិស្សិតក្នុង Lab។"
-      },
-      "e7": {
-        "period": "2009 — 2010",
-        "role": "គ្រូបង្រៀនកុំព្យូទ័រ",
-        "company": "American House School (AHS)",
-        "desc": "បង្រៀនមុខវិជ្ជា Microsoft Word, Excel, Access, Internet Program, Maintenance & Repair, HTML, និង Network Administrator។"
-      },
-      "e8": {
-        "period": "2007 — 2009",
-        "role": "គ្រូបង្រៀនភាសាអង់គ្លេស",
-        "company": "EYDP Organization",
-        "desc": "បង្រៀនការសន្ទនាភាសាអង់គ្លេស និង Core English (Opportunity) ហើយបានបំរើជាអ្នកបកប្រែនៅ EYDP។"
-      }
-    }
-  },
-  "projects": {
-    "title": "គម្រោងសំខាន់ៗ",
-    "subtitle": "គម្រោងមួយចំនួនដែលខ្ញុំបានបង្កើតថ្មីៗនេះ។",
-    "viewGithub": "មើលច្រើនទៀតលើ GitHub",
-    "items": {
-      "inventory": {
-        "title": "ប្រព័ន្ធគ្រប់គ្រងស្តុក",
-        "desc": "កម្មវិធី Desktop សម្រាប់គ្រប់គ្រងស្តុក ការលក់ និងការទិញសម្រាប់រោងចក្រ បង្កើតដោយ C# តាមគំរូ MVP ភ្ជាប់ជាមួយ MSSQL។"
-      },
-      "sfa": {
-        "title": "កម្មវិធីស្វ័យប្រវត្តិកម្មការលក់ (SFA)",
-        "desc": "កម្មវិធីទូរស័ព្ទ Flutter ដែលសម្រួលដំណើរការលក់ គ្រប់គ្រងទំនាក់ទំនងអតិថិជន និងតាមដានសកម្មភាពលក់។"
-      },
-      "payroll": {
-        "title": "ប្រព័ន្ធគ្រប់គ្រងប្រាក់ខែ",
-        "desc": "កម្មវិធី Desktop សម្រាប់គ្រប់គ្រងប្រាក់ខែបុគ្គលិក ការគណនាប្រាក់ខែ ការកាត់ប្រាក់ និងបង្កើតបង្គ្រប់ប្រចាំខែ — បង្កើតដោយ C# តាមគំរូ MVP ភ្ជាប់ជាមួយ MSSQL។"
-      },
-      "parking": {
-        "title": "ប្រព័ន្ធគ្រប់គ្រងចតរថយន្ត",
-        "desc": "កម្មវិធី Desktop សម្រាប់គ្រប់គ្រងការចតរថយន្ត តាមដានពេលចូល-ចេញ គណនាថ្លៃ និងបង្កើតរបាយការណ៍ប្រចាំថ្ងៃ — បង្កើតដោយ C# តាមគំរូ MVP ភ្ជាប់ជាមួយ MSSQL។"
-      },
-      "production": {
-        "title": "ប្រព័ន្ធគ្រប់គ្រងផលិតកម្ម",
-        "desc": "កម្មវិធី Desktop សម្រាប់រៀបចំផែនការ តាមដានការបញ្ជាទិញផលិតកម្ម ត្រួតពិនិត្យដំណើរការផលិត និងបង្កើតរបាយការណ៍ — បង្កើតដោយ C# តាមគំរូ MVP ភ្ជាប់ជាមួយ MSSQL។"
-      },
-      "crm": {
-        "title": "ប្រព័ន្ធគ្រប់គ្រងទំនាក់ទំនងអតិថិជន",
-        "desc": "កម្មវិធី Desktop សម្រាប់គ្រប់គ្រងទិន្នន័យអតិថិជន តាមដានអន្តរកម្ម តាមដានការចាប់អារម្មណ៍ និងវិភាគសកម្មភាពអតិថិជន — បង្កើតដោយ C# តាមគំរូ MVP ភ្ជាប់ជាមួយ MSSQL។"
-      },
-      "pos": {
-        "title": "ប្រព័ន្ធលក់រាយ (POS)",
-        "desc": "កម្មវិធី Desktop សម្រាប់ដំណើរការប្រតិបត្តិការលក់ គ្រប់គ្រងស្ទុ ព្រីនវិក្កយបត្រ និងបង្កើតរបាយការណ៍លក់ — បង្កើតដោយ C# តាមគំរូ MVP ភ្ជាប់ជាមួយ MSSQL។"
-      },
-      "hrm": {
-        "title": "ប្រព័ន្ធគ្រប់គ្រងធនធានមនុស្ស",
-        "desc": "កម្មវិធី Desktop សម្រាប់គ្រប់គ្រងព័ត៌មានបុគ្គលិក កិច្ចសន្យា ការស្នើច្បាប់ និងរបាយការណ៍ធនធានមនុស្ស — បង្កើតដោយ C# តាមគំរូ MVP ភ្ជាប់ជាមួយ MSSQL។"
-      },
-      "canteen": {
-        "title": "ប្រព័ន្ធគ្រប់គ្រងបន្ទប់ញ៉ាំ",
-        "desc": "កម្មវិធី Desktop សម្រាប់គ្រប់គ្រងម៉ឺនុយ ការបញ្ជាទិញប្រចាំថ្ងៃ តាមដានអាហារ និងបង្កើតរបាយការណ៍ចំណាយសម្រាប់បុគ្គលិក — បង្កើតដោយ C# តាមគំរូ MVP ភ្ជាប់ជាមួយ MSSQL។"
-      },
-      "attendance": {
-        "title": "ប្រព័ន្ធគ្រប់គ្រងវត្តមាន",
-        "desc": "កម្មវិធី Desktop សម្រាប់តាមដានការចូលចេញការងារបុគ្គលិក គ្រប់គ្រងច្បាប់ និងការងារអតិរេក និងបង្កើតរបាយការណ៍វត្តមាន — បង្កើតដោយ C# តាមគំរូ MVP ភ្ជាប់ជាមួយ MSSQL។"
-      }
-    }
-  },
-  "contact": {
-    "title": "ទាក់ទងខ្ញុំ",
-    "subtitle": "ខ្ញុំបើកចំហចំពោះការងារ និងកិច្ចសហការថ្មីៗ — សួស្តីបានគ្រប់ពេល។",
-    "cta": "អ៊ីមែលមកខ្ញុំ"
-  },
-  "releaseNotes": {
-    "badge": "ថ្មីបំផុត",
-    "whatsNew": "មានអ្វីថ្មី",
-    "released": "បានចេញផ្សាយ {date}",
-    "viewGithub": "មើលលើ GitHub →",
-    "gotIt": "យល់ហើយ",
-    "items": {
-      "liquidGlass": {
-        "title": "Liquid Glass UI",
-        "desc": "ប្រព័ន្ធរចនាបែប Glassmorphism បែបស្ទីល Apple ជាមួយការគាំទ្រ ម៉ូដ ងងឹត ភ្លឺ និងប្រព័ន្ធ។"
-      },
-      "i18n": {
-        "title": "គាំទ្រ 4 ភាសា",
-        "desc": "ការបកប្រែពេញលេញជា ភាសាអង់គ្លេស ខ្មែរ ជប៉ុន និងចិន — ផ្អែកលើ Cookie គ្មានការផ្ទុកទំព័រឡើងវិញ។"
-      },
-      "skillArch": {
-        "title": "ដ្យាក្រាមស្ថាបត្យកម្មជំនាញ",
-        "desc": "ដ្យាក្រាម SVG ផ្ទាល់ខ្លួន ครอบ 9 វិស័យ: Desktop, Web, Mobile, Backend, Automation, Database, Tools, DevOps, និង DevSecOps។"
-      },
-      "pwa": {
-        "title": "Progressive Web App (PWA)",
-        "desc": " អាចដំឡើងបានគ្រប់វេទិកា ជាមួយ Service Worker Cache ឧបករណ៍ icon ពេញលេញ និង Web Manifest។"
-      },
-      "animations": {
-        "title": "Animation រំកិលបែប Apple",
-        "desc": "ប្រើ GSAP ScrollTrigger ជំរុញ Reveal, Robot Parallax, Timeline Progress និង Lenis Smooth Scrolling។"
-      },
-      "devsecops": {
-        "title": "DevSecOps Coverage",
-        "desc": "SAST, SCA, Secret Scanning, Image Scan, SBOM, IaC Scan, Dockerfile Lint, និង License Compliance — ទាំងអស់ត្រូវបានចងក្រង។"
-      }
-    }
-  },
-  "footer": {
-    "madeWith": "បង្កើតដោយ",
-    "by": "ដោយ",
-    "rights": "រក្សាសិទ្ធិគ្រប់យ៉ាង។"
-  }
 }

@@ -1,221 +1,272 @@
 {
-  "metadata": {
-    "title": "Ron Vanda — 全栈工程师 · DevOps · DevSecOps",
-    "description": "Ron Vanda 的个人作品集 — 全栈工程师，构建 Flutter 移动应用、Next.js & ASP.NET Core 网页平台及 .NET 桌面软件，深耕云端 DevOps、多数据库架构与 DevSecOps 安全自动化。"
-  },
-  "nav": {
-    "home": "首页",
-    "skills": "技能",
-    "experience": "经历",
-    "projects": "项目",
-    "contact": "联系"
-  },
-  "hero": {
-    "greeting": "你好,我是",
-    "name": "Ron Vanda",
-    "roles": [
-      "全栈开发工程师",
-      "项目经理",
-      "DevOps 与 DevSecOps 基础设施"
-    ],
-    "tagline": "全栈工程师，覆盖 Flutter 移动端（Android & iOS）、Next.js & ASP.NET Core 网页、.NET 桌面 — 兼具 NestJS 后端、PostgreSQL · Redis · DynamoDB 数据库、Docker & AWS DevOps、CI/CD 自动化流水线，以及端到端 DevSecOps 安全体系。",
-    "ctaProjects": "查看项目",
-    "ctaContact": "联系我"
-  },
-  "theme": {
-    "menuLabel": "选择主题",
-    "light": "浅色",
-    "dark": "深色",
-    "system": "跟随系统"
-  },
-  "locale": {
-    "label": "语言"
-  },
-  "common": {
-    "scrollToTop": "返回顶部"
-  },
-  "skills": {
-    "title": "技能与工具",
-    "subtitle": "我用来构建产品的完整技术栈。",
-    "items": {
-      "mobile": { "title": "移动应用", "desc": "Flutter" },
-      "web": { "title": "Web 应用", "desc": "ASP.NET Core" },
-      "desktop": { "title": "桌面应用", "desc": "C# · MVP 模式" },
-      "website": { "title": "网站", "desc": "Next.js · NestJS · TYPO3" },
-      "database": { "title": "数据库", "desc": "MSSQL · PostgreSQL" },
-      "devops": { "title": "DevOps", "desc": "Docker · GitHub Actions · AWS" },
-      "design": { "title": "UI/UX", "desc": "响应式设计" },
-      "pm": { "title": "项目管理", "desc": "Jira · Git & GitHub" },
-      "devsecops": { "title": "DevSecOps", "desc": "SAST · SCA · 密钥扫描" }
+    "metadata": {
+        "title": "Ron Vanda — 全栈工程师 · DevOps · DevSecOps",
+        "description": "Ron Vanda 的个人作品集 — 全栈工程师，构建 Flutter 移动应用、Next.js & ASP.NET Core 网页平台及 .NET 桌面软件，深耕云端 DevOps、多数据库架构与 DevSecOps 安全自动化。"
+    },
+    "nav": {
+        "home": "首页",
+        "about": "关于我",
+        "skills": "技能",
+        "experience": "经历",
+        "projects": "项目",
+        "contact": "联系"
+    },
+    "hero": {
+        "greeting": "你好,我是",
+        "name": "Ron Vanda",
+        "roles": [
+            "全栈开发工程师",
+            "项目经理",
+            "DevOps 与 DevSecOps 基础设施"
+        ],
+        "tagline": "18年以上的经验，涵盖移动应用、Web平台和桌面软件开发 — 从 Flutter & Next.js 到 .NET、Docker 和 DevSecOps。",
+        "ctaProjects": "查看项目",
+        "ctaContact": "联系我"
+    },
+    "theme": {
+        "menuLabel": "选择主题",
+        "light": "浅色",
+        "dark": "深色",
+        "system": "跟随系统"
+    },
+    "locale": {
+        "label": "语言"
+    },
+    "common": {
+        "scrollToTop": "返回顶部"
+    },
+    "skills": {
+        "title": "技能与工具",
+        "subtitle": "我用来构建产品的完整技术栈。",
+        "items": {
+            "mobile": {
+                "title": "移动应用",
+                "desc": "Flutter 跨平台开发，覆盖 Android & iOS，从架构设计到应用上架全流程。"
+            },
+            "web": {
+                "title": "Web 应用",
+                "desc": "ASP.NET Core 门户与 NestJS API，驱动企业级业务系统。"
+            },
+            "desktop": {
+                "title": "桌面应用",
+                "desc": "C# & MVP 模式构建 Windows 应用 — 薪资、POS、HRM 等系统。"
+            },
+            "website": {
+                "title": "网站开发",
+                "desc": "Next.js & TYPO3，支持 SSR、i18n、PWA 与 Tailwind UI。"
+            },
+            "database": {
+                "title": "数据库",
+                "desc": "MSSQL、PostgreSQL、Redis、DynamoDB — 模式设计到查询优化。"
+            },
+            "devops": {
+                "title": "DevOps",
+                "desc": "Docker、GitHub Actions、AWS ECS/S3/RDS 构建从代码到云端的 CI/CD 流水线。"
+            },
+            "design": {
+                "title": "UI / UX",
+                "desc": "Figma 到代码，玻璃拟态设计系统与响应式 Tailwind 界面。"
+            },
+            "pm": {
+                "title": "项目管理",
+                "desc": "Jira、GitHub Projects 与敏捷冲刺，端到端项目交付。"
+            },
+            "devsecops": {
+                "title": "DevSecOps",
+                "desc": "SAST、SCA、密钥扫描、镜像扫描、SBOM、IaC 扫描，集成至每条流水线。"
+            }
+        }
+    },
+    "techStack": {
+        "title": "技术栈",
+        "subtitle": "我日常使用的工具与平台。",
+        "categories": {
+            "platform": "平台",
+            "stack": "技术栈",
+            "deployment": "部署",
+            "pm": "项目管理"
+        }
+    },
+    "architecture": {
+        "title": "技能架构",
+        "subtitle": "各部分如何协同工作。",
+        "categories": {
+            "desktop": "桌面端",
+            "web": "网页",
+            "backend": "后端",
+            "automation": "自动化工作流程",
+            "database": "数据库",
+            "mobile": "移动端",
+            "devops": "DevOps",
+            "tools": "工具",
+            "devsecops": "DevSecOps"
+        }
+    },
+    "experience": {
+        "title": "工作经历",
+        "subtitle": "自 2007 年起从事专业软件开发工作。",
+        "items": {
+            "e1": {
+                "period": "2025 — 至今",
+                "role": "应用开发高级经理",
+                "company": "J Trust Royal Bank Plc.",
+                "desc": "为利益相关方和客户开发 Web 应用、移动应用及网站。"
+            },
+            "e2": {
+                "period": "2022 — 2024",
+                "role": "Web 应用与解决方案经理",
+                "company": "J Trust Royal Bank Plc.",
+                "desc": "开发 Web 应用门户，帮助利益相关方管理日常运营，提升客户满意度。"
+            },
+            "e3": {
+                "period": "2014 — 2022",
+                "role": "特别项目经理",
+                "company": "Forval (Cambodia) Co., Ltd.（日资企业）",
+                "desc": "为日本客户开发和管理各类系统，涵盖工厂、餐厅、建筑、酒店及房地产公司。"
+            },
+            "e4": {
+                "period": "2014",
+                "role": "IT 工程师",
+                "company": "Forval (Cambodia) Co., Ltd.（日资企业）",
+                "desc": "为工厂开发生产管理系统，并为众多日本客户管理服务器、网络与硬件。"
+            },
+            "e5": {
+                "period": "2013 — 2014",
+                "role": "数据库开发工程师",
+                "company": "S.I Group Co., Ltd.",
+                "desc": "为 S.I Group 及其客户开发库存管理系统，用于控制库存并追踪物料使用情况。"
+            },
+            "e6": {
+                "period": "2011 — 2013",
+                "role": "IT 助理",
+                "company": "金边皇家大学（RUPP）",
+                "desc": "管理计算机实验室，支持教师与学生，开发实验室管理系统以管控学生在实验室的使用情况。"
+            },
+            "e7": {
+                "period": "2009 — 2010",
+                "role": "计算机教师",
+                "company": "American House School（AHS）",
+                "desc": "讲授 Microsoft Word、Excel、Access、互联网、硬件维护与维修、HTML 及网络管理员课程。"
+            },
+            "e8": {
+                "period": "2007 — 2009",
+                "role": "英语教师",
+                "company": "EYDP Organization",
+                "desc": "教授英语会话与核心英语（Opportunity）课程，并担任 EYDP 组织的翻译。"
+            }
+        }
+    },
+    "projects": {
+        "title": "代表项目",
+        "subtitle": "我设计、构建并交付的企业级系统。",
+        "viewGithub": "在 GitHub 查看更多",
+        "items": {
+            "inventory": {
+                "title": "库存管理系统",
+                "desc": "面向工厂的库存、销售与采购桌面应用,采用 C# 与 MVP 模式开发,后端使用 MSSQL。"
+            },
+            "sfa": {
+                "title": "销售自动化应用 (SFA)",
+                "desc": "一款 Flutter 移动应用,用于简化销售流程、管理客户关系并跟踪销售活动。"
+            },
+            "payroll": {
+                "title": "薪资管理系统",
+                "desc": "面向员工薪资管理的桌面应用，支持薪资计算、扣款处理与月度工资单生成，采用 C# 与 MVP 模式开发，后端使用 MSSQL。"
+            },
+            "parking": {
+                "title": "停车场管理系统",
+                "desc": "面向车辆停车管理的桌面应用，支持进出场时间追踪、费用计算与日报生成，采用 C# 与 MVP 模式开发，后端使用 MSSQL。"
+            },
+            "production": {
+                "title": "生产管理系统",
+                "desc": "面向工厂生产的桌面应用，支持生产订单规划与追踪、在制品监控及产量报告生成，采用 C# 与 MVP 模式开发，后端使用 MSSQL。"
+            },
+            "crm": {
+                "title": "客户关系管理系统",
+                "desc": "面向客户管理的桌面应用，支持客户数据管理、互动追踪、线索跟进与客户活动分析，采用 C# 与 MVP 模式开发，后端使用 MSSQL。"
+            },
+            "pos": {
+                "title": "销售终端系统 (POS)",
+                "desc": "面向零售的桌面应用，支持销售交易处理、商品库存管理、收据打印与销售报表生成，采用 C# 与 MVP 模式开发，后端使用 MSSQL。"
+            },
+            "hrm": {
+                "title": "人力资源管理系统",
+                "desc": "面向人事管理的桌面应用，支持员工档案、合同、请假申请与 HR 报表管理，采用 C# 与 MVP 模式开发，后端使用 MSSQL。"
+            },
+            "canteen": {
+                "title": "食堂管理系统",
+                "desc": "面向企业食堂的桌面应用，支持菜单管理、每日订餐、用餐追踪与成本报表生成，采用 C# 与 MVP 模式开发，后端使用 MSSQL。"
+            },
+            "attendance": {
+                "title": "考勤管理系统",
+                "desc": "面向员工考勤的桌面应用，支持签到签退追踪、请假与加班管理及考勤报表生成，采用 C# 与 MVP 模式开发，后端使用 MSSQL。"
+            }
+        }
+    },
+    "contact": {
+        "title": "联系我",
+        "subtitle": "我对新的机会与合作持开放态度 —— 欢迎与我联系。",
+        "cta": "给我发邮件"
+    },
+    "releaseNotes": {
+        "badge": "最新",
+        "whatsNew": "新增内容",
+        "released": "{date} 发布",
+        "viewGithub": "在 GitHub 查看 →",
+        "gotIt": "知道了",
+        "items": {
+            "liquidGlass": {
+                "title": "液态玻璃 UI",
+                "desc": "苹果风格玻璃拟态设计系统，支持深色、浅色与跟随系统主题。"
+            },
+            "i18n": {
+                "title": "四语言支持",
+                "desc": "完整支持英语、高棉语（ខ្មែរ）、日语（日本語）和中文 —— 基于 Cookie 切换，无需刷新页面。"
+            },
+            "skillArch": {
+                "title": "技能架构图",
+                "desc": "自定义 SVG 流程图，涵盖 9 个领域：桌面端、网页、移动端、后端、自动化、数据库、工具、DevOps 和 DevSecOps。"
+            },
+            "pwa": {
+                "title": "渐进式 Web 应用（PWA）",
+                "desc": "可安装于所有平台，具备 Service Worker 缓存、完整图标集与 Web Manifest。"
+            },
+            "animations": {
+                "title": "苹果风格滚动动效",
+                "desc": "GSAP ScrollTrigger 驱动的入场动画、视差机器人、进度线联动，以及 Lenis 流畅滚动。"
+            },
+            "devsecops": {
+                "title": "DevSecOps 全覆盖",
+                "desc": "SAST、SCA、密钥扫描、镜像扫描、SBOM、IaC 扫描、Dockerfile Lint 和许可证合规 —— 全部已归档。"
+            }
+        }
+    },
+    "footer": {
+        "madeWith": "用",
+        "by": "由",
+        "rights": "保留所有权利。"
+    },
+    "about": {
+        "title": "关于我",
+        "bio": "我是一名全栈工程师，常驻柬埔寨金边，拥有18年以上经验，为银行、工厂、学校等构建移动端、Web 和桌面软件。我注重简洁架构、开发体验，以及交付真正可用的产品。",
+        "stats": {
+            "years": {
+                "value": "18+",
+                "label": "年经验"
+            },
+            "platforms": {
+                "value": "3",
+                "label": "平台"
+            },
+            "systems": {
+                "value": "10+",
+                "label": "企业系统"
+            },
+            "languages": {
+                "value": "4",
+                "label": "UI语言"
+            }
+        },
+        "linkedinButton": "查看 LinkedIn 主页"
     }
-  },
-  "techStack": {
-    "title": "技术栈",
-    "subtitle": "我日常使用的工具与平台。",
-    "categories": {
-      "platform": "平台",
-      "stack": "技术栈",
-      "deployment": "部署",
-      "pm": "项目管理"
-    }
-  },
-  "architecture": {
-    "title": "技能架构",
-    "subtitle": "各部分如何协同工作。",
-    "categories": {
-      "desktop": "桌面端",
-      "web": "网页",
-      "backend": "后端",
-      "automation": "自动化工作流程",
-      "database": "数据库",
-      "mobile": "移动端",
-      "devops": "DevOps",
-      "tools": "工具",
-      "devsecops": "DevSecOps"
-    }
-  },
-  "experience": {
-    "title": "工作经历",
-    "subtitle": "自 2007 年起从事专业软件开发工作。",
-    "items": {
-      "e1": {
-        "period": "2025 — 至今",
-        "role": "应用开发高级经理",
-        "company": "J Trust Royal Bank Plc.",
-        "desc": "为利益相关方和客户开发 Web 应用、移动应用及网站。"
-      },
-      "e2": {
-        "period": "2022 — 2024",
-        "role": "Web 应用与解决方案经理",
-        "company": "J Trust Royal Bank Plc.",
-        "desc": "开发 Web 应用门户，帮助利益相关方管理日常运营，提升客户满意度。"
-      },
-      "e3": {
-        "period": "2014 — 2022",
-        "role": "特别项目经理",
-        "company": "Forval (Cambodia) Co., Ltd.（日资企业）",
-        "desc": "为日本客户开发和管理各类系统，涵盖工厂、餐厅、建筑、酒店及房地产公司。"
-      },
-      "e4": {
-        "period": "2014 — 2014",
-        "role": "IT 工程师",
-        "company": "Forval (Cambodia) Co., Ltd.（日资企业）",
-        "desc": "为工厂开发生产管理系统，并为众多日本客户管理服务器、网络与硬件。"
-      },
-      "e5": {
-        "period": "2013 — 2014",
-        "role": "数据库开发工程师",
-        "company": "S.I Group Co., Ltd.",
-        "desc": "为 S.I Group 及其客户开发库存管理系统，用于控制库存并追踪物料使用情况。"
-      },
-      "e6": {
-        "period": "2011 — 2013",
-        "role": "IT 助理",
-        "company": "金边皇家大学（RUPP）",
-        "desc": "管理计算机实验室，支持教师与学生，开发实验室管理系统以管控学生在实验室的使用情况。"
-      },
-      "e7": {
-        "period": "2009 — 2010",
-        "role": "计算机教师",
-        "company": "American House School（AHS）",
-        "desc": "讲授 Microsoft Word、Excel、Access、互联网、硬件维护与维修、HTML 及网络管理员课程。"
-      },
-      "e8": {
-        "period": "2007 — 2009",
-        "role": "英语教师",
-        "company": "EYDP Organization",
-        "desc": "教授英语会话与核心英语（Opportunity）课程，并担任 EYDP 组织的翻译。"
-      }
-    }
-  },
-  "projects": {
-    "title": "代表项目",
-    "subtitle": "近期完成的一些项目。",
-    "viewGithub": "在 GitHub 查看更多",
-    "items": {
-      "inventory": {
-        "title": "库存管理系统",
-        "desc": "面向工厂的库存、销售与采购桌面应用,采用 C# 与 MVP 模式开发,后端使用 MSSQL。"
-      },
-      "sfa": {
-        "title": "销售自动化应用 (SFA)",
-        "desc": "一款 Flutter 移动应用,用于简化销售流程、管理客户关系并跟踪销售活动。"
-      },
-      "payroll": {
-        "title": "薪资管理系统",
-        "desc": "面向员工薪资管理的桌面应用，支持薪资计算、扣款处理与月度工资单生成，采用 C# 与 MVP 模式开发，后端使用 MSSQL。"
-      },
-      "parking": {
-        "title": "停车场管理系统",
-        "desc": "面向车辆停车管理的桌面应用，支持进出场时间追踪、费用计算与日报生成，采用 C# 与 MVP 模式开发，后端使用 MSSQL。"
-      },
-      "production": {
-        "title": "生产管理系统",
-        "desc": "面向工厂生产的桌面应用，支持生产订单规划与追踪、在制品监控及产量报告生成，采用 C# 与 MVP 模式开发，后端使用 MSSQL。"
-      },
-      "crm": {
-        "title": "客户关系管理系统",
-        "desc": "面向客户管理的桌面应用，支持客户数据管理、互动追踪、线索跟进与客户活动分析，采用 C# 与 MVP 模式开发，后端使用 MSSQL。"
-      },
-      "pos": {
-        "title": "销售终端系统 (POS)",
-        "desc": "面向零售的桌面应用，支持销售交易处理、商品库存管理、收据打印与销售报表生成，采用 C# 与 MVP 模式开发，后端使用 MSSQL。"
-      },
-      "hrm": {
-        "title": "人力资源管理系统",
-        "desc": "面向人事管理的桌面应用，支持员工档案、合同、请假申请与 HR 报表管理，采用 C# 与 MVP 模式开发，后端使用 MSSQL。"
-      },
-      "canteen": {
-        "title": "食堂管理系统",
-        "desc": "面向企业食堂的桌面应用，支持菜单管理、每日订餐、用餐追踪与成本报表生成，采用 C# 与 MVP 模式开发，后端使用 MSSQL。"
-      },
-      "attendance": {
-        "title": "考勤管理系统",
-        "desc": "面向员工考勤的桌面应用，支持签到签退追踪、请假与加班管理及考勤报表生成，采用 C# 与 MVP 模式开发，后端使用 MSSQL。"
-      }
-    }
-  },
-  "contact": {
-    "title": "联系我",
-    "subtitle": "我对新的机会与合作持开放态度 —— 欢迎与我联系。",
-    "cta": "给我发邮件"
-  },
-  "releaseNotes": {
-    "badge": "最新",
-    "whatsNew": "新增内容",
-    "released": "{date} 发布",
-    "viewGithub": "在 GitHub 查看 →",
-    "gotIt": "知道了",
-    "items": {
-      "liquidGlass": {
-        "title": "液态玻璃 UI",
-        "desc": "苹果风格玻璃拟态设计系统，支持深色、浅色与跟随系统主题。"
-      },
-      "i18n": {
-        "title": "四语言支持",
-        "desc": "完整支持英语、高棉语（ខ្មែរ）、日语（日本語）和中文 —— 基于 Cookie 切换，无需刷新页面。"
-      },
-      "skillArch": {
-        "title": "技能架构图",
-        "desc": "自定义 SVG 流程图，涵盖 9 个领域：桌面端、网页、移动端、后端、自动化、数据库、工具、DevOps 和 DevSecOps。"
-      },
-      "pwa": {
-        "title": "渐进式 Web 应用（PWA）",
-        "desc": "可安装于所有平台，具备 Service Worker 缓存、完整图标集与 Web Manifest。"
-      },
-      "animations": {
-        "title": "苹果风格滚动动效",
-        "desc": "GSAP ScrollTrigger 驱动的入场动画、视差机器人、进度线联动，以及 Lenis 流畅滚动。"
-      },
-      "devsecops": {
-        "title": "DevSecOps 全覆盖",
-        "desc": "SAST、SCA、密钥扫描、镜像扫描、SBOM、IaC 扫描、Dockerfile Lint 和许可证合规 —— 全部已归档。"
-      }
-    }
-  },
-  "footer": {
-    "madeWith": "用",
-    "by": "由",
-    "rights": "保留所有权利。"
-  }
 }

@@ -1,221 +1,272 @@
 {
-  "metadata": {
-    "title": "Ron Vanda — Full-Stack Engineer · DevOps · DevSecOps",
-    "description": "Portfolio of Ron Vanda — full-stack engineer building Flutter mobile apps, Next.js & ASP.NET Core web platforms, and .NET desktop software, with expertise in cloud DevOps, multi-database architecture, and DevSecOps security automation."
-  },
-  "nav": {
-    "home": "Home",
-    "skills": "Skills",
-    "experience": "Experience",
-    "projects": "Projects",
-    "contact": "Contact"
-  },
-  "hero": {
-    "greeting": "Hello, I'm",
-    "name": "Ron Vanda",
-    "roles": [
-      "Full-Stack Developer",
-      "Project Manager",
-      "DevOps and DevSecOps Infrastructure"
-    ],
-    "tagline": "Full-stack engineer across Flutter mobile (Android & iOS), Next.js & ASP.NET Core web, and .NET desktop — with NestJS backends, PostgreSQL · Redis · DynamoDB databases, Docker & AWS DevOps, CI/CD automation pipelines, and end-to-end DevSecOps security.",
-    "ctaProjects": "View Projects",
-    "ctaContact": "Contact Me"
-  },
-  "theme": {
-    "menuLabel": "Select theme",
-    "light": "Light",
-    "dark": "Dark",
-    "system": "System"
-  },
-  "locale": {
-    "label": "Language"
-  },
-  "common": {
-    "scrollToTop": "Scroll to top"
-  },
-  "skills": {
-    "title": "Skills & Tools",
-    "subtitle": "What I build with, end to end.",
-    "items": {
-      "mobile": { "title": "Mobile Apps", "desc": "Flutter" },
-      "web": { "title": "Web Apps", "desc": "ASP.NET Core" },
-      "desktop": { "title": "Desktop Apps", "desc": "C# · MVP pattern" },
-      "website": { "title": "Websites", "desc": "Next.js · NestJS · TYPO3" },
-      "database": { "title": "Databases", "desc": "MSSQL · PostgreSQL" },
-      "devops": { "title": "DevOps", "desc": "Docker · GitHub Actions · AWS" },
-      "design": { "title": "UI/UX", "desc": "Responsive design" },
-      "pm": { "title": "Project Management", "desc": "Jira · Git & GitHub" },
-      "devsecops": { "title": "DevSecOps", "desc": "SAST · SCA · Secret Scanning" }
+    "metadata": {
+        "title": "Ron Vanda — Full-Stack Engineer · DevOps · DevSecOps",
+        "description": "Portfolio of Ron Vanda — full-stack engineer building Flutter mobile apps, Next.js & ASP.NET Core web platforms, and .NET desktop software, with expertise in cloud DevOps, multi-database architecture, and DevSecOps security automation."
+    },
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "skills": "Skills",
+        "experience": "Experience",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "hero": {
+        "greeting": "Hello, I'm",
+        "name": "Ron Vanda",
+        "roles": [
+            "Full-Stack Developer",
+            "Project Manager",
+            "DevOps and DevSecOps Infrastructure"
+        ],
+        "tagline": "18+ years shipping mobile apps, web platforms, and desktop software — from Flutter & Next.js to .NET, Docker, and DevSecOps.",
+        "ctaProjects": "View Projects",
+        "ctaContact": "Contact Me"
+    },
+    "theme": {
+        "menuLabel": "Select theme",
+        "light": "Light",
+        "dark": "Dark",
+        "system": "System"
+    },
+    "locale": {
+        "label": "Language"
+    },
+    "common": {
+        "scrollToTop": "Scroll to top"
+    },
+    "skills": {
+        "title": "Skills & Tools",
+        "subtitle": "What I build with, end to end.",
+        "items": {
+            "mobile": {
+                "title": "Mobile Apps",
+                "desc": "Cross-platform Flutter apps for Android & iOS — from architecture to App Store release."
+            },
+            "web": {
+                "title": "Web Apps",
+                "desc": "ASP.NET Core portals and NestJS APIs powering enterprise workflows at scale."
+            },
+            "desktop": {
+                "title": "Desktop Apps",
+                "desc": "Rich Windows apps in C# with MVP pattern — payroll, POS, HRM, and more."
+            },
+            "website": {
+                "title": "Websites",
+                "desc": "Next.js & TYPO3 sites with SSR, i18n, PWA, and Tailwind-polished UIs."
+            },
+            "database": {
+                "title": "Databases",
+                "desc": "MSSQL, PostgreSQL, Redis, and DynamoDB — schema design to query optimisation."
+            },
+            "devops": {
+                "title": "DevOps",
+                "desc": "Docker, GitHub Actions, AWS ECS/S3/RDS — CI/CD pipelines from code to cloud."
+            },
+            "design": {
+                "title": "UI / UX",
+                "desc": "Figma-to-code design systems, glassmorphism, and responsive Tailwind interfaces."
+            },
+            "pm": {
+                "title": "Project Management",
+                "desc": "End-to-end delivery with Jira, GitHub Projects, and agile sprint planning."
+            },
+            "devsecops": {
+                "title": "DevSecOps",
+                "desc": "SAST, SCA, Secret Scanning, Image Scan, SBOM, and IaC scanning in every pipeline."
+            }
+        }
+    },
+    "techStack": {
+        "title": "Tech Stack",
+        "subtitle": "Tools and platforms I work with daily.",
+        "categories": {
+            "platform": "Platform",
+            "stack": "Tech Stack",
+            "deployment": "Deployment",
+            "pm": "Project Management"
+        }
+    },
+    "architecture": {
+        "title": "Skill Architecture",
+        "subtitle": "How everything fits together.",
+        "categories": {
+            "desktop": "Desktop",
+            "web": "Web",
+            "backend": "Backend",
+            "automation": "Automation Workflows",
+            "database": "Database",
+            "mobile": "Mobile",
+            "devops": "DevOps",
+            "tools": "Tools",
+            "devsecops": "DevSecOps"
+        }
+    },
+    "experience": {
+        "title": "Work Experience",
+        "subtitle": "Building software professionally since 2007.",
+        "items": {
+            "e1": {
+                "period": "2025 — Present",
+                "role": "Senior Manager, Application Development",
+                "company": "J Trust Royal Bank Plc.",
+                "desc": "Developed Web App, Mobile App, and Website for Stakeholders and Customers."
+            },
+            "e2": {
+                "period": "2022 — 2024",
+                "role": "Web Application and Solution Manager",
+                "company": "J Trust Royal Bank Plc.",
+                "desc": "Developed web application portals for stakeholders to manage their daily operations to support customer satisfaction."
+            },
+            "e3": {
+                "period": "2014 — 2022",
+                "role": "Special Project Manager",
+                "company": "Forval (Cambodia) Co., Ltd.",
+                "desc": "Developed and managed all kinds of systems for Japanese customers including Factory, Restaurant, Construction, Hotel, and Real Estate companies."
+            },
+            "e4": {
+                "period": "2014",
+                "role": "IT Engineer",
+                "company": "Forval (Cambodia) Co., Ltd.",
+                "desc": "Developed Production Management System for Factory and managed Server, Network, and Hardware for many Japanese customers."
+            },
+            "e5": {
+                "period": "2013 — 2014",
+                "role": "Database Developer",
+                "company": "S.I Group Co., Ltd.",
+                "desc": "Developed an inventory management system for S.I Group and customers to control inventory and track the usage of materials."
+            },
+            "e6": {
+                "period": "2011 — 2013",
+                "role": "IT Assistance",
+                "company": "Royal University of Phnom Penh (RUPP)",
+                "desc": "Managed Computer Labs, supported lecturers and students, and developed a Lab Management System to control students in the lab."
+            },
+            "e7": {
+                "period": "2009 — 2010",
+                "role": "Computer Teacher",
+                "company": "American House School (AHS)",
+                "desc": "Taught courses including Microsoft Word, Excel, Access, Internet Program, Maintenance & Repair, HTML, and Network Administrator."
+            },
+            "e8": {
+                "period": "2007 — 2009",
+                "role": "English Teacher",
+                "company": "EYDP Organization",
+                "desc": "Taught English Conversation and Core English (Opportunity) and worked as a translator at EYDP organization."
+            }
+        }
+    },
+    "projects": {
+        "title": "Featured Projects",
+        "subtitle": "Enterprise systems I've designed, built, and shipped.",
+        "viewGithub": "More on GitHub",
+        "items": {
+            "inventory": {
+                "title": "Inventory Management System",
+                "desc": "A desktop application for factory inventory, sales, and purchases — built with C# using the MVP pattern, backed by MSSQL."
+            },
+            "sfa": {
+                "title": "Sales Force Automation (SFA)",
+                "desc": "A Flutter mobile app that streamlines sales processes, manages customer relationships, and tracks sales activity."
+            },
+            "payroll": {
+                "title": "Payroll Management System",
+                "desc": "A desktop application for managing employee payroll, salary calculations, deductions, and monthly payslip generation — built with C# using the MVP pattern, backed by MSSQL."
+            },
+            "parking": {
+                "title": "Parking Management System",
+                "desc": "A desktop application for managing vehicle parking, tracking entry and exit times, calculating fees, and generating daily reports — built with C# using the MVP pattern, backed by MSSQL."
+            },
+            "production": {
+                "title": "Production Management System",
+                "desc": "A desktop application for planning and tracking factory production orders, monitoring work-in-progress, and generating output reports — built with C# using the MVP pattern, backed by MSSQL."
+            },
+            "crm": {
+                "title": "Customer Relationship Management System",
+                "desc": "A desktop application for managing customer data, tracking interactions, following up on leads, and analyzing customer activity — built with C# using the MVP pattern, backed by MSSQL."
+            },
+            "pos": {
+                "title": "Point of Sale System",
+                "desc": "A desktop application for processing sales transactions, managing product inventory, printing receipts, and generating sales reports — built with C# using the MVP pattern, backed by MSSQL."
+            },
+            "hrm": {
+                "title": "Human Resource Management System",
+                "desc": "A desktop application for managing employee records, contracts, leave requests, and HR reporting — built with C# using the MVP pattern, backed by MSSQL."
+            },
+            "canteen": {
+                "title": "Canteen Management System",
+                "desc": "A desktop application for managing canteen menus, daily orders, meal tracking, and cost reporting for company staff — built with C# using the MVP pattern, backed by MSSQL."
+            },
+            "attendance": {
+                "title": "Attendance Management System",
+                "desc": "A desktop application for tracking employee check-in and check-out, managing leave and overtime, and generating attendance reports — built with C# using the MVP pattern, backed by MSSQL."
+            }
+        }
+    },
+    "contact": {
+        "title": "Get In Touch",
+        "subtitle": "Open to new opportunities and collaborations — say hello.",
+        "cta": "Email Me"
+    },
+    "releaseNotes": {
+        "badge": "Latest",
+        "whatsNew": "What's New",
+        "released": "Released {date}",
+        "viewGithub": "View on GitHub →",
+        "gotIt": "Got it",
+        "items": {
+            "liquidGlass": {
+                "title": "Liquid Glass UI",
+                "desc": "Apple-inspired glassmorphism design system with dark, light, and system theme support."
+            },
+            "i18n": {
+                "title": "4-Language Support",
+                "desc": "Full localization in English, Khmer (ខ្មែរ), Japanese (日本語), and Chinese (中文) — cookie-based, no page reload."
+            },
+            "skillArch": {
+                "title": "Skill Architecture Diagram",
+                "desc": "Custom SVG flowchart covering 9 domains: Desktop, Web, Mobile, Backend, Automation, Database, Tools, DevOps, and DevSecOps."
+            },
+            "pwa": {
+                "title": "Progressive Web App (PWA)",
+                "desc": "Installable on all platforms with service worker caching, full icon set, and web manifest."
+            },
+            "animations": {
+                "title": "Apple-style Scroll Animations",
+                "desc": "GSAP ScrollTrigger-powered reveals, parallax robot, scrubbed timeline progress, and Lenis smooth scrolling."
+            },
+            "devsecops": {
+                "title": "DevSecOps Coverage",
+                "desc": "SAST, SCA, Secret Scanning, Image Scan, SBOM, IaC Scan, Dockerfile Lint, and License Compliance — all documented."
+            }
+        }
+    },
+    "footer": {
+        "madeWith": "Made with",
+        "by": "by",
+        "rights": "All rights reserved."
+    },
+    "about": {
+        "title": "About Me",
+        "bio": "I'm a full-stack engineer based in Phnom Penh, Cambodia, with 18+ years of experience building software across mobile, web, and desktop — for banks, factories, schools, and beyond. I care about clean architecture, developer experience, and shipping things that actually work.",
+        "stats": {
+            "years": {
+                "value": "18+",
+                "label": "Years Experience"
+            },
+            "platforms": {
+                "value": "3",
+                "label": "Platforms"
+            },
+            "systems": {
+                "value": "10+",
+                "label": "Enterprise Systems"
+            },
+            "languages": {
+                "value": "4",
+                "label": "UI Languages"
+            }
+        },
+        "linkedinButton": "View LinkedIn Profile"
     }
-  },
-  "techStack": {
-    "title": "Tech Stack",
-    "subtitle": "Tools and platforms I work with daily.",
-    "categories": {
-      "platform": "Platform",
-      "stack": "Tech Stack",
-      "deployment": "Deployment",
-      "pm": "Project Management"
-    }
-  },
-  "architecture": {
-    "title": "Skill Architecture",
-    "subtitle": "How everything fits together.",
-    "categories": {
-      "desktop": "Desktop",
-      "web": "Web",
-      "backend": "Backend",
-      "automation": "Automation Workflows",
-      "database": "Database",
-      "mobile": "Mobile",
-      "devops": "DevOps",
-      "tools": "Tools",
-      "devsecops": "DevSecOps"
-    }
-  },
-  "experience": {
-    "title": "Work Experience",
-    "subtitle": "Building software professionally since 2007.",
-    "items": {
-      "e1": {
-        "period": "2025 — Present",
-        "role": "Senior Manager, Application Development",
-        "company": "J Trust Royal Bank Plc.",
-        "desc": "Developed Web App, Mobile App, and Website for Stakeholders and Customers."
-      },
-      "e2": {
-        "period": "2022 — 2024",
-        "role": "Web Application and Solution Manager",
-        "company": "J Trust Royal Bank Plc.",
-        "desc": "Developed web application portals for stakeholders to manage their daily operations to support customer satisfaction."
-      },
-      "e3": {
-        "period": "2014 — 2022",
-        "role": "Special Project Manager",
-        "company": "Forval (Cambodia) Co., Ltd.",
-        "desc": "Developed and managed all kinds of systems for Japanese customers including Factory, Restaurant, Construction, Hotel, and Real Estate companies."
-      },
-      "e4": {
-        "period": "2014 — 2014",
-        "role": "IT Engineer",
-        "company": "Forval (Cambodia) Co., Ltd.",
-        "desc": "Developed Production Management System for Factory and managed Server, Network, and Hardware for many Japanese customers."
-      },
-      "e5": {
-        "period": "2013 — 2014",
-        "role": "Database Developer",
-        "company": "S.I Group Co., Ltd.",
-        "desc": "Developed an inventory management system for S.I Group and customers to control inventory and track the usage of materials."
-      },
-      "e6": {
-        "period": "2011 — 2013",
-        "role": "IT Assistance",
-        "company": "Royal University of Phnom Penh (RUPP)",
-        "desc": "Managed Computer Labs, supported lecturers and students, and developed a Lab Management System to control students in the lab."
-      },
-      "e7": {
-        "period": "2009 — 2010",
-        "role": "Computer Teacher",
-        "company": "American House School (AHS)",
-        "desc": "Taught courses including Microsoft Word, Excel, Access, Internet Program, Maintenance & Repair, HTML, and Network Administrator."
-      },
-      "e8": {
-        "period": "2007 — 2009",
-        "role": "English Teacher",
-        "company": "EYDP Organization",
-        "desc": "Taught English Conversation and Core English (Opportunity) and worked as a translator at EYDP organization."
-      }
-    }
-  },
-  "projects": {
-    "title": "Featured Projects",
-    "subtitle": "A few things I've shipped recently.",
-    "viewGithub": "More on GitHub",
-    "items": {
-      "inventory": {
-        "title": "Inventory Management System",
-        "desc": "A desktop application for factory inventory, sales, and purchases — built with C# using the MVP pattern, backed by MSSQL."
-      },
-      "sfa": {
-        "title": "Sales Force Automation (SFA)",
-        "desc": "A Flutter mobile app that streamlines sales processes, manages customer relationships, and tracks sales activity."
-      },
-      "payroll": {
-        "title": "Payroll Management System",
-        "desc": "A desktop application for managing employee payroll, salary calculations, deductions, and monthly payslip generation — built with C# using the MVP pattern, backed by MSSQL."
-      },
-      "parking": {
-        "title": "Parking Management System",
-        "desc": "A desktop application for managing vehicle parking, tracking entry and exit times, calculating fees, and generating daily reports — built with C# using the MVP pattern, backed by MSSQL."
-      },
-      "production": {
-        "title": "Production Management System",
-        "desc": "A desktop application for planning and tracking factory production orders, monitoring work-in-progress, and generating output reports — built with C# using the MVP pattern, backed by MSSQL."
-      },
-      "crm": {
-        "title": "Customer Relationship Management System",
-        "desc": "A desktop application for managing customer data, tracking interactions, following up on leads, and analyzing customer activity — built with C# using the MVP pattern, backed by MSSQL."
-      },
-      "pos": {
-        "title": "Point of Sale System",
-        "desc": "A desktop application for processing sales transactions, managing product inventory, printing receipts, and generating sales reports — built with C# using the MVP pattern, backed by MSSQL."
-      },
-      "hrm": {
-        "title": "Human Resource Management System",
-        "desc": "A desktop application for managing employee records, contracts, leave requests, and HR reporting — built with C# using the MVP pattern, backed by MSSQL."
-      },
-      "canteen": {
-        "title": "Canteen Management System",
-        "desc": "A desktop application for managing canteen menus, daily orders, meal tracking, and cost reporting for company staff — built with C# using the MVP pattern, backed by MSSQL."
-      },
-      "attendance": {
-        "title": "Attendance Management System",
-        "desc": "A desktop application for tracking employee check-in and check-out, managing leave and overtime, and generating attendance reports — built with C# using the MVP pattern, backed by MSSQL."
-      }
-    }
-  },
-  "contact": {
-    "title": "Get In Touch",
-    "subtitle": "Open to new opportunities and collaborations — say hello.",
-    "cta": "Email Me"
-  },
-  "releaseNotes": {
-    "badge": "Latest",
-    "whatsNew": "What's New",
-    "released": "Released {date}",
-    "viewGithub": "View on GitHub →",
-    "gotIt": "Got it",
-    "items": {
-      "liquidGlass": {
-        "title": "Liquid Glass UI",
-        "desc": "Apple-inspired glassmorphism design system with dark, light, and system theme support."
-      },
-      "i18n": {
-        "title": "4-Language Support",
-        "desc": "Full localization in English, Khmer (ខ្មែរ), Japanese (日本語), and Chinese (中文) — cookie-based, no page reload."
-      },
-      "skillArch": {
-        "title": "Skill Architecture Diagram",
-        "desc": "Custom SVG flowchart covering 9 domains: Desktop, Web, Mobile, Backend, Automation, Database, Tools, DevOps, and DevSecOps."
-      },
-      "pwa": {
-        "title": "Progressive Web App (PWA)",
-        "desc": "Installable on all platforms with service worker caching, full icon set, and web manifest."
-      },
-      "animations": {
-        "title": "Apple-style Scroll Animations",
-        "desc": "GSAP ScrollTrigger-powered reveals, parallax robot, scrubbed timeline progress, and Lenis smooth scrolling."
-      },
-      "devsecops": {
-        "title": "DevSecOps Coverage",
-        "desc": "SAST, SCA, Secret Scanning, Image Scan, SBOM, IaC Scan, Dockerfile Lint, and License Compliance — all documented."
-      }
-    }
-  },
-  "footer": {
-    "madeWith": "Made with",
-    "by": "by",
-    "rights": "All rights reserved."
-  }
 }

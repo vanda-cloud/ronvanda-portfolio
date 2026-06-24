@@ -142,40 +142,6 @@ body {
   }
 }
 
-/* ── Section background blobs (softer than hero) ─────────────────────────── */
-.section-blob {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(80px);
-  opacity: 0.18;
-  pointer-events: none;
-  animation: section-drift-a 20s ease-in-out infinite;
-}
-
-.section-blob-b { animation-name: section-drift-b; animation-duration: 24s; }
-.section-blob-c { animation-name: section-drift-c; animation-duration: 18s; }
-
-@keyframes section-drift-a {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  40%       { transform: translate(5%, 8%) scale(1.1); }
-  70%       { transform: translate(-4%, -5%) scale(0.93); }
-}
-@keyframes section-drift-b {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  35%       { transform: translate(-6%, 5%) scale(1.07); }
-  65%       { transform: translate(4%, -7%) scale(0.96); }
-}
-@keyframes section-drift-c {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  50%       { transform: translate(3%, -6%) scale(1.05); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .liquid-blob,
-  .section-blob {
-    animation: none !important;
-  }
-}
 
 .dropdown-content {
   transform-origin: var(--radix-dropdown-menu-content-transform-origin);

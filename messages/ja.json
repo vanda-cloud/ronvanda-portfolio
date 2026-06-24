@@ -1,221 +1,272 @@
 {
-  "metadata": {
-    "title": "Ron Vanda — フルスタックエンジニア · DevOps · DevSecOps",
-    "description": "Ron Vanda のポートフォリオ — Flutter モバイルアプリ・Next.js & ASP.NET Core Web プラットフォーム・.NET デスクトップを手がけるフルスタックエンジニア。クラウド DevOps、マルチデータベース設計、DevSecOps セキュリティ自動化の専門知識を持つ。"
-  },
-  "nav": {
-    "home": "ホーム",
-    "skills": "スキル",
-    "experience": "経歴",
-    "projects": "プロジェクト",
-    "contact": "お問い合わせ"
-  },
-  "hero": {
-    "greeting": "こんにちは、私は",
-    "name": "Ron Vanda",
-    "roles": [
-      "フルスタック開発者",
-      "プロジェクトマネージャー",
-      "DevOps・DevSecOps インフラ"
-    ],
-    "tagline": "Flutter モバイル（Android & iOS）・Next.js & ASP.NET Core Web・.NET デスクトップを横断するフルスタックエンジニア — NestJS バックエンド、PostgreSQL · Redis · DynamoDB、Docker & AWS DevOps、CI/CD 自動化、エンドツーエンドの DevSecOps セキュリティまで担う。",
-    "ctaProjects": "プロジェクトを見る",
-    "ctaContact": "お問い合わせ"
-  },
-  "theme": {
-    "menuLabel": "テーマを選択",
-    "light": "ライト",
-    "dark": "ダーク",
-    "system": "システム"
-  },
-  "locale": {
-    "label": "言語"
-  },
-  "common": {
-    "scrollToTop": "トップへ戻る"
-  },
-  "skills": {
-    "title": "スキル & ツール",
-    "subtitle": "私が使っている技術スタックです。",
-    "items": {
-      "mobile": { "title": "モバイルアプリ", "desc": "Flutter" },
-      "web": { "title": "Webアプリ", "desc": "ASP.NET Core" },
-      "desktop": { "title": "デスクトップアプリ", "desc": "C# · MVPパターン" },
-      "website": { "title": "Webサイト", "desc": "Next.js · NestJS · TYPO3" },
-      "database": { "title": "データベース", "desc": "MSSQL · PostgreSQL" },
-      "devops": { "title": "DevOps", "desc": "Docker · GitHub Actions · AWS" },
-      "design": { "title": "UI/UX", "desc": "レスポンシブデザイン" },
-      "pm": { "title": "プロジェクト管理", "desc": "Jira · Git & GitHub" },
-      "devsecops": { "title": "DevSecOps", "desc": "SAST · SCA · シークレットスキャン" }
+    "metadata": {
+        "title": "Ron Vanda — フルスタックエンジニア · DevOps · DevSecOps",
+        "description": "Ron Vanda のポートフォリオ — Flutter モバイルアプリ・Next.js & ASP.NET Core Web プラットフォーム・.NET デスクトップを手がけるフルスタックエンジニア。クラウド DevOps、マルチデータベース設計、DevSecOps セキュリティ自動化の専門知識を持つ。"
+    },
+    "nav": {
+        "home": "ホーム",
+        "about": "自己紹介",
+        "skills": "スキル",
+        "experience": "経歴",
+        "projects": "プロジェクト",
+        "contact": "お問い合わせ"
+    },
+    "hero": {
+        "greeting": "こんにちは、私は",
+        "name": "Ron Vanda",
+        "roles": [
+            "フルスタック開発者",
+            "プロジェクトマネージャー",
+            "DevOps・DevSecOps インフラ"
+        ],
+        "tagline": "18年以上にわたり、モバイルアプリ・Webプラットフォーム・デスクトップソフトウェアを開発。Flutter & Next.js から .NET、Docker、DevSecOps まで幅広く対応。",
+        "ctaProjects": "プロジェクトを見る",
+        "ctaContact": "お問い合わせ"
+    },
+    "theme": {
+        "menuLabel": "テーマを選択",
+        "light": "ライト",
+        "dark": "ダーク",
+        "system": "システム"
+    },
+    "locale": {
+        "label": "言語"
+    },
+    "common": {
+        "scrollToTop": "トップへ戻る"
+    },
+    "skills": {
+        "title": "スキル & ツール",
+        "subtitle": "私が使っている技術スタックです。",
+        "items": {
+            "mobile": {
+                "title": "モバイルアプリ",
+                "desc": "Flutter で Android & iOS 対応のクロスプラットフォームアプリを設計・リリース。"
+            },
+            "web": {
+                "title": "Webアプリ",
+                "desc": "ASP.NET Core ポータルと NestJS API でエンタープライズ業務を支援。"
+            },
+            "desktop": {
+                "title": "デスクトップアプリ",
+                "desc": "C# & MVP パターンによる Windows アプリ — 給与、POS、HRM など。"
+            },
+            "website": {
+                "title": "Webサイト",
+                "desc": "Next.js & TYPO3 で SSR・i18n・PWA・Tailwind UI を実装。"
+            },
+            "database": {
+                "title": "データベース",
+                "desc": "MSSQL、PostgreSQL、Redis、DynamoDB のスキーマ設計からチューニングまで。"
+            },
+            "devops": {
+                "title": "DevOps",
+                "desc": "Docker、GitHub Actions、AWS ECS/S3/RDS による CI/CD パイプライン構築。"
+            },
+            "design": {
+                "title": "UI / UX",
+                "desc": "Figma からコードへ、グラスモーフィズムとレスポンシブ Tailwind UI。"
+            },
+            "pm": {
+                "title": "プロジェクト管理",
+                "desc": "Jira・GitHub Projects・アジャイルスプリントでエンドツーエンド納品。"
+            },
+            "devsecops": {
+                "title": "DevSecOps",
+                "desc": "SAST・SCA・シークレットスキャン・イメージスキャン・SBOM・IaC スキャンを全パイプラインに組み込み。"
+            }
+        }
+    },
+    "techStack": {
+        "title": "技術スタック",
+        "subtitle": "日常的に使用しているツールとプラットフォームです。",
+        "categories": {
+            "platform": "プラットフォーム",
+            "stack": "技術スタック",
+            "deployment": "デプロイ",
+            "pm": "プロジェクト管理"
+        }
+    },
+    "architecture": {
+        "title": "スキルアーキテクチャ",
+        "subtitle": "それぞれがどのようにつながっているか。",
+        "categories": {
+            "desktop": "デスクトップ",
+            "web": "Web",
+            "backend": "バックエンド",
+            "automation": "自動化ワークフロー",
+            "database": "データベース",
+            "mobile": "モバイル",
+            "devops": "DevOps",
+            "tools": "ツール",
+            "devsecops": "DevSecOps"
+        }
+    },
+    "experience": {
+        "title": "実務経験",
+        "subtitle": "2007年からソフトウェア開発を専門としています。",
+        "items": {
+            "e1": {
+                "period": "2025年 — 現在",
+                "role": "シニアマネージャー、アプリケーション開発",
+                "company": "J Trust Royal Bank Plc.",
+                "desc": "ステークホルダーおよびお客様向けに Web アプリ、モバイルアプリ、ウェブサイトを開発。"
+            },
+            "e2": {
+                "period": "2022年 — 2024年",
+                "role": "ウェブアプリケーション・ソリューションマネージャー",
+                "company": "J Trust Royal Bank Plc.",
+                "desc": "ステークホルダーが日常業務を管理し顧客満足を支援するための Web アプリケーションポータルを開発。"
+            },
+            "e3": {
+                "period": "2014年 — 2022年",
+                "role": "スペシャルプロジェクトマネージャー",
+                "company": "Forval (Cambodia) Co., Ltd.（日系企業）",
+                "desc": "工場・飲食店・建設・ホテル・不動産など多様な日本企業向けに各種システムを開発・管理。"
+            },
+            "e4": {
+                "period": "2014年 — 2014年",
+                "role": "IT エンジニア",
+                "company": "Forval (Cambodia) Co., Ltd.（日系企業）",
+                "desc": "工場向け生産管理システムを開発し、多数の日本企業向けにサーバー・ネットワーク・ハードウェアを管理。"
+            },
+            "e5": {
+                "period": "2013年 — 2014年",
+                "role": "データベース開発者",
+                "company": "S.I Group Co., Ltd.",
+                "desc": "S.I Group および顧客向けに在庫を管理し資材の使用状況を追跡する在庫管理システムを開発。"
+            },
+            "e6": {
+                "period": "2011年 — 2013年",
+                "role": "IT アシスタント",
+                "company": "プノンペン王立大学（RUPP）",
+                "desc": "コンピュータ実習室を管理し、教員・学生をサポート。実習室内の学生管理システムを開発。"
+            },
+            "e7": {
+                "period": "2009年 — 2010年",
+                "role": "コンピュータ教師",
+                "company": "American House School（AHS）",
+                "desc": "Microsoft Word・Excel・Access・インターネット・PC メンテナンス・HTML・ネットワーク管理者コースを担当。"
+            },
+            "e8": {
+                "period": "2007年 — 2009年",
+                "role": "英語教師",
+                "company": "EYDP Organization",
+                "desc": "英会話および Core English（Opportunity）を指導し、EYDP 組織にて通訳としても活動。"
+            }
+        }
+    },
+    "projects": {
+        "title": "主な実績",
+        "subtitle": "設計・開発・リリースしてきたエンタープライズシステム。",
+        "viewGithub": "GitHubでもっと見る",
+        "items": {
+            "inventory": {
+                "title": "在庫管理システム",
+                "desc": "工場の在庫・販売・購買を管理するデスクトップアプリ。C# と MVP パターンで構築し、MSSQL と連携。"
+            },
+            "sfa": {
+                "title": "営業支援アプリ (SFA)",
+                "desc": "営業プロセスを効率化し、顧客関係を管理し、営業活動を追跡する Flutter 製モバイルアプリ。"
+            },
+            "payroll": {
+                "title": "給与管理システム",
+                "desc": "従業員の給与管理・給与計算・控除・月次給与明細生成を行うデスクトップアプリ。C# と MVP パターンで構築し、MSSQL と連携。"
+            },
+            "parking": {
+                "title": "駐車場管理システム",
+                "desc": "車両の駐車管理・入出庫時刻の追跡・料金計算・日次レポート生成を行うデスクトップアプリ。C# と MVP パターンで構築し、MSSQL と連携。"
+            },
+            "production": {
+                "title": "生産管理システム",
+                "desc": "工場の生産計画・製造指示の追跡・仕掛品の監視・生産レポート生成を行うデスクトップアプリ。C# と MVP パターンで構築し、MSSQL と連携。"
+            },
+            "crm": {
+                "title": "顧客関係管理システム",
+                "desc": "顧客データの管理・インタラクションの追跡・見込み客のフォローアップ・顧客活動の分析を行うデスクトップアプリ。C# と MVP パターンで構築し、MSSQL と連携。"
+            },
+            "pos": {
+                "title": "POSシステム",
+                "desc": "販売取引の処理・商品在庫の管理・レシート印刷・売上レポート生成を行うデスクトップアプリ。C# と MVP パターンで構築し、MSSQL と連携。"
+            },
+            "hrm": {
+                "title": "人事管理システム",
+                "desc": "従業員情報・契約・休暇申請・HR レポートを管理するデスクトップアプリ。C# と MVP パターンで構築し、MSSQL と連携。"
+            },
+            "canteen": {
+                "title": "社員食堂管理システム",
+                "desc": "社員向けにメニュー・日次注文・食事追跡・コストレポートを管理するデスクトップアプリ。C# と MVP パターンで構築し、MSSQL と連携。"
+            },
+            "attendance": {
+                "title": "勤怠管理システム",
+                "desc": "従業員の出退勤追跡・休暇と残業の管理・勤怠レポート生成を行うデスクトップアプリ。C# と MVP パターンで構築し、MSSQL と連携。"
+            }
+        }
+    },
+    "contact": {
+        "title": "お問い合わせ",
+        "subtitle": "新しい機会やコラボレーションを歓迎しています。お気軽にご連絡ください。",
+        "cta": "メールを送る"
+    },
+    "releaseNotes": {
+        "badge": "最新",
+        "whatsNew": "新機能",
+        "released": "{date} リリース",
+        "viewGithub": "GitHub で見る →",
+        "gotIt": "了解",
+        "items": {
+            "liquidGlass": {
+                "title": "リキッドグラス UI",
+                "desc": "Apple にインスパイアされたグラスモーフィズムデザインシステム。ダーク・ライト・システムテーマに対応。"
+            },
+            "i18n": {
+                "title": "4言語対応",
+                "desc": "英語・クメール語（ខ្មែរ）・日本語・中国語（中文）に完全対応 — Cookie ベースでページリロードなし。"
+            },
+            "skillArch": {
+                "title": "スキルアーキテクチャ図",
+                "desc": "9 ドメイン（Desktop・Web・Mobile・Backend・Automation・Database・Tools・DevOps・DevSecOps）を網羅したカスタム SVG フローチャート。"
+            },
+            "pwa": {
+                "title": "プログレッシブ ウェブ アプリ（PWA）",
+                "desc": "Service Worker キャッシュ・完全なアイコンセット・Web マニフェストを備え、全プラットフォームにインストール可能。"
+            },
+            "animations": {
+                "title": "Apple スタイルのスクロールアニメーション",
+                "desc": "GSAP ScrollTrigger によるリビール、パララックスロボット、スクラブ付きタイムライン進行、Lenis スムーズスクロール。"
+            },
+            "devsecops": {
+                "title": "DevSecOps カバレッジ",
+                "desc": "SAST・SCA・シークレットスキャン・イメージスキャン・SBOM・IaC スキャン・Dockerfile Lint・ライセンスコンプライアンス — すべて文書化済み。"
+            }
+        }
+    },
+    "footer": {
+        "madeWith": "愛を込めて",
+        "by": "制作：",
+        "rights": "無断転載を禁じます。"
+    },
+    "about": {
+        "title": "自己紹介",
+        "bio": "カンボジア・プノンペンを拠点とするフルスタックエンジニア。18年以上にわたり、銀行・工場・学校などのモバイル・Web・デスクトップアプリを開発。クリーンなアーキテクチャと確実に動くものを届けることを大切にしています。",
+        "stats": {
+            "years": {
+                "value": "18+",
+                "label": "年の経験"
+            },
+            "platforms": {
+                "value": "3",
+                "label": "プラットフォーム"
+            },
+            "systems": {
+                "value": "10+",
+                "label": "企業システム"
+            },
+            "languages": {
+                "value": "4",
+                "label": "UI言語"
+            }
+        },
+        "linkedinButton": "LinkedInプロフィールを見る"
     }
-  },
-  "techStack": {
-    "title": "技術スタック",
-    "subtitle": "日常的に使用しているツールとプラットフォームです。",
-    "categories": {
-      "platform": "プラットフォーム",
-      "stack": "技術スタック",
-      "deployment": "デプロイ",
-      "pm": "プロジェクト管理"
-    }
-  },
-  "architecture": {
-    "title": "スキルアーキテクチャ",
-    "subtitle": "それぞれがどのようにつながっているか。",
-    "categories": {
-      "desktop": "デスクトップ",
-      "web": "Web",
-      "backend": "バックエンド",
-      "automation": "自動化ワークフロー",
-      "database": "データベース",
-      "mobile": "モバイル",
-      "devops": "DevOps",
-      "tools": "ツール",
-      "devsecops": "DevSecOps"
-    }
-  },
-  "experience": {
-    "title": "実務経験",
-    "subtitle": "2007年からソフトウェア開発を専門としています。",
-    "items": {
-      "e1": {
-        "period": "2025年 — 現在",
-        "role": "シニアマネージャー、アプリケーション開発",
-        "company": "J Trust Royal Bank Plc.",
-        "desc": "ステークホルダーおよびお客様向けに Web アプリ、モバイルアプリ、ウェブサイトを開発。"
-      },
-      "e2": {
-        "period": "2022年 — 2024年",
-        "role": "ウェブアプリケーション・ソリューションマネージャー",
-        "company": "J Trust Royal Bank Plc.",
-        "desc": "ステークホルダーが日常業務を管理し顧客満足を支援するための Web アプリケーションポータルを開発。"
-      },
-      "e3": {
-        "period": "2014年 — 2022年",
-        "role": "スペシャルプロジェクトマネージャー",
-        "company": "Forval (Cambodia) Co., Ltd.（日系企業）",
-        "desc": "工場・飲食店・建設・ホテル・不動産など多様な日本企業向けに各種システムを開発・管理。"
-      },
-      "e4": {
-        "period": "2014年 — 2014年",
-        "role": "IT エンジニア",
-        "company": "Forval (Cambodia) Co., Ltd.（日系企業）",
-        "desc": "工場向け生産管理システムを開発し、多数の日本企業向けにサーバー・ネットワーク・ハードウェアを管理。"
-      },
-      "e5": {
-        "period": "2013年 — 2014年",
-        "role": "データベース開発者",
-        "company": "S.I Group Co., Ltd.",
-        "desc": "S.I Group および顧客向けに在庫を管理し資材の使用状況を追跡する在庫管理システムを開発。"
-      },
-      "e6": {
-        "period": "2011年 — 2013年",
-        "role": "IT アシスタント",
-        "company": "プノンペン王立大学（RUPP）",
-        "desc": "コンピュータ実習室を管理し、教員・学生をサポート。実習室内の学生管理システムを開発。"
-      },
-      "e7": {
-        "period": "2009年 — 2010年",
-        "role": "コンピュータ教師",
-        "company": "American House School（AHS）",
-        "desc": "Microsoft Word・Excel・Access・インターネット・PC メンテナンス・HTML・ネットワーク管理者コースを担当。"
-      },
-      "e8": {
-        "period": "2007年 — 2009年",
-        "role": "英語教師",
-        "company": "EYDP Organization",
-        "desc": "英会話および Core English（Opportunity）を指導し、EYDP 組織にて通訳としても活動。"
-      }
-    }
-  },
-  "projects": {
-    "title": "主な実績",
-    "subtitle": "最近手がけたプロジェクトの一部です。",
-    "viewGithub": "GitHubでもっと見る",
-    "items": {
-      "inventory": {
-        "title": "在庫管理システム",
-        "desc": "工場の在庫・販売・購買を管理するデスクトップアプリ。C# と MVP パターンで構築し、MSSQL と連携。"
-      },
-      "sfa": {
-        "title": "営業支援アプリ (SFA)",
-        "desc": "営業プロセスを効率化し、顧客関係を管理し、営業活動を追跡する Flutter 製モバイルアプリ。"
-      },
-      "payroll": {
-        "title": "給与管理システム",
-        "desc": "従業員の給与管理・給与計算・控除・月次給与明細生成を行うデスクトップアプリ。C# と MVP パターンで構築し、MSSQL と連携。"
-      },
-      "parking": {
-        "title": "駐車場管理システム",
-        "desc": "車両の駐車管理・入出庫時刻の追跡・料金計算・日次レポート生成を行うデスクトップアプリ。C# と MVP パターンで構築し、MSSQL と連携。"
-      },
-      "production": {
-        "title": "生産管理システム",
-        "desc": "工場の生産計画・製造指示の追跡・仕掛品の監視・生産レポート生成を行うデスクトップアプリ。C# と MVP パターンで構築し、MSSQL と連携。"
-      },
-      "crm": {
-        "title": "顧客関係管理システム",
-        "desc": "顧客データの管理・インタラクションの追跡・見込み客のフォローアップ・顧客活動の分析を行うデスクトップアプリ。C# と MVP パターンで構築し、MSSQL と連携。"
-      },
-      "pos": {
-        "title": "POSシステム",
-        "desc": "販売取引の処理・商品在庫の管理・レシート印刷・売上レポート生成を行うデスクトップアプリ。C# と MVP パターンで構築し、MSSQL と連携。"
-      },
-      "hrm": {
-        "title": "人事管理システム",
-        "desc": "従業員情報・契約・休暇申請・HR レポートを管理するデスクトップアプリ。C# と MVP パターンで構築し、MSSQL と連携。"
-      },
-      "canteen": {
-        "title": "社員食堂管理システム",
-        "desc": "社員向けにメニュー・日次注文・食事追跡・コストレポートを管理するデスクトップアプリ。C# と MVP パターンで構築し、MSSQL と連携。"
-      },
-      "attendance": {
-        "title": "勤怠管理システム",
-        "desc": "従業員の出退勤追跡・休暇と残業の管理・勤怠レポート生成を行うデスクトップアプリ。C# と MVP パターンで構築し、MSSQL と連携。"
-      }
-    }
-  },
-  "contact": {
-    "title": "お問い合わせ",
-    "subtitle": "新しい機会やコラボレーションを歓迎しています。お気軽にご連絡ください。",
-    "cta": "メールを送る"
-  },
-  "releaseNotes": {
-    "badge": "最新",
-    "whatsNew": "新機能",
-    "released": "{date} リリース",
-    "viewGithub": "GitHub で見る →",
-    "gotIt": "了解",
-    "items": {
-      "liquidGlass": {
-        "title": "リキッドグラス UI",
-        "desc": "Apple にインスパイアされたグラスモーフィズムデザインシステム。ダーク・ライト・システムテーマに対応。"
-      },
-      "i18n": {
-        "title": "4言語対応",
-        "desc": "英語・クメール語（ខ្មែរ）・日本語・中国語（中文）に完全対応 — Cookie ベースでページリロードなし。"
-      },
-      "skillArch": {
-        "title": "スキルアーキテクチャ図",
-        "desc": "9 ドメイン（Desktop・Web・Mobile・Backend・Automation・Database・Tools・DevOps・DevSecOps）を網羅したカスタム SVG フローチャート。"
-      },
-      "pwa": {
-        "title": "プログレッシブ ウェブ アプリ（PWA）",
-        "desc": "Service Worker キャッシュ・完全なアイコンセット・Web マニフェストを備え、全プラットフォームにインストール可能。"
-      },
-      "animations": {
-        "title": "Apple スタイルのスクロールアニメーション",
-        "desc": "GSAP ScrollTrigger によるリビール、パララックスロボット、スクラブ付きタイムライン進行、Lenis スムーズスクロール。"
-      },
-      "devsecops": {
-        "title": "DevSecOps カバレッジ",
-        "desc": "SAST・SCA・シークレットスキャン・イメージスキャン・SBOM・IaC スキャン・Dockerfile Lint・ライセンスコンプライアンス — すべて文書化済み。"
-      }
-    }
-  },
-  "footer": {
-    "madeWith": "愛を込めて",
-    "by": "制作：",
-    "rights": "無断転載を禁じます。"
-  }
 }

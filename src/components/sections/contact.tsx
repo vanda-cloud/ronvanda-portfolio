@@ -13,7 +13,8 @@ import {
 import { gsap, ScrollTrigger } from "@/lib/gsap";
 import programmingComputerAnimation from "@/assets/lottie/programming-computer.json";
 
-type IconComponent = (props: { size?: number; className?: string }) => React.JSX.Element;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type IconComponent = (props: { size?: number; className?: string }) => any;
 
 const SOCIALS: { id: string; href: string; icon: IconComponent }[] = [
   { id: "Facebook", href: "https://www.facebook.com/lovelysweatboy", icon: FacebookIcon },

@@ -92,7 +92,7 @@ const TECH_CATEGORIES: { key: string; badges: Badge[] }[] = [
       { alt: "Jira",       href: "https://www.atlassian.com/software/jira",            img: "https://img.shields.io/badge/-Jira-0052CC?style=flat-square&logo=jira&logoColor=white" },
       { alt: "GitHub",     href: "https://github.com/",                                img: "https://img.shields.io/badge/-GitHub-0052CC?style=flat-square&logo=github&logoColor=white" },
       { alt: "Figma",      href: "https://www.figma.com/",                             img: "https://img.shields.io/badge/-Figma-0052CC?style=flat-square&logo=figma&logoColor=white" },
-      { alt: "Canva",      href: "https://www.canva.com/",                             img: "https://img.shields.io/badge/-Canva-0052CC?style=flat-square&logo=figma&logoColor=white" },
+      { alt: "Canva",      href: "https://www.canva.com/",                             img: "https://img.shields.io/badge/-Canva-0052CC?style=flat-square&logo=canva&logoColor=white" },
       { alt: "DevOps",     img: "https://img.shields.io/badge/-DevOps-0052CC?style=flat-square&logo=terraform&logoColor=white" },
       { alt: "DevSecOps",  img: "https://img.shields.io/badge/-DevSecOps-0052CC?style=flat-square&logo=owasp&logoColor=white" },
     ],

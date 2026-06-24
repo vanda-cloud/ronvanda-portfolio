@@ -9,16 +9,16 @@ import { gsap, ScrollTrigger } from "@/lib/gsap";
 const PROJECT_IDS = ["inventory", "sfa", "payroll", "parking", "production", "crm", "pos", "hrm", "canteen", "attendance"] as const;
 
 const TAGS: Record<(typeof PROJECT_IDS)[number], string[]> = {
-  inventory:  ["C#", "MVP Pattern", "MSSQL", "Desktop"],
-  sfa:        ["Flutter", "Mobile", "CRM"],
-  payroll:    ["C#", "MVP Pattern", "MSSQL", "Desktop"],
-  parking:    ["C#", "MVP Pattern", "MSSQL", "Desktop"],
-  production: ["C#", "MVP Pattern", "MSSQL", "Desktop"],
-  crm:        ["C#", "MVP Pattern", "MSSQL", "Desktop"],
-  pos:        ["C#", "MVP Pattern", "MSSQL", "Desktop"],
-  hrm:        ["C#", "MVP Pattern", "MSSQL", "Desktop"],
-  canteen:    ["C#", "MVP Pattern", "MSSQL", "Desktop"],
-  attendance: ["C#", "MVP Pattern", "MSSQL", "Desktop"],
+  inventory:  ["C#", "MVP Pattern", "MSSQL", "Barcode", "Reporting"],
+  sfa:        ["Flutter", "Android", "iOS", "Firebase", "CRM"],
+  payroll:    ["C#", "MVP Pattern", "MSSQL", "Payslip", "Tax Calc"],
+  parking:    ["C#", "MVP Pattern", "MSSQL", "Fee Calc", "Daily Reports"],
+  production: ["C#", "MVP Pattern", "MSSQL", "WIP Tracking", "Factory"],
+  crm:        ["C#", "MVP Pattern", "MSSQL", "Lead Tracking", "Analytics"],
+  pos:        ["C#", "MVP Pattern", "MSSQL", "Receipt Print", "Inventory"],
+  hrm:        ["C#", "MVP Pattern", "MSSQL", "Leave Mgmt", "Contracts"],
+  canteen:    ["C#", "MVP Pattern", "MSSQL", "Menu Mgmt", "Cost Report"],
+  attendance: ["C#", "MVP Pattern", "MSSQL", "Check-in/out", "Overtime"],
 };
 
 // ── Per-card 3-D tilt + spotlight glow ──────────────────────────────────────
@@ -179,7 +179,7 @@ export function Projects() {
         </p>
       </div>
 
-      <div ref={gridRef} className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-2">
+      <div ref={gridRef} className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
         {PROJECT_IDS.map((id) => (
           <ProjectCard
             key={id}

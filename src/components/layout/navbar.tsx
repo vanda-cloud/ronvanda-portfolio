@@ -7,6 +7,7 @@ import { LocaleSwitcher } from "./locale-switcher";
 import { ThemeToggle } from "./theme-toggle";
 
 const NAV_ITEMS = [
+  { key: "about", href: "about" },
   { key: "skills", href: "skills" },
   { key: "experience", href: "experience" },
   { key: "projects", href: "projects" },
