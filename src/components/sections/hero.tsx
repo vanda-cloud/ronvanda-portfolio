@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useCallback, useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
 import { motion } from "motion/react";
 import { ArrowRight, Mail, ChevronDown } from "lucide-react";
@@ -19,7 +19,26 @@ export function Hero() {
   const t = useTranslations("hero");
   const roles = t.raw("roles") as string[];
   const sectionRef = useRef<HTMLDivElement>(null);
-  const robotRef = useRef<HTMLDivElement>(null);
+  const robotRef   = useRef<HTMLDivElement>(null);
+
+  // Forward hero-wide pointermove to the Spline canvas so the robot
+  // tracks the cursor from anywhere on the hero, not just over itself.
+  const handleHeroMouseMove = useCallback((e: React.MouseEvent<HTMLElement>) => {
+    const canvas = robotRef.current?.querySelector("canvas");
+    if (!canvas) return;
+    canvas.dispatchEvent(
+      new PointerEvent("pointermove", {
+        bubbles: true,
+        cancelable: true,
+        clientX: e.clientX,
+        clientY: e.clientY,
+        screenX: e.screenX,
+        screenY: e.screenY,
+        pointerType: "mouse",
+        isPrimary: true,
+      })
+    );
+  }, []);
 
   useEffect(() => {
     if (!sectionRef.current || !robotRef.current) return;
@@ -47,6 +66,7 @@ export function Hero() {
     <section
       id="home"
       ref={sectionRef}
+      onMouseMove={handleHeroMouseMove}
       className="relative flex min-h-screen items-center px-6 pb-20 pt-32"
     >
       <div className="pointer-events-none absolute inset-0 -z-10">
@@ -101,7 +121,9 @@ export function Hero() {
           transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1], delay: 0.15 }}
           className="relative mx-auto aspect-square w-full max-w-md"
         >
-          <div className="glass-panel relative h-full w-full overflow-hidden rounded-[2.5rem]">
+          <div className="relative h-full w-full overflow-hidden rounded-[2.5rem]" style={{ border: "1px solid var(--glass-border)", boxShadow: "0 8px 32px var(--glass-shadow)" }}>
+            {/* Background panel at 10% opacity — robot stays fully visible */}
+            <div className="pointer-events-none absolute inset-0 rounded-[2.5rem]" style={{ background: "var(--glass-bg)", backdropFilter: "blur(20px) saturate(160%)", WebkitBackdropFilter: "blur(20px) saturate(160%)", opacity: 0.10 }} />
             <Spotlight className="-top-1/4 left-1/4" size={320} />
             <SplineScene scene={HERO_SPLINE_SCENE} className="h-full w-full" />
           </div>

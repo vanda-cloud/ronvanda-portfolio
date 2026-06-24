@@ -10,7 +10,7 @@ const PROJECT_IDS = ["inventory", "sfa", "payroll", "parking", "production", "cr
 
 const TAGS: Record<(typeof PROJECT_IDS)[number], string[]> = {
   inventory:  ["C#", "MVP Pattern", "MSSQL", "Barcode", "Reporting"],
-  sfa:        ["Flutter", "Android", "iOS", "Firebase", "CRM"],
+  sfa:        ["Objective-C", "Android", "Firebase", "CRM"],
   payroll:    ["C#", "MVP Pattern", "MSSQL", "Payslip", "Tax Calc"],
   parking:    ["C#", "MVP Pattern", "MSSQL", "Fee Calc", "Daily Reports"],
   production: ["C#", "MVP Pattern", "MSSQL", "WIP Tracking", "Factory"],
