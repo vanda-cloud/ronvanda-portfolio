@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f5f6f8;
-  --foreground: #14151a;
-  --muted-foreground: #5b5f6b;
-  --accent: #6366f1;
-  --glass-bg: rgba(255, 255, 255, 0.55);
-  --glass-strong: rgba(255, 255, 255, 0.75);
-  --glass-border: rgba(255, 255, 255, 0.6);
-  --glass-shadow: rgba(20, 21, 26, 0.08);
+  --background: #f0f1f5;
+  --foreground: #0e0f14;
+  --muted-foreground: #4b4f5e;
+  --accent: #4f52e8;
+  --glass-bg: rgba(255, 255, 255, 0.78);
+  --glass-strong: rgba(255, 255, 255, 0.94);
+  --glass-border: rgba(79, 82, 232, 0.16);
+  --glass-shadow: rgba(20, 21, 26, 0.10);
   --accent-secondary: #0891b2;
   --accent-tertiary: #c026d3;
   /* Light mode: the vivid 3-stop gradient. */
