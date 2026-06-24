@@ -4,54 +4,18 @@ All notable changes to **Ron Vanda Portfolio** are documented here.
 
 ---
 
-## 🚀 3.1.0 (24-Jun-2026)
-[![Author](https://img.shields.io/badge/Author-Ron%20Vanda-green?style=flat-round&logo=github)](https://github.com/vanda-cloud)
-![Release Date](https://img.shields.io/badge/Release%20Date-24%20Jun%202026-blue?style=flat-round&logo=rocket)
-![Version](https://img.shields.io/badge/Version-3.1.0-brightgreen?style=flat-round&logo=semanticrelease)
-
-### 🌱 New Feature
-
-- feat(background): replace shooting star canvas with neural network particle background — 48 floating nodes, edges drawn between nodes < 190px apart, signal pulses travel along edges every 350–1000ms (up to 16 active), floating hex labels spawn on signal arrival; dark/light aware via `globalFade`
-- feat(cursor): magic wand cursor effect — fixed canvas at z-index 9999 with `pointer-events-none`, wand-tip gold/violet radial glow at cursor, 3–5 star/dot sparkles per `mousemove` with physics (upward velocity, gravity, rotation, fade)
-- feat(about): new About Me section between Hero and Skills — 3D tilt stat cards (count-up animation, GSAP spotlight glow), bio paragraph, and LinkedIn Profile button
-- feat(hero): hero-wide Spline robot mouse tracking — dispatches `PointerEvent("pointermove")` to Spline canvas on section `mousemove` so the robot follows the cursor from anywhere on the hero
-- feat(hero): 10% glass backdrop behind Spline robot via a separate `pointer-events-none` absolute div — preserves Spline interactivity
-- feat(hero): scroll-down indicator with `ChevronDown` bounce animation scrolling to `#about`
-- feat(experience): per-item tech tag pills for all 8 experience entries
-- feat(experience): promoted badge for e4 — emerald `TrendingUp` badge "Promoted · Dec 2014"
-- feat(projects): add VnC POS — multi-tenant full-stack POS (NestJS, Next.js, Flutter, GraphQL, PostgreSQL, Redis)
-- feat(projects): add VnC PMS — petroleum station management system (Flutter, ASP.NET Core, SignalR, Firebird, Windows Service)
-- feat(navbar): add "about" nav item linking to `#about`
-
-### 🧩 Improvement
-
-- feat(hero): update tagline across all 4 locales — 18+ years, full tech breadth (Flutter, Next.js, NestJS, TYPO3, .NET, Docker, AWS, DigitalOcean, Vercel, DevOps, DevSecOps)
-- feat(hero): update typing roles to 5 items — Full-Stack Engineering, Mobile, Web, and Desktop Development, DevOps & DevSecOps, Cloud Architecture, Technical Leadership
-- feat(skills): expand all 9 skill card descriptions across all 4 locales
-- feat(projects): unique tech tags per project card (previously generic across all C# entries)
-- feat(projects): update subtitle to "Enterprise systems I've designed, built, and shipped."
-- feat(experience): e4 period updated to "Jun — Dec 2014" with desc noting 6-month promotion
-
-### 🧪 Bug Fix
-
-- fix(light-mode): `--glass-border` was `rgba(255,255,255,0.6)` — invisible white border on light background; changed to `rgba(79,82,232,0.16)` (indigo tint)
-- fix(light-mode): improve `--background`, `--foreground`, `--muted-foreground`, `--accent`, `--glass-bg`, `--glass-strong`, `--glass-shadow` for better light mode contrast
-- fix(skills): fix Canva badge logo — was `logo=figma`, corrected to `logo=canva`
-- fix(contact): widen `IconComponent` type to `() => any` to resolve `ForwardRefExoticComponent` assignment error
-- fix(hero): use `PointerEvent("pointermove")` instead of `MouseEvent("mousemove")` — Spline only responds to pointer events
-
-
-
-## 🚀 3.0.0 (23-Jun-2026)
+## 🚀 3.0.0 (24-Jun-2026)
 [![Author](https://img.shields.io/badge/Author-Ron%20Vanda-green?style=flat-round&logo=github)](https://github.com/vanda-cloud)
 ![Start Date](https://img.shields.io/badge/Start%20Date-20%20Jun%202026-lightgrey?style=flat-round&logo=readme)
-![Release Date](https://img.shields.io/badge/Release%20Date-23%20Jun%202026-blue?style=flat-round&logo=rocket)
+![Release Date](https://img.shields.io/badge/Release%20Date-24%20Jun%202026-blue?style=flat-round&logo=rocket)
 ![Version](https://img.shields.io/badge/Version-3.0.0-brightgreen?style=flat-round&logo=semanticrelease)
 
 ### 🌱 New Feature
 
 #### Core & Infrastructure
 - feat(scaffold): initialize Next.js 16 App Router project with TypeScript and Tailwind v4 CSS-first config
+- feat(background): neural network particle background — 48 floating nodes, signal pulses along edges every 350–1000ms (up to 16 active), floating hex labels on signal arrival; dark/light aware via `globalFade`
+- feat(cursor): magic wand cursor effect — fixed canvas at z-index 9999 with `pointer-events-none`, wand-tip gold/violet radial glow, 3–5 star/dot sparkles per `mousemove` with physics (upward velocity, gravity, rotation, fade)
 - feat(i18n): implement 4-language support (English, Khmer, Japanese, Chinese) via `next-intl` with cookie-based locale detection — no URL prefix, no page reload
 - feat(theme): dark / light / system theme switcher via `next-themes` with Radix UI dropdown
 - feat(fonts): self-host Roboto (Latin) and Kantumruy Pro (Khmer) via `next/font/google`
@@ -67,26 +31,38 @@ All notable changes to **Ron Vanda Portfolio** are documented here.
 #### Sections
 - feat(hero): liquid glass hero section — greeting, gradient name, typing role animation (accent color), comprehensive tagline across 4 locales, CTA buttons, GSAP parallax robot, liquid blob background
 - feat(hero): integrate Spline 3D robot scene (`@splinetool/react-spline`) with transparent background and Spotlight effect
+- feat(hero): hero-wide Spline robot mouse tracking — dispatches `PointerEvent("pointermove")` to Spline canvas on section `mousemove` so the robot follows the cursor from anywhere on the hero
+- feat(hero): 10% glass backdrop behind Spline robot via a separate `pointer-events-none` absolute div — preserves Spline interactivity
+- feat(hero): scroll-down indicator with `ChevronDown` bounce animation scrolling to `#about`
+- feat(about): new About Me section between Hero and Skills — 3D tilt stat cards (count-up animation, GSAP spotlight glow), bio paragraph, and LinkedIn Profile button
 - feat(skills): 9 skill cards grid with GSAP stagger scroll-reveal (`clearProps` fix for backdrop-filter blur)
 - feat(skills): tech stack badges section using shields.io badges organized in 4 categories (Platform, Tech Stack, Deployment, Project Management) with Lucide icons on category pills
 - feat(skills): custom SVG skill architecture diagram — 9 domains (Desktop, Web, Mobile, Backend, Automation Workflows, Database, Tools, DevOps, DevSecOps), hub-and-spoke layout with individual colored node boxes, dashed subgraph containers, bezier cross-link curves with bypass routing, GSAP stagger reveal
 - feat(experience): vertical timeline with scrubbed GSAP progress line, scrollspy dot activation (cumulative keep behavior)
 - feat(experience): sticky programmer Lottie (programmer.json) alongside timeline in 2-col layout — slides in from left on scroll
+- feat(experience): per-item tech tag pills for all 8 experience entries
+- feat(experience): promoted badge for e4 — emerald `TrendingUp` badge "Promoted · Dec 2014"
 - feat(projects): featured projects section with glass-panel cards and tilt-in stagger animation
+- feat(projects): add VnC POS — multi-tenant full-stack POS (NestJS, Next.js, Flutter, GraphQL, PostgreSQL, Redis)
+- feat(projects): add VnC PMS — petroleum station management system (Flutter, ASP.NET Core, SignalR, Firebird, Windows Service)
 - feat(contact): contact section with social icons (Facebook, Telegram, LinkedIn, Instagram, GitHub), bouncy GSAP icon pop-in, programming Lottie animation (programming-computer.json)
 - feat(scroll-to-top): scroll-to-top button with Lottie animation (scroll-up.json), appears after 300px scroll
 
 ### 🧩 Improvement
 - refactor(i18n): drop `[locale]` route segment entirely — plain `app/layout.tsx` with `Accept-Language` header + cookie fallback
 - feat(hero): expand hero tagline and metadata description across all 4 locales to cover full skill breadth — Flutter mobile, Next.js & ASP.NET Core web, .NET desktop, NestJS backend, PostgreSQL/Redis/DynamoDB, Docker/AWS DevOps, CI/CD automation, DevSecOps pipeline
+- feat(hero): update typing roles to 5 items — Full-Stack Engineering, Mobile, Web, and Desktop Development, DevOps & DevSecOps, Cloud Architecture, Technical Leadership
 - feat(skills): add section header icons — `Zap` (Skills), `Briefcase` (Experience), `FolderCode` (Projects), `MessageCircle` (Contact)
 - feat(skills): replace Collaboration card with DevSecOps card (`ShieldCheck` icon); move Git & GitHub into Project Management card
 - feat(skills): add Internal Vulnerability Assessment, Web Application Penetration Test, Mobile Application Penetration Test to DevSecOps architecture group
+- feat(skills): expand all 9 skill card descriptions across all 4 locales
 - feat(hero): change typing animation text color from `muted-foreground` to `accent`
-- feat(navbar): Khmer language font-size bump via `html[lang="km"]` CSS selectors (`.nav-link` → `1.05rem`, `.nav-mobile-item` → `0.9375rem`)
+- feat(navbar): add "about" nav item; Khmer language font-size bump via `html[lang="km"]` CSS selectors
 - feat(footer): firework heart effect — spread to screen center with 3-phase burst, 60 hearts → 207 hearts per click with 10-color palette
 - feat(footer): translate footer text (Made with / by / All rights reserved) across all 4 locales
 - feat(footer): release notes modal — backdrop click shows GSAP shake animation instead of closing
+- feat(experience): e4 period updated to "Jun — Dec 2014" with desc noting 6-month promotion
+- feat(projects): unique tech tags per project card; update subtitle to "Enterprise systems I've designed, built, and shipped."
 
 ### 🧪 Bug Fix
 - fix(middleware): rename conflicting `middleware.ts` to `.bak` to resolve locale detection double-routing issue
@@ -95,6 +71,11 @@ All notable changes to **Ron Vanda Portfolio** are documented here.
 - fix(gsap): add `clearProps: "transform,opacity"` to all scroll-reveal tweens — fixes glass-panel `backdrop-filter` blur recompute bug in Chrome/Safari
 - fix(skills): use high-arc routing (ARC_Y=140) for cross-link bezier edges A→G, E→I, E→J to clear intervening columns after Mobile column insertion
 - fix(skills): add bypass curve for J→I and F→H edges to avoid node overlap after Database reorder
+- fix(skills): fix Canva badge logo — was `logo=figma`, corrected to `logo=canva`
+- fix(light-mode): `--glass-border` was `rgba(255,255,255,0.6)` — invisible white border on light background; changed to `rgba(79,82,232,0.16)` (indigo tint)
+- fix(light-mode): improve `--background`, `--foreground`, `--muted-foreground`, `--accent`, `--glass-bg`, `--glass-strong`, `--glass-shadow` for better light mode contrast
+- fix(contact): widen `IconComponent` type to `() => any` to resolve `ForwardRefExoticComponent` assignment error
+- fix(hero): use `PointerEvent("pointermove")` instead of `MouseEvent("mousemove")` — Spline only responds to pointer events
 
 ### 🛡️ Security
 - feat(devsecops): document full DevSecOps coverage in skill architecture — Secret Scanning, SAST, Dockerfile Lint, IaC Scan, SCA, License Compliance, Image Scan, SBOM, IVA, WAPT, MAPT

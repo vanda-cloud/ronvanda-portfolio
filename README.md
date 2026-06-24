@@ -6,7 +6,7 @@
 
 <!-- Profile Photo -->
 <img src="public/icon-source.png" width="160px" alt="Ron Vanda" style="border-radius: 50%; border: 3px solid #818cf8;" />
-<h1 align="center">🧑‍💻 Ron Vanda — Portfolio v3.1.0</h1>
+<h1 align="center">🧑‍💻 Ron Vanda — Portfolio v3.0.0</h1>
 
 <!-- Author -->
 <a href="https://github.com/vanda-cloud" target="_blank">
@@ -81,7 +81,7 @@
 <a name="Overview"></a>
 ## 💡 [Overview &#9650;](#___top "click to go to top of document")
 
-**Ron Vanda Portfolio v3.1.0** is a personal portfolio website built with **Next.js 16 App Router**, **Tailwind v4**, and **TypeScript**. It showcases full-stack engineering expertise across mobile, web, desktop, DevOps, and DevSecOps — delivered with Apple-inspired **Liquid Glass UI**, smooth scroll animations, a 3D robot hero, neural network particle background, magic wand cursor, and full PWA support.
+**Ron Vanda Portfolio v3.0.0** is a personal portfolio website built with **Next.js 16 App Router**, **Tailwind v4**, and **TypeScript**. It showcases full-stack engineering expertise across mobile, web, desktop, DevOps, and DevSecOps — delivered with Apple-inspired **Liquid Glass UI**, smooth scroll animations, a 3D robot hero, neural network particle background, magic wand cursor, and full PWA support.
 
 The site supports **4 languages** (English, Khmer, Japanese, Chinese) via cookie-based locale switching with no URL prefix and no page reload.
 
