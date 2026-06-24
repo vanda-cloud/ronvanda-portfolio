@@ -77,7 +77,7 @@ export function Contact() {
     <section
       id="contact"
       ref={sectionRef}
-      className="relative mx-auto max-w-6xl px-6 py-28"
+      className="relative mx-auto max-w-6xl px-6 py-20 md:py-28"
     >
       <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
         <div className="text-center lg:text-left">
@@ -119,7 +119,7 @@ export function Contact() {
 
         <div
           ref={robotRef}
-          className="relative mx-auto flex w-full max-w-sm items-center justify-center lg:max-w-md"
+          className="relative mx-auto hidden w-full max-w-sm items-center justify-center lg:flex lg:max-w-md"
         >
           <Lottie animationData={programmingComputerAnimation} loop autoplay />
         </div>

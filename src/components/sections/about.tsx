@@ -134,7 +134,7 @@ export function About() {
     <section
       id="about"
       ref={sectionRef}
-      className="relative mx-auto max-w-6xl px-6 py-28"
+      className="relative mx-auto max-w-6xl px-6 py-20 md:py-28"
     >
       <div className="grid grid-cols-1 items-center gap-14 lg:grid-cols-2">
         {/* Text side */}
@@ -165,7 +165,7 @@ export function About() {
         </div>
 
         {/* Stats grid */}
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-3 sm:gap-4">
           {STAT_KEYS.map((key, i) => (
             <StatCard
               key={key}

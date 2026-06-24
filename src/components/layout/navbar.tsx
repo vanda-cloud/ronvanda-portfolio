@@ -25,22 +25,29 @@ export function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    function handleScroll() {
-      const scrollY = window.scrollY;
-      setScrolled(scrollY > 10);
+    let ticking = false;
 
-      const probe = scrollY + window.innerHeight / 2;
-      let current = "home";
-      for (const id of SECTION_IDS) {
-        const section = document.getElementById(id);
-        if (!section) continue;
-        const { offsetTop, offsetHeight } = section;
-        if (probe >= offsetTop && probe < offsetTop + offsetHeight) {
-          current = id;
-          break;
+    function handleScroll() {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        const scrollY = window.scrollY;
+        setScrolled(scrollY > 10);
+
+        const probe = scrollY + window.innerHeight / 2;
+        let current = "home";
+        for (const id of SECTION_IDS) {
+          const section = document.getElementById(id);
+          if (!section) continue;
+          const { offsetTop, offsetHeight } = section;
+          if (probe >= offsetTop && probe < offsetTop + offsetHeight) {
+            current = id;
+            break;
+          }
         }
-      }
-      setActiveSection(current);
+        setActiveSection(current);
+        ticking = false;
+      });
     }
 
     handleScroll();
@@ -55,7 +62,7 @@ export function Navbar() {
   }
 
   return (
-    <header className="fixed inset-x-0 top-4 z-50 flex justify-center px-4">
+    <header className="fixed inset-x-0 top-4 z-50 flex justify-center px-4" style={{ willChange: "transform", transform: "translateZ(0)" }}>
       <nav
         className="glass-panel w-full max-w-4xl rounded-[1.75rem] transition-colors duration-300"
         style={{ background: scrolled ? "var(--glass-strong)" : "var(--glass-bg)" }}

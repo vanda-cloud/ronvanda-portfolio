@@ -195,7 +195,7 @@ export function Experience() {
     <section
       id="experience"
       ref={sectionRef}
-      className="relative mx-auto max-w-6xl px-6 py-28"
+      className="relative mx-auto max-w-6xl px-6 py-20 md:py-28"
     >
       <div className="mx-auto max-w-xl text-center">
         <div className="flex items-center justify-center gap-3">

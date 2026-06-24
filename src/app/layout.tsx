@@ -78,7 +78,7 @@ export default async function RootLayout({
       className={`${roboto.variable} ${kantumruyPro.variable}`}
       suppressHydrationWarning
     >
-      <body className="antialiased">
+      <body className="antialiased" suppressHydrationWarning>
         <ParticleBackground />
         <MagicCursor />
         <NextIntlClientProvider messages={messages}>
