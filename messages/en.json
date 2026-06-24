@@ -164,6 +164,14 @@
         "subtitle": "Enterprise systems I've designed, built, and shipped.",
         "viewGithub": "More on GitHub",
         "items": {
+            "vnc-pos": {
+                "title": "VnC POS — Point of Sale System",
+                "desc": "A production-ready, multi-tenant full-stack POS platform for small businesses — NestJS GraphQL API, Next.js admin dashboard (PWA), and Flutter cashier app (Android & iOS), with PostgreSQL, Redis, and role-based access control."
+            },
+            "vnc-pms": {
+                "title": "VnC PMS — Petroleum Management System",
+                "desc": "A real-time petroleum station management system integrating with Wayne DFS Fusion® v3 — ASP.NET Core 10 Windows Service REST API with SignalR live push, Flutter mobile app (BLoC, go_router), Firebird 3.0 DB, and ESC/POS receipt printing."
+            },
             "inventory": {
                 "title": "Inventory Management System",
                 "desc": "A desktop application for factory inventory, sales, and purchases — built with C# using the MVP pattern, backed by MSSQL."

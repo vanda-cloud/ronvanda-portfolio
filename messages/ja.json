@@ -164,6 +164,14 @@
         "subtitle": "設計・開発・リリースしてきたエンタープライズシステム。",
         "viewGithub": "GitHubでもっと見る",
         "items": {
+            "vnc-pos": {
+                "title": "VnC POS — 販売管理システム",
+                "desc": "小規模ビジネス向けマルチテナント対応フルスタック POS プラットフォーム — NestJS GraphQL API・Next.js 管理ダッシュボード（PWA）・Flutter レジアプリ（Android & iOS）、PostgreSQL・Redis・ロールベースアクセス制御を搭載。"
+            },
+            "vnc-pms": {
+                "title": "VnC PMS — 給油所管理システム",
+                "desc": "Wayne DFS Fusion® v3 と連携するリアルタイム給油所管理システム — ASP.NET Core 10 Windows Service REST API（SignalR リアルタイムプッシュ）・Flutter モバイルアプリ（BLoC）・Firebird 3.0・ESC/POS レシート印刷対応。"
+            },
             "inventory": {
                 "title": "在庫管理システム",
                 "desc": "工場の在庫・販売・購買を管理するデスクトップアプリ。C# と MVP パターンで構築し、MSSQL と連携。"

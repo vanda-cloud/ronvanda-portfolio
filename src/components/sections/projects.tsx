@@ -6,9 +6,11 @@ import { ArrowUpRight, FolderCode } from "lucide-react";
 import { GithubIcon } from "@/components/ui/brand-icons";
 import { gsap, ScrollTrigger } from "@/lib/gsap";
 
-const PROJECT_IDS = ["inventory", "sfa", "payroll", "parking", "production", "crm", "pos", "hrm", "canteen", "attendance"] as const;
+const PROJECT_IDS = ["vnc-pos", "vnc-pms", "inventory", "sfa", "payroll", "parking", "production", "crm", "pos", "hrm", "canteen", "attendance"] as const;
 
 const TAGS: Record<(typeof PROJECT_IDS)[number], string[]> = {
+  "vnc-pos":  ["NestJS", "Next.js", "Flutter", "GraphQL", "PostgreSQL", "Redis"],
+  "vnc-pms":  ["Flutter", "ASP.NET Core", "SignalR", "Firebird", "Windows Service"],
   inventory:  ["C#", "MVP Pattern", "MSSQL", "Barcode", "Reporting"],
   sfa:        ["Objective-C", "Android", "Firebase", "CRM"],
   payroll:    ["C#", "MVP Pattern", "MSSQL", "Payslip", "Tax Calc"],

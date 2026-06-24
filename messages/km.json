@@ -164,6 +164,14 @@
         "subtitle": "ប្រព័ន្ធសហគ្រាសដែលខ្ញុំបានរចនា បង្កើត និងដាក់ឱ្យប្រើប្រាស់។",
         "viewGithub": "មើលច្រើនទៀតលើ GitHub",
         "items": {
+            "vnc-pos": {
+                "title": "VnC POS — ប្រព័ន្ធលក់រាយ",
+                "desc": "វេទិកា POS Multi-Tenant ពេញលេញសម្រាប់អាជីវកម្មតូច — NestJS GraphQL API, Next.js Admin Dashboard (PWA), Flutter Cashier App (Android & iOS), PostgreSQL, Redis, និងការគ្រប់គ្រងសិទ្ធិតាមតួនាទី។"
+            },
+            "vnc-pms": {
+                "title": "VnC PMS — ប្រព័ន្ធគ្រប់គ្រងស្ថានីយ៍ សាំង",
+                "desc": "ប្រព័ន្ធគ្រប់គ្រងស្ថានីយ៍ សាំង ក្នុងពេលជាក់ស្តែង ភ្ជាប់ជាមួយ Wayne DFS Fusion® v3 — ASP.NET Core 10 Windows Service REST API ជាមួយ SignalR, Flutter Mobile App (BLoC), Firebird 3.0, និងការបោះបង្កាន់ ESC/POS។"
+            },
             "inventory": {
                 "title": "ប្រព័ន្ធគ្រប់គ្រងស្តុក",
                 "desc": "កម្មវិធី Desktop សម្រាប់គ្រប់គ្រងស្តុក ការលក់ និងការទិញសម្រាប់រោងចក្រ បង្កើតដោយ C# តាមគំរូ MVP ភ្ជាប់ជាមួយ MSSQL។"

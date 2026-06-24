@@ -164,6 +164,14 @@
         "subtitle": "我设计、构建并交付的企业级系统。",
         "viewGithub": "在 GitHub 查看更多",
         "items": {
+            "vnc-pos": {
+                "title": "VnC POS — 销售终端系统",
+                "desc": "面向小型商户的多租户全栈 POS 平台 — NestJS GraphQL API、Next.js 管理后台（PWA）、Flutter 收银应用（Android & iOS），集成 PostgreSQL、Redis 与基于角色的访问控制。"
+            },
+            "vnc-pms": {
+                "title": "VnC PMS — 加油站管理系统",
+                "desc": "与 Wayne DFS Fusion® v3 深度集成的实时加油站管理系统 — ASP.NET Core 10 Windows Service REST API（SignalR 实时推送）、Flutter 移动应用（BLoC 架构）、Firebird 3.0 数据库，支持 ESC/POS 小票打印。"
+            },
             "inventory": {
                 "title": "库存管理系统",
                 "desc": "面向工厂的库存、销售与采购桌面应用,采用 C# 与 MVP 模式开发,后端使用 MSSQL。"
