@@ -6,11 +6,10 @@ import { Experience } from "@/components/sections/experience";
 import { Projects } from "@/components/sections/projects";
 import { Contact } from "@/components/sections/contact";
 import { ScrollToTop } from "@/components/ui/scroll-to-top";
-
 export default function Home() {
   return (
     <>
-      <main className="relative min-h-screen overflow-hidden">
+      <main className="relative min-h-screen">
         <Navbar />
         <Hero />
         <Skills />

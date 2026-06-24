@@ -47,7 +47,7 @@ export function Hero() {
     <section
       id="home"
       ref={sectionRef}
-      className="relative flex min-h-screen items-center overflow-hidden px-6 pb-20 pt-32"
+      className="relative flex min-h-screen items-center px-6 pb-20 pt-32"
     >
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div className="liquid-blob liquid-blob-a" />

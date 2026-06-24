@@ -5,6 +5,7 @@ import { getLocale, getMessages, getTranslations } from "next-intl/server";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { SmoothScrollProvider } from "@/components/providers/smooth-scroll-provider";
 import { PwaRegister } from "@/components/providers/pwa-register";
+import { ParticleBackground } from "@/components/ui/particle-background";
 import "./globals.css";
 
 // next/font self-hosts these automatically at build time — the files are
@@ -77,6 +78,7 @@ export default async function RootLayout({
       suppressHydrationWarning
     >
       <body className="antialiased">
+        <ParticleBackground />
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
             <SmoothScrollProvider>{children}</SmoothScrollProvider>
