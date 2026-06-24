@@ -10,7 +10,7 @@ import programmerAnimation from "@/assets/lottie/programmer.json";
 // Example placeholders spanning 2012 → present, newest first.
 // Swap in your real roles/companies/dates whenever you're ready —
 // nothing else about the section needs to change.
-const EXPERIENCE_IDS = ["current", "prior3", "prior2", "prior1"] as const;
+const EXPERIENCE_IDS = ["e1", "e2", "e3", "e4", "e5", "e6", "e7", "e8"] as const;
 
 export function Experience() {
   const t = useTranslations("experience");

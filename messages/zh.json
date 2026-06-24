@@ -76,31 +76,55 @@
   },
   "experience": {
     "title": "工作经历",
-    "subtitle": "自 2012 年起从事专业软件开发工作。",
+    "subtitle": "自 2007 年起从事专业软件开发工作。",
     "items": {
-      "current": {
-        "period": "2023 — 至今",
-        "role": "首席全栈开发工程师",
-        "company": "公司名称",
-        "desc": "占位说明文字 —— 请替换为你的真实职责、成果与所使用的技术栈。"
+      "e1": {
+        "period": "2025 — 至今",
+        "role": "应用开发高级经理",
+        "company": "J Trust Royal Bank Plc.",
+        "desc": "为利益相关方和客户开发 Web 应用、移动应用及网站。"
       },
-      "prior3": {
-        "period": "2019 — 2023",
-        "role": "高级全栈开发工程师",
-        "company": "公司名称",
-        "desc": "占位说明文字 —— 请替换为你的真实职责、成果与所使用的技术栈。"
+      "e2": {
+        "period": "2022 — 2024",
+        "role": "Web 应用与解决方案经理",
+        "company": "J Trust Royal Bank Plc.",
+        "desc": "开发 Web 应用门户，帮助利益相关方管理日常运营，提升客户满意度。"
       },
-      "prior2": {
-        "period": "2015 — 2019",
-        "role": "全栈开发工程师",
-        "company": "公司名称",
-        "desc": "占位说明文字 —— 请替换为你的真实职责、成果与所使用的技术栈。"
+      "e3": {
+        "period": "2014 — 2022",
+        "role": "IT 工程师",
+        "company": "Forval (Cambodia) Co., Ltd.（日资企业）",
+        "desc": "为日本客户开发和管理各类系统，涵盖工厂、餐厅、建筑、酒店及房地产公司。"
       },
-      "prior1": {
-        "period": "2012 — 2015",
-        "role": "初级软件开发工程师",
-        "company": "公司名称",
-        "desc": "占位说明文字 —— 请替换为你的真实职责、成果与所使用的技术栈。"
+      "e4": {
+        "period": "2014 — 2014",
+        "role": "IT 工程师",
+        "company": "Forval (Cambodia) Co., Ltd.（日资企业）",
+        "desc": "为工厂开发生产管理系统，并为众多日本客户管理服务器、网络与硬件。"
+      },
+      "e5": {
+        "period": "2013 — 2014",
+        "role": "数据库开发工程师",
+        "company": "S.I Group Co., Ltd.",
+        "desc": "为 S.I Group 及其客户开发库存管理系统，用于控制库存并追踪物料使用情况。"
+      },
+      "e6": {
+        "period": "2011 — 2013",
+        "role": "IT 助理",
+        "company": "金边皇家大学（RUPP）",
+        "desc": "管理计算机实验室，支持教师与学生，开发实验室管理系统以管控学生在实验室的使用情况。"
+      },
+      "e7": {
+        "period": "2009 — 2010",
+        "role": "计算机教师",
+        "company": "American House School（AHS）",
+        "desc": "讲授 Microsoft Word、Excel、Access、互联网、硬件维护与维修、HTML 及网络管理员课程。"
+      },
+      "e8": {
+        "period": "2007 — 2009",
+        "role": "英语教师",
+        "company": "EYDP Organization",
+        "desc": "教授英语会话与核心英语（Opportunity）课程，并担任 EYDP 组织的翻译。"
       }
     }
   },

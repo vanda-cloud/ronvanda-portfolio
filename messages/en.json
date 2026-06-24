@@ -76,31 +76,55 @@
   },
   "experience": {
     "title": "Work Experience",
-    "subtitle": "Building software professionally since 2012.",
+    "subtitle": "Building software professionally since 2007.",
     "items": {
-      "current": {
-        "period": "2023 — Present",
-        "role": "Lead Full-Stack Developer",
-        "company": "Company Name",
-        "desc": "Placeholder description — replace with your real responsibilities, achievements, and the tech stack you used in this role."
+      "e1": {
+        "period": "2025 — Present",
+        "role": "Senior Manager, Application Development",
+        "company": "J Trust Royal Bank Plc.",
+        "desc": "Developed Web App, Mobile App, and Website for Stakeholders and Customers."
       },
-      "prior3": {
-        "period": "2019 — 2023",
-        "role": "Senior Full-Stack Developer",
-        "company": "Company Name",
-        "desc": "Placeholder description — replace with your real responsibilities, achievements, and the tech stack you used in this role."
+      "e2": {
+        "period": "2022 — 2024",
+        "role": "Web Application and Solution Manager",
+        "company": "J Trust Royal Bank Plc.",
+        "desc": "Developed web application portals for stakeholders to manage their daily operations to support customer satisfaction."
       },
-      "prior2": {
-        "period": "2015 — 2019",
-        "role": "Full-Stack Developer",
-        "company": "Company Name",
-        "desc": "Placeholder description — replace with your real responsibilities, achievements, and the tech stack you used in this role."
+      "e3": {
+        "period": "2014 — 2022",
+        "role": "IT Engineer",
+        "company": "Forval (Cambodia) Co., Ltd.",
+        "desc": "Developed and managed all kinds of systems for Japanese customers including Factory, Restaurant, Construction, Hotel, and Real Estate companies."
       },
-      "prior1": {
-        "period": "2012 — 2015",
-        "role": "Junior Software Developer",
-        "company": "Company Name",
-        "desc": "Placeholder description — replace with your real responsibilities, achievements, and the tech stack you used in this role."
+      "e4": {
+        "period": "2014 — 2014",
+        "role": "IT Engineer",
+        "company": "Forval (Cambodia) Co., Ltd.",
+        "desc": "Developed Production Management System for Factory and managed Server, Network, and Hardware for many Japanese customers."
+      },
+      "e5": {
+        "period": "2013 — 2014",
+        "role": "Database Developer",
+        "company": "S.I Group Co., Ltd.",
+        "desc": "Developed an inventory management system for S.I Group and customers to control inventory and track the usage of materials."
+      },
+      "e6": {
+        "period": "2011 — 2013",
+        "role": "IT Assistance",
+        "company": "Royal University of Phnom Penh (RUPP)",
+        "desc": "Managed Computer Labs, supported lecturers and students, and developed a Lab Management System to control students in the lab."
+      },
+      "e7": {
+        "period": "2009 — 2010",
+        "role": "Computer Teacher",
+        "company": "American House School (AHS)",
+        "desc": "Taught courses including Microsoft Word, Excel, Access, Internet Program, Maintenance & Repair, HTML, and Network Administrator."
+      },
+      "e8": {
+        "period": "2007 — 2009",
+        "role": "English Teacher",
+        "company": "EYDP Organization",
+        "desc": "Taught English Conversation and Core English (Opportunity) and worked as a translator at EYDP organization."
       }
     }
   },
