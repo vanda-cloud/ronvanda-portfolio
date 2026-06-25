@@ -80,19 +80,30 @@ body {
 
 @layer components {
   .glass-panel {
-    background: var(--glass-bg);
-    border: 1px solid var(--glass-border);
+    background: rgba(255, 255, 255, 0.78);
+    border: 1px solid rgba(79, 82, 232, 0.16);
     backdrop-filter: blur(20px) saturate(160%);
     -webkit-backdrop-filter: blur(20px) saturate(160%);
-    box-shadow: 0 8px 32px var(--glass-shadow);
+    box-shadow: 0 8px 32px rgba(20, 21, 26, 0.10);
+  }
+
+  .dark .glass-panel {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.14);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
   }
 
   .glass-pill {
-    background: var(--glass-bg);
-    border: 1px solid var(--glass-border);
+    background: rgba(255, 255, 255, 0.78);
+    border: 1px solid rgba(79, 82, 232, 0.16);
     backdrop-filter: blur(16px) saturate(160%);
     -webkit-backdrop-filter: blur(16px) saturate(160%);
     border-radius: 999px;
+  }
+
+  .dark .glass-pill {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.14);
   }
 
   .gradient-text {
