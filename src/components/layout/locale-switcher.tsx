@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { Check } from "lucide-react";
@@ -33,6 +34,19 @@ export function LocaleSwitcher() {
   const locale = useLocale();
   const router = useRouter();
   const t = useTranslations("locale");
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => setMounted(true), []);
+
+  if (!mounted) {
+    return (
+      <div
+        className="glass-pill h-9 w-[4.5rem]"
+        style={{ background: "var(--glass-bg)", borderColor: "var(--glass-border)" }}
+        aria-hidden
+      />
+    );
+  }
 
   function selectLocale(loc: string) {
     if (loc === locale) return;
@@ -48,6 +62,7 @@ export function LocaleSwitcher() {
           variant="outline"
           aria-label={t("label")}
           className="h-9 gap-1.5 px-3 text-sm font-medium"
+          style={{ background: "var(--glass-bg)", borderColor: "var(--glass-border)" }}
         >
           <span aria-hidden>{flags[locale]}</span>
           {labels[locale]}

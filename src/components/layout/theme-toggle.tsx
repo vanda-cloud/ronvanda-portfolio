@@ -13,8 +13,8 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 const OPTIONS = [
-  { value: "light", icon: Sun },
-  { value: "dark", icon: Moon },
+  { value: "light",  icon: Sun },
+  { value: "dark",   icon: Moon },
   { value: "system", icon: Monitor },
 ] as const;
 
@@ -26,10 +26,18 @@ export function ThemeToggle() {
   useEffect(() => setMounted(true), []);
 
   if (!mounted) {
-    return <div className="glass-pill h-9 w-9" aria-hidden />;
+    return (
+      <div
+        className="glass-pill h-9 w-9"
+        style={{ background: "var(--glass-bg)", borderColor: "var(--glass-border)" }}
+        aria-hidden
+      />
+    );
   }
 
-  const isDark = resolvedTheme === "dark";
+  const icon =
+    theme === "system" ? <Monitor size={16} /> :
+    resolvedTheme === "dark" ? <Moon size={16} /> : <Sun size={16} />;
 
   return (
     <DropdownMenu>
@@ -39,8 +47,9 @@ export function ThemeToggle() {
           size="icon"
           aria-label={t("menuLabel")}
           className="h-9 w-9"
+          style={{ background: "var(--glass-bg)", borderColor: "var(--glass-border)" }}
         >
-          {isDark ? <Moon size={16} /> : <Sun size={16} />}
+          {icon}
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="min-w-36">
