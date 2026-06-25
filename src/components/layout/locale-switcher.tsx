@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useTheme } from "next-themes";
 import { useRouter } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { Check } from "lucide-react";
@@ -34,15 +35,22 @@ export function LocaleSwitcher() {
   const locale = useLocale();
   const router = useRouter();
   const t = useTranslations("locale");
+  const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => setMounted(true), []);
+
+  const dark = resolvedTheme === "dark";
+  const glassStyle = {
+    background:  dark ? "rgba(255,255,255,0.06)" : "rgba(255,255,255,0.78)",
+    borderColor: dark ? "rgba(255,255,255,0.14)" : "rgba(79,82,232,0.16)",
+  };
 
   if (!mounted) {
     return (
       <div
         className="glass-pill h-9 w-[4.5rem]"
-        style={{ background: "var(--glass-bg)", borderColor: "var(--glass-border)" }}
+        style={glassStyle}
         aria-hidden
       />
     );
@@ -62,7 +70,7 @@ export function LocaleSwitcher() {
           variant="outline"
           aria-label={t("label")}
           className="h-9 gap-1.5 px-3 text-sm font-medium"
-          style={{ background: "var(--glass-bg)", borderColor: "var(--glass-border)" }}
+          style={glassStyle}
         >
           <span aria-hidden>{flags[locale]}</span>
           {labels[locale]}

@@ -35,9 +35,15 @@ export function ThemeToggle() {
     );
   }
 
+  const dark = resolvedTheme === "dark";
+  const glassStyle = {
+    background:  dark ? "rgba(255,255,255,0.06)" : "rgba(255,255,255,0.78)",
+    borderColor: dark ? "rgba(255,255,255,0.14)" : "rgba(79,82,232,0.16)",
+  };
+
   const icon =
-    theme === "system" ? <Monitor size={16} /> :
-    resolvedTheme === "dark" ? <Moon size={16} /> : <Sun size={16} />;
+    theme === "system"  ? <Monitor size={16} /> :
+    dark                ? <Moon    size={16} /> : <Sun size={16} />;
 
   return (
     <DropdownMenu>
@@ -47,7 +53,7 @@ export function ThemeToggle() {
           size="icon"
           aria-label={t("menuLabel")}
           className="h-9 w-9"
-          style={{ background: "var(--glass-bg)", borderColor: "var(--glass-border)" }}
+          style={glassStyle}
         >
           {icon}
         </Button>
