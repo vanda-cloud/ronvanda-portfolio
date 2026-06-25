@@ -75,14 +75,14 @@ export default async function RootLayout({
   return (
     <html
       lang={locale}
-      className={`${roboto.variable} ${kantumruyPro.variable}`}
+      className={`${roboto.variable} ${kantumruyPro.variable} dark`}
       suppressHydrationWarning
     >
       <body className="antialiased" suppressHydrationWarning>
         <ParticleBackground />
         <MagicCursor />
         <NextIntlClientProvider messages={messages}>
-          <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+          <ThemeProvider attribute="class" defaultTheme="dark" enableSystem storageKey="rv-portfolio-theme">
             <SmoothScrollProvider>{children}</SmoothScrollProvider>
           </ThemeProvider>
           <PwaRegister />

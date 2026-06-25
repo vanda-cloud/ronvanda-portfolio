@@ -4,10 +4,10 @@ All notable changes to **Ron Vanda Portfolio** are documented here.
 
 ---
 
-## 🚀 3.0.0 (24-Jun-2026)
+## 🚀 3.0.0 (25-Jun-2026)
 [![Author](https://img.shields.io/badge/Author-Ron%20Vanda-green?style=flat-round&logo=github)](https://github.com/vanda-cloud)
 ![Start Date](https://img.shields.io/badge/Start%20Date-20%20Jun%202026-lightgrey?style=flat-round&logo=readme)
-![Release Date](https://img.shields.io/badge/Release%20Date-24%20Jun%202026-blue?style=flat-round&logo=rocket)
+![Release Date](https://img.shields.io/badge/Release%20Date-25%20Jun%202026-blue?style=flat-round&logo=rocket)
 ![Version](https://img.shields.io/badge/Version-3.0.0-brightgreen?style=flat-round&logo=semanticrelease)
 
 ### 🌱 New Feature
