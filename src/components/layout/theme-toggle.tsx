@@ -11,6 +11,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { useIsDark } from "@/hooks/use-is-dark";
 
 const OPTIONS = [
   { value: "light",  icon: Sun },
@@ -19,31 +20,25 @@ const OPTIONS = [
 ] as const;
 
 export function ThemeToggle() {
-  const { theme, resolvedTheme, setTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
   const t = useTranslations("theme");
+  const isDark = useIsDark();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => setMounted(true), []);
 
-  if (!mounted) {
-    return (
-      <div
-        className="glass-pill h-9 w-9"
-        style={{ background: "var(--glass-bg)", borderColor: "var(--glass-border)" }}
-        aria-hidden
-      />
-    );
-  }
-
-  const dark = resolvedTheme === "dark";
   const glassStyle = {
-    background:  dark ? "rgba(255,255,255,0.06)" : "rgba(255,255,255,0.78)",
-    borderColor: dark ? "rgba(255,255,255,0.14)" : "rgba(79,82,232,0.16)",
+    background:  isDark ? "rgba(255,255,255,0.06)" : "rgba(255,255,255,0.78)",
+    borderColor: isDark ? "rgba(255,255,255,0.14)" : "rgba(79,82,232,0.16)",
   };
 
+  if (!mounted) {
+    return <div className="glass-pill h-9 w-9" style={glassStyle} aria-hidden />;
+  }
+
   const icon =
-    theme === "system"  ? <Monitor size={16} /> :
-    dark                ? <Moon    size={16} /> : <Sun size={16} />;
+    theme === "system" ? <Monitor size={16} /> :
+    isDark             ? <Moon    size={16} /> : <Sun size={16} />;
 
   return (
     <DropdownMenu>

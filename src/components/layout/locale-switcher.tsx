@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useTheme } from "next-themes";
 import { useRouter } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
+import { useIsDark } from "@/hooks/use-is-dark";
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -35,25 +35,18 @@ export function LocaleSwitcher() {
   const locale = useLocale();
   const router = useRouter();
   const t = useTranslations("locale");
-  const { resolvedTheme } = useTheme();
+  const isDark = useIsDark();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => setMounted(true), []);
 
-  const dark = resolvedTheme === "dark";
   const glassStyle = {
-    background:  dark ? "rgba(255,255,255,0.06)" : "rgba(255,255,255,0.78)",
-    borderColor: dark ? "rgba(255,255,255,0.14)" : "rgba(79,82,232,0.16)",
+    background:  isDark ? "rgba(255,255,255,0.06)" : "rgba(255,255,255,0.78)",
+    borderColor: isDark ? "rgba(255,255,255,0.14)" : "rgba(79,82,232,0.16)",
   };
 
   if (!mounted) {
-    return (
-      <div
-        className="glass-pill h-9 w-[4.5rem]"
-        style={glassStyle}
-        aria-hidden
-      />
-    );
+    return <div className="glass-pill h-9 w-[4.5rem]" style={glassStyle} aria-hidden />;
   }
 
   function selectLocale(loc: string) {
