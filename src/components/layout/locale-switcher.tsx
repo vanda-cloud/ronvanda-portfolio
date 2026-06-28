@@ -41,7 +41,7 @@ export function LocaleSwitcher() {
   useEffect(() => setMounted(true), []);
 
   const glassStyle = {
-    background:       isDark ? "rgba(255,255,255,0.06)" : "rgba(255,255,255,0.78)",
+    background:       isDark ? "rgba(255,255,255,0.06)" : "rgba(255,255,255,0.52)",
     borderColor:      isDark ? "rgba(255,255,255,0.14)" : "rgba(79,82,232,0.16)",
     // Disable backdrop-filter on the button itself — iOS WebKit renders nested
     // backdrop-filter (button inside glass-panel nav) incorrectly, causing a
