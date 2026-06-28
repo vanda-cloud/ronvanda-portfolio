@@ -13,12 +13,17 @@ import { useState, useEffect } from "react";
  * A MutationObserver keeps it reactive to subsequent theme switches.
  */
 export function useIsDark(): boolean {
-  const [isDark, setIsDark] = useState(false);
+  // Lazy initializer reads the DOM synchronously on the client so the very
+  // first render already has the correct value — prevents iOS WebKit's GPU
+  // compositor from caching a stale "light" frame that it never invalidates.
+  const [isDark, setIsDark] = useState<boolean>(() => {
+    if (typeof document === "undefined") return false;
+    return document.documentElement.classList.contains("dark");
+  });
 
   useEffect(() => {
     const el = document.documentElement;
     const sync = () => setIsDark(el.classList.contains("dark"));
-    sync(); // read the class that next-themes already set
     const obs = new MutationObserver(sync);
     obs.observe(el, { attributes: true, attributeFilter: ["class"] });
     return () => obs.disconnect();
