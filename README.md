@@ -322,7 +322,7 @@ npm start
 <br/>
 <h1></h1>
 <div align="center">
-  <img src="https://img.shields.io/badge/Updated_At-24_|_Jun_|_2026-blue?style=flat-round&logo=readme" alt="Updated" />
+  <img src="https://img.shields.io/badge/Initialized_At-22_|_Jun_|_2026-blue?style=flat-round&logo=readme" alt="Updated" />
   <img src="https://img.shields.io/badge/Maintained%20by-Ron%20Vanda-blue?style=flat-round&logo=github" alt="Maintained by Ron Vanda" />
   <img src="https://img.shields.io/badge/License-MIT-green?style=flat-round&logo=opensourceinitiative&logoColor=white" alt="License" />
 </div>
