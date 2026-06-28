@@ -119,7 +119,7 @@ export function Contact() {
 
         <div
           ref={robotRef}
-          className="relative mx-auto hidden w-full max-w-sm items-center justify-center lg:flex lg:max-w-md"
+          className="relative mx-auto flex w-full max-w-xs items-center justify-center sm:max-w-sm lg:max-w-md"
         >
           <Lottie animationData={programmingComputerAnimation} loop autoplay />
         </div>

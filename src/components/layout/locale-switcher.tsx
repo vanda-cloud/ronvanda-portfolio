@@ -51,7 +51,7 @@ export function LocaleSwitcher() {
   };
 
   if (!mounted) {
-    return <div className="glass-pill h-9 w-[4.5rem]" style={glassStyle} aria-hidden />;
+    return <div className="glass-pill h-9 w-[4.5rem]" aria-hidden />;
   }
 
   function selectLocale(loc: string) {

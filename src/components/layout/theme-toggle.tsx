@@ -38,7 +38,7 @@ export function ThemeToggle() {
   };
 
   if (!mounted) {
-    return <div className="glass-pill h-9 w-9" style={glassStyle} aria-hidden />;
+    return <div className="glass-pill h-9 w-9" aria-hidden />;
   }
 
   const icon =
