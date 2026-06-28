@@ -6,7 +6,7 @@ import { X, Sparkles, Zap, Shield, Smartphone, Globe, Monitor, Tag } from "lucid
 import { gsap } from "@/lib/gsap";
 
 const VERSION = "3.0.0";
-const RELEASE_DATE = "25 Jun 2026";
+const RELEASE_DATE = "28 Jun 2026";
 const STORAGE_KEY = "rv-last-seen-version";
 
 const RELEASE_ITEM_KEYS = [
