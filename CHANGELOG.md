@@ -4,10 +4,10 @@ All notable changes to **Ron Vanda Portfolio** are documented here.
 
 ---
 
-## 🚀 3.0.0 (25-Jun-2026)
+## 🚀 3.0.0 (28-Jun-2026)
 [![Author](https://img.shields.io/badge/Author-Ron%20Vanda-green?style=flat-round&logo=github)](https://github.com/vanda-cloud)
 ![Start Date](https://img.shields.io/badge/Start%20Date-20%20Jun%202026-lightgrey?style=flat-round&logo=readme)
-![Release Date](https://img.shields.io/badge/Release%20Date-25%20Jun%202026-blue?style=flat-round&logo=rocket)
+![Release Date](https://img.shields.io/badge/Release%20Date-28%20Jun%202026-blue?style=flat-round&logo=rocket)
 ![Version](https://img.shields.io/badge/Version-3.0.0-brightgreen?style=flat-round&logo=semanticrelease)
 
 ### 🌱 New Feature
@@ -47,6 +47,7 @@ All notable changes to **Ron Vanda Portfolio** are documented here.
 - feat(projects): add VnC PMS — petroleum station management system (Flutter, ASP.NET Core, SignalR, Firebird, Windows Service)
 - feat(contact): contact section with social icons (Facebook, Telegram, LinkedIn, Instagram, GitHub), bouncy GSAP icon pop-in, programming Lottie animation (programming-computer.json)
 - feat(scroll-to-top): scroll-to-top button with Lottie animation (scroll-up.json), appears after 300px scroll
+- feat(hooks): add `useIsDark` hook — reads dark mode directly from `document.documentElement.classList` with MutationObserver for reactive theme switching, bypassing next-themes `resolvedTheme` race condition
 
 ### 🧩 Improvement
 - refactor(i18n): drop `[locale]` route segment entirely — plain `app/layout.tsx` with `Accept-Language` header + cookie fallback
@@ -63,6 +64,10 @@ All notable changes to **Ron Vanda Portfolio** are documented here.
 - feat(footer): release notes modal — backdrop click shows GSAP shake animation instead of closing
 - feat(experience): e4 period updated to "Jun — Dec 2014" with desc noting 6-month promotion
 - feat(projects): unique tech tags per project card; update subtitle to "Enterprise systems I've designed, built, and shipped."
+- feat(theme): restore `enableSystem` and System option with Monitor icon in ThemeToggle dropdown; show Monitor icon in navbar trigger when system theme is active
+- feat(navbar): add `mounted` guard to `LocaleSwitcher` to prevent SSR flash on first hamburger open
+- feat(contact): show programming Lottie on mobile at `max-w-xs`, grows to `sm:max-w-sm` on tablet and `lg:max-w-md` on desktop
+- refactor(glass): reduce light mode glass opacity from 0.78 → 0.52 (`--glass-bg`, `--glass-strong`, `glass-panel`, `glass-pill`) for better translucency and background bleed-through
 
 ### 🧪 Bug Fix
 - fix(middleware): rename conflicting `middleware.ts` to `.bak` to resolve locale detection double-routing issue
@@ -76,13 +81,19 @@ All notable changes to **Ron Vanda Portfolio** are documented here.
 - fix(light-mode): improve `--background`, `--foreground`, `--muted-foreground`, `--accent`, `--glass-bg`, `--glass-strong`, `--glass-shadow` for better light mode contrast
 - fix(contact): widen `IconComponent` type to `() => any` to resolve `ForwardRefExoticComponent` assignment error
 - fix(hero): use `PointerEvent("pointermove")` instead of `MouseEvent("mousemove")` — Spline only responds to pointer events
+- fix(build): delete orphaned `src/app/_locale-old.bak/` directory causing Vercel TypeScript build error (`Module '"@/i18n/routing"' has no exported member 'routing'`)
+- fix(hydration): add `suppressHydrationWarning` on `<body>` to suppress Grammarly extension injecting `data-gr-ext-installed` attribute mismatch
+- fix(navbar): wrap scroll handler in `requestAnimationFrame` + `transform: translateZ(0)` / `will-change: transform` on `<header>` to prevent mobile address-bar-triggered navbar jitter
+- fix(mobile): add `mounted` guard and `useIsDark` to `LocaleSwitcher` and `ThemeToggle`; disable nested `backdrop-filter` on nav buttons via inline style — fixes iOS WebKit compositor rendering white buttons inside glass-panel nav on portrait load (confirmed via Safari Web Inspector: computed background was correct but compositor cached stale light-mode frame due to nested backdrop-filter)
+- fix(hydration): revert lazy `useState` initializer in `useIsDark` (caused SSR/client style mismatch on placeholder div); use `useState(false)` + MutationObserver instead
+- fix(i18n): correct Khmer translation for VnC PMS — `ស្ថានីយ័ xăng` → `ស្ថានីយ៍ សាំង` in both title and desc of `km.json`
 
 ### 🛡️ Security
 - feat(devsecops): document full DevSecOps coverage in skill architecture — Secret Scanning, SAST, Dockerfile Lint, IaC Scan, SCA, License Compliance, Image Scan, SBOM, IVA, WAPT, MAPT
 - feat(pwa): service worker cache-first strategy with version-keyed cache and stale cache cleanup on activate
 
 ### 📖 Documentation
-- doc(changelog): add `CHANGELOG.md` for v3.0.0 initial release
+- doc(changelog): add `CHANGELOG.md` for v3.0.0 initial release; update release date to 28 Jun 2026
 - chore(i18n): add `footer` translation namespace to all 4 locale files (en/km/ja/zh)
 - chore(i18n): add comprehensive hero tagline, metadata title/description across all 4 locales
 - chore(package): add `generate:icons` script — `node scripts/generate-icons.mjs` to derive all PWA icon sizes from `public/icon-source.png`
