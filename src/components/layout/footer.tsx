@@ -6,6 +6,7 @@ import Lottie, { type LottieRefCurrentProps } from "lottie-react";
 import { gsap } from "@/lib/gsap";
 import heartAnimation from "@/assets/lottie/animation-heart.json";
 import { ReleaseNotesModal } from "@/components/ui/release-notes-modal";
+import { OnlineBadge } from "@/components/ui/online-badge";
 
 const HEART_COLORS = ["#f43f5e","#fb7185","#ff6b6b","#f472b6","#e879f9","#ff4d6d","#fda4af","#f9a8d4","#fbbf24","#fb923c"];
 
@@ -124,8 +125,9 @@ export function Footer() {
   return (
     <footer className="border-t border-[var(--glass-border)] bg-[var(--background)] py-6">
       {/* Version badge — clicking opens release notes modal */}
-      <div className="mb-4 flex items-center justify-center">
+      <div className="mb-4 flex flex-wrap items-center justify-center gap-2">
         <ReleaseNotesModal />
+        <OnlineBadge />
       </div>
 
       <p className="flex flex-wrap items-center justify-center gap-x-1 text-center text-xs text-[var(--muted-foreground)]">
