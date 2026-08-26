@@ -255,7 +255,8 @@
     "footer": {
         "madeWith": "Made with",
         "by": "by",
-        "rights": "All rights reserved."
+        "rights": "All rights reserved.",
+        "online": "{count, plural, one {# online now} other {# online now}}"
     },
     "about": {
         "title": "About Me",

@@ -255,7 +255,8 @@
     "footer": {
         "madeWith": "愛を込めて",
         "by": "制作：",
-        "rights": "無断転載を禁じます。"
+        "rights": "無断転載を禁じます。",
+        "online": "{count, plural, other {現在 # 人がオンライン}}"
     },
     "about": {
         "title": "自己紹介",

@@ -255,7 +255,8 @@
     "footer": {
         "madeWith": "用",
         "by": "由",
-        "rights": "保留所有权利。"
+        "rights": "保留所有权利。",
+        "online": "{count, plural, other {# 人在线}}"
     },
     "about": {
         "title": "关于我",
